@@ -1,0 +1,18 @@
+:root{
+    /* colours, use -- for custom properties*/
+    --colour-bg: white;
+    --colour-text: black;
+    --colour-main: #29546e;
+    --colour-main-light: #9bb9cb;
+    --colour-accent: #ad6f38;
+    --colour-accent-light: #d5a171;
+}
+
+body{
+    color: var(--colour-text);
+    background-color: var(--colour-bg);
+}
+
+nav{
+    background-color: var(--colour-main-light);
+}
