@@ -1,0 +1,29 @@
+.clickable-img{
+    background-size: contain;
+    height: 15em;
+    width: 15em;
+}
+
+#link-table{
+    background-image: url("images/LinkMultiPurposeTable.webp");
+}
+
+#link-table:hover{
+    background-image: url("images/LinkMultiPurposeTableHover.jpeg");
+}
+
+#chriss-chair{
+    background-image: url("images/ChrissLoungeChair.jpeg");
+}
+
+#chriss-chair:hover{
+    background-image: url("images/ChrissLoungeChairHover.jpeg");
+}
+
+#seychelles-bookcase{
+    background-image: url("images/SeychellesBookcase.webp");
+}
+
+#seychelles-bookcase:hover{
+    background-image: url("images/SeychellesBookcaseHover.webp");
+}

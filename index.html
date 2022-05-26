@@ -8,89 +8,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="cluster">
+        <ul class="menu">
+            <a href="javascript:void(0)" class="closebtn"></a>
+            <li><a href="#">New In</a></li>
+            <li><a href="#">Seating</a></li>
+            <li><a href="#">Desks & Tables</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Furniture Ranges</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">COVID-19 Products</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Free Trial Chairs</a></li>
+            <li><a href="#">Meeting Room</a></li>
+            <li><a href="#">Executive</a></li>
+            <li><a href="#">Ergonomic</a></li>
+            <li><a href="#">Visitor</a></li>
+            <li><a href="#">Lounges and Ottomans</a></li>
+            <li><a href="#">Hospitality</a></li>
+            <li><a href="#">Industrial</a></li>
+            <li><a href="#">Chair Components</a></li>
+        </ul>
+        <div class="cluster" id="navLinksLeft">
+            <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+            <a href="index.html">
+                <span>
+                    <img id="logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                </span>
+            </a>
+        </div>
+        <div class="searchBarWrap">
+            <input class="searchbar" type="text">
+            <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+        </div>
+        <div class="cluster" id="navLinksRight">
+            <a id="contactUs" href="#">Contact Us</a>
+            <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+        </div>
+    </nav>
     <!-- hero header -->
     <section class="header">
-        <nav class="cluster">
-            <ul class="menu">
-                <a href="javascript:void(0)" class="closebtn"></a>
-                <li><a href="#">New In</a></li>
-                <li><a href="#">Seating</a></li>
-                <li><a href="#">Desks & Tables</a></li>
-                <li><a href="#">Storage</a></li>
-                <li><a href="#">Furniture Ranges</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">COVID-19 Products</a></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="#">Free Trial Chairs</a></li>
-                <li><a href="#">Meeting Room</a></li>
-                <li><a href="#">Executive</a></li>
-                <li><a href="#">Ergonomic</a></li>
-                <li><a href="#">Visitor</a></li>
-                <li><a href="#">Lounges and Ottomans</a></li>
-                <li><a href="#">Hospitality</a></li>
-                <li><a href="#">Industrial</a></li>
-                <li><a href="#">Chair Components</a></li>
-            </ul>
-            <div class="cluster" id="navLinksLeft">
-                <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-                <a href="index.html">
-                    <span>
-                        <img id="logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-                    </span>
-                </a>
-            </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="text">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
-            <div class="cluster" id="navLinksRight">
-                <a id="contactUs" href="#">Contact Us</a>
-                <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-            </div>
-        </nav>
-        <h1>Trending and Modern Office Furniture</h1>
-        <a href="#" type="button">Learn more</a>
+        <div class="margin">
+            <h1 class="heroText">Trending and Modern Office Furniture</h1>
+            <a class="learnMore btn" href="#" type="button">Learn more</a>
+        </div>
     </section>
     <!-- newest range -->
-    <section>
-        <h2>Shop Our Newest Range</h2>
-        <div>
-            <a href="#">
-                <img src="images/LinkMultiPurposeTable.webp" alt="Link Multi Purpose Table">
-                <img src="images/LinkMultiPurposeTableHover.jpeg" alt="Link Multi Purpose Table">
-                <p>Link Multi-purpose Table</p>
-            </a>
-            <div class="price">
-                <p class="oldPrice"><s>$499</s></p>
-                <p class="newPrice">$347</p>
+    <section class="stack margin">
+        <h2 class="centre-text">Shop Our Newest Range</h2>
+        <div class="cluster image-row">
+            <div>
+                <a href="#">
+                    <div class="clickable-img" id="link-table"></div>
+                    <p class="centre-text">Link Multi-purpose Table</p>
+                </a>
+                <div class="price centre-text">
+                    <p class="oldPrice"><s>$499</s></p>
+                    <p class="newPrice">$347</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <a href="#">
-                <img src="images/ChrissLoungeChair.jpeg" alt="Chriss Lounge Chair">
-                <img src="images/ChrissLoungeChairHover.jpeg" alt="Chriss Lounge Chair">
-                <p>Chriss Lounge Chair</p>
-            </a>
-            <div class="price">
-                <p class="oldPrice"><s>$700</s></p>
-                <p class="newPrice">$585</p>
+            <div>
+                <a href="#">
+                    <div class="clickable-img" id="chriss-chair"></div>
+                    <p class="centre-text">Chriss Lounge Chair</p>
+                </a>
+                <div class="price centre-text">
+                    <p class="oldPrice"><s>$700</s></p>
+                    <p class="newPrice">$585</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <a href="#">
-                <img src="images/SeychellesBookcase.webp" alt="Seychelles Bookcase">
-                <img src="images/SeychellesBookcaseHover.webp" alt="Seychelles Bookcase">
-                <p>Seychelles Bookcase</p>
-            </a>
-            <div class="price">
-                <p class="currentPrice">$248 - $311</p>
+            <div>
+                <a href="#">
+                    <div class="clickable-img" id="seychelles-bookcase"></div>
+                    <p class="centre-text">Seychelles Bookcase</p>
+                </a>
+                <div class="price centre-text">
+                    <p class="currentPrice">$248 - $311</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- value office furniture difference -->
     <section>
-        <h2>The Value Office Furniture Difference</h2>
+        <h2 class="centreAlign">The Value Office Furniture Difference</h2>
         <p>We are a proudly Australian company selling an unparalleled selection from core pieces including office desks, chairs and storage units to height-adjustable desks, AFRDI-certified chairs and other trending essentials. You’ll find 
             everything you need to outfit your office space, all at a fraction of the price.</p>
     </section>

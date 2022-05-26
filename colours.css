@@ -17,6 +17,19 @@ nav{
     background-color: var(--colour-main);
 }
 
+.heroText{
+    color: var(--colour-bg);
+}
+
+.learnMore{
+    background-color: var(--colour-main);
+    color: var(--colour-bg);
+}
+
+.oldPrice{
+    color: var(--colour-accent);
+}
+
 #contactUs{
     color: var(--colour-bg);
 }
