@@ -10,8 +10,8 @@
 <body>
     <!-- header -->
     <section>
-        <nav class="mainNav">
-            <ul class="firstMenuExpanded">
+        <nav class="cluster">
+            <ul class="menu">
                 <a href="javascript:void(0)" class="closebtn"></a>
                 <li><a href="#">New In</a></li>
                 <li><a href="#">Seating</a></li>
@@ -21,7 +21,7 @@
                 <li><a href="#">Accessories</a></li>
                 <li><a href="#">COVID-19 Products</a></li>
             </ul>
-            <ul class="secondMenuExpanded">
+            <ul class="menu">
                 <li><a href="#">Free Trial Chairs</a></li>
                 <li><a href="#">Meeting Room</a></li>
                 <li><a href="#">Executive</a></li>
@@ -32,16 +32,23 @@
                 <li><a href="#">Industrial</a></li>
                 <li><a href="#">Chair Components</a></li>
             </ul>
-            <button><img src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-            <a href="#"><img src="icons/VOFLogo.svg" alt="Value Office Furniture Logo"></a>
+            <div class="cluster" id="navLinksLeft">
+                <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <a href="index.html">
+                    <span>
+                        <img id="logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                    </span>
+                </a>
+            </div>
             <div class="searchBarWrap">
                 <input class="searchbar" type="text">
-                <img src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
             </div>
-            <a href="#">Contact Us</a>
-            <a href="#"><img src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            <div class="cluster" id="navLinksRight">
+                <a id="contactUs" href="#">Contact Us</a>
+                <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            </div>
         </nav>
-        <h1>Shopping Cart</h1>
     </section>
     <section>
         <div>

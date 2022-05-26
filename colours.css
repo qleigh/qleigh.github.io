@@ -14,5 +14,9 @@ body{
 }
 
 nav{
-    background-color: var(--colour-main-light);
+    background-color: var(--colour-main);
+}
+
+#contactUs{
+    color: var(--colour-bg);
 }

@@ -10,7 +10,7 @@
 <body>
     <!-- hero header -->
     <section class="header">
-        <nav class="mainNav cluster">
+        <nav class="cluster">
             <ul class="menu">
                 <a href="javascript:void(0)" class="closebtn"></a>
                 <li><a href="#">New In</a></li>
@@ -32,14 +32,22 @@
                 <li><a href="#">Industrial</a></li>
                 <li><a href="#">Chair Components</a></li>
             </ul>
-            <button><img src="icons/list-bold.svg" alt="Hamburger Menu Icon" class="hamburger"></button>
-            <a href="#"><img src="icons/VOFLogo.svg" alt="Value Office Furniture Logo"></a>
+            <div class="cluster" id="navLinksLeft">
+                <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <a href="index.html">
+                    <span>
+                        <img id="logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                    </span>
+                </a>
+            </div>
             <div class="searchBarWrap">
                 <input class="searchbar" type="text">
-                <img src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
             </div>
-            <a href="#">Contact Us</a>
-            <a href="#"><img src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            <div class="cluster" id="navLinksRight">
+                <a id="contactUs" href="#">Contact Us</a>
+                <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            </div>
         </nav>
         <h1>Trending and Modern Office Furniture</h1>
         <a href="#" type="button">Learn more</a>
