@@ -29,30 +29,20 @@ nav {
     top: 0;
 }
 
-button{
-    width: fit-content;
-    background-color: transparent;
-    border: none;
-}
-
 h2{
-    margin-top: 2em;
-    margin-bottom: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
 }
 
-.btn{
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+footer{
+    margin-top: 5em;
+    padding: 4em 4em 8em 4em;
 }
 
 .cluster {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
 }
 
@@ -62,18 +52,51 @@ h2{
     gap: 1em;
 }
 
+.swap-position{
+    flex-direction: row-reverse;
+}
+
 .centre-text{
     text-align: center;
 }
 
+.centre-items{
+    align-items: center;
+}
+
 .image-row{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding: 0em 5em 8em 5em;
 }
 
 .margin{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+}
+
+.trending-image{
+    height: 30%;
+    width: 30%;
+    margin: 5% 12.5% 5% 12.5%;
+}
+
+.left-box{
+    width: 45%;
+    height: 25em;
+    justify-content: center;
+    padding: 6%;
+    align-items: center;
+    border-radius: 0em 3em 3em 0em;
+    gap: 2em;
+}
+
+.right-box{
+    width: 45%;
+    height: 25em;
+    justify-content: center;
+    padding: 6%;
+    align-items: center;
+    border-radius: 3em 0em 0em 3em;
+    gap: 2em;
 }
 
 .header{
@@ -125,6 +148,30 @@ h2{
     margin-bottom: 0.5em;
 }
 
+.right-align{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-logo {
+    height: 1.75em;
+}
+
+.footer-logo{
+    height: 3em;
+}
+
+.two-col{
+    column-count: 2;
+    column-gap: 4em;
+}
+
+.social-links{
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
 #navLinksLeft {
     display: flex;
     width: 8em;
@@ -135,6 +182,7 @@ h2{
     width: 10em;
 }
 
-#logo {
-    height: 1.75em;
+#payment-methods{
+    margin-top: 1.5em;
+    width: 7em;
 }

@@ -1,7 +1,9 @@
 :root{
     /* colours, use -- for custom properties*/
     --colour-bg: white;
+    --colour-grey: #dbdbdb;
     --colour-text: black;
+    --colour-blur: #272727;
     --colour-main: #29546e;
     --colour-main-light: #9bb9cb;
     --colour-accent: #ad6f38;
@@ -15,6 +17,11 @@ body{
 
 nav{
     background-color: var(--colour-main);
+    box-shadow: 0px 3px 30px var(--colour-blur);
+}
+
+footer{
+    background-color: var(--colour-main-light);
 }
 
 .heroText{
@@ -28,6 +35,36 @@ nav{
 
 .oldPrice{
     color: var(--colour-accent);
+}
+
+.blue-background{
+    background-color: var(--colour-main);
+}
+
+.left-box{
+    color: var(--colour-bg);
+    background-color: var(--colour-main);
+}
+
+.right-box{
+    color: var(--colour-bg);
+    background-color: var(--colour-accent);
+}
+
+.link-btn{
+    background-color: var(--colour-bg);
+}
+
+.link-btn:hover{
+    background-color: var(--colour-grey);
+}
+
+.btn:hover{
+    background-color: var(--colour-main-light);
+}
+
+.white-text{
+    color: var(--colour-bg);
 }
 
 #contactUs{
