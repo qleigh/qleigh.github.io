@@ -32,6 +32,8 @@ nav {
 h1{
     padding-top: 3em;
     padding-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h2{
@@ -42,6 +44,10 @@ h2{
 footer{
     margin-top: 5em;
     padding: 4em 4em 8em 4em;
+}
+
+.top{
+    margin-top: 5em;
 }
 
 .cluster {
@@ -98,8 +104,16 @@ footer{
     text-align: center;
 }
 
-.centre-items{
+.left-text{
+    text-align: left;
+}
+
+.centre-vertical{
     align-items: center;
+}
+
+.centre-horizontal{
+    justify-content: center;
 }
 
 .image-row{
@@ -125,24 +139,25 @@ footer{
     margin: 5% 12.5% 5% 12.5%;
 }
 
-.left-box{
+.box{
     width: 45%;
-    height: 25em;
     justify-content: center;
-    padding: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
     align-items: center;
-    border-radius: 0em 3em 3em 0em;
     gap: 2em;
 }
 
-.right-box{
-    width: 45%;
+.left.box{
+    border-radius: 0em 2em 2em 0em;
+}
+
+.right.box{
+    border-radius: 2em 0em 0em 2em;
+}
+
+.trending > .box{
     height: 25em;
-    justify-content: center;
-    padding: 6%;
-    align-items: center;
-    border-radius: 3em 0em 0em 3em;
-    gap: 2em;
 }
 
 .header{
@@ -157,7 +172,6 @@ footer{
     background-position: center center;
     background-repeat: no-repeat;
 }
-
 
 .menu{
     display: none;
@@ -224,7 +238,7 @@ footer{
 }
 
 .price{
-    display: inline-flex;
+    display: flex;
 }
 
 .oldPrice + .newPrice{

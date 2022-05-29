@@ -1,7 +1,7 @@
 .clickable-img{
     background-size: contain;
-    height: 15em;
-    width: 15em;
+    height: 18em;
+    width: 18em;
 }
 
 .product > a > .clickable-img{
@@ -108,18 +108,18 @@
 }
 
 #valentina-chair{
-    background-image: url();
+    background-image: url("images/ValentinaChair.webp");
 }
 
 #valentina-chair:hover{
-    background-image: url();
+    background-image: url("images/ValentinaChairHover.webp");
 }
 
 #hunter-chair{
-    background-image: url();
+    background-image: url("images/HunterChair.webp");
 }
 
 #hunter-chair:hover{
-    background-image: url();
+    background-image: url("images/HunterChairHover.webp");
 }
 

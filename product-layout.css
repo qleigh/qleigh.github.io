@@ -1,0 +1,35 @@
+.features > .box{
+    height: 6em;
+    padding: 3%;
+}
+
+.productWrapper{
+    margin-top: 10em;
+    align-items: center;
+}
+
+.product-images{
+}
+
+.product-image-caret{
+    height: 2em;
+}
+
+.alt-images-wrapper{
+    margin-top: 3em;
+}
+
+.alt-image{
+    width: 8em;
+    height: 8em;
+    padding: 0.5em;
+}
+
+.main-image{
+    height: 25em;
+    width: 25em;
+}
+
+.dropdownContent{
+    display: none;
+}

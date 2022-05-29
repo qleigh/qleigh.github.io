@@ -31,7 +31,7 @@
             <li><a href="#">Industrial</a></li>
             <li><a href="#">Chair Components</a></li>
         </ul>
-        <div class="cluster centre-items" id="navLinksLeft">
+        <div class="cluster centre-vertical" id="navLinksLeft">
             <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
             <a href="index.html">
                 <span>
@@ -43,32 +43,29 @@
             <input class="searchbar" type="text">
             <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
         </div>
-        <div class="cluster centre-items" id="navLinksRight">
+        <div class="cluster centre-vertical" id="navLinksRight">
             <a id="contactUs" href="#">Contact Us</a>
             <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
         </div>
     </nav>
     <!-- product info -->
-    <section>
-        <div class="productWrapper">
-            <div>
-                <div>
-                    <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseMeetingRoomChairHover.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseChairTan.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
-                    <img src="icons/caret-left-bold.svg" alt="">
-                    <img src="icons/caret-right-bold.svg" alt="">
+    <section class="top">
+        <div class="productWrapper cluster margin">
+            <div class="product-images stack centre-vertical">
+                <div class="cluster centre-vertical">
+                    <img class="product-image-caret" src="icons/caret-left-bold.svg" alt="">
+                    <img class="main-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                    <img class="product-image-caret" src="icons/caret-right-bold.svg" alt="">
                 </div>
-                <div>
-                    <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseMeetingRoomChairHover.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseChairTan.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
+                <div class="alt-images-wrapper">
+                    <img class="alt-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                    <img class="alt-image" src="images/ChaseMeetingRoomChairHover.webp" alt="Chase Meeting Room Chair">
+                    <img class="alt-image" src="images/ChaseChairTan.webp" alt="Chase Meeting Room Chair">
+                    <img class="alt-image" src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
                 </div>
             </div>
             <div>
-                <h1>Chase Meeting Room Chair</h1>
+                <h1 class="left-text">Chase Meeting Room Chair</h1>
                 <h4 class="oldPrice">$529</h4>
                 <h4 class="newPrice">$458</h4>
                 <p>Chase Meeting Room Chair upholstered in soft man-made leather. Perfect for your conference room or office desk.</p>
@@ -167,54 +164,53 @@
     </section>
     <!-- additional info -->
     <section>
-        <div class="additionalInfoGrid">
-            <div>
-                <p>Gas lift, multi position tilt lock mechanism</p>
-                <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+        <div class="stack">
+            <div class="cluster centre-vertical features">
+                <p class="centre-text left box">Gas lift, multi position tilt lock mechanism</p>
+                <img class="trending-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
             </div>
-            <div>
-                <p>Modern slimline thin pad design</p>
-                <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+            <div class="cluster swap-position centre-vertical features">
+                <p class="centre-text right box">Modern slimline thin pad design</p>
+                <img class="trending-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
             </div>
-            <div>
-                <p>Unique matte black satin alloy arms</p>
-                <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+            <div class="cluster centre-vertical features">
+                <p class="centre-text left box">Unique matte black satin alloy arms</p>
+                <img class="trending-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
             </div>
         </div>
     </section>
     <!-- more like this -->
-    <section>
-        <h2>More Like This</h2>
-        <div>
-            <a href="#">
-                <img src="images/BondiChair.webp" alt="Bondi Chair">
-                <img src="images/BondiChairHover.webp" alt="Bondi Chair">
-                <p>Bondi Chair</p>
-            </a>
-            <div class="price">
-                <p class="currentPrice">$379 - $453</p>
+    <section class="stack margin">
+        <h2 class="centre-text">More Like This</h2>
+        <div class="cluster image-row">
+            <div class="centre-text">
+                <a href="#">
+                    <div class="clickable-img" id="bondi-chair"></div>
+                    <p>Bondi Chair</p>
+                </a>
+                <div class="price centre-horizontal">
+                    <p class="currentPrice">$379 - $453</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <a href="#">
-                <img src="images/ValentinaChair.webp" alt="Valentina Medium Back Chair">
-                <img src="images/ValentinaChairHover.webp" alt="Valentina Medium Back Chair">
-                <p>Valentina Medium Back Chair</p>
-            </a>
-            <div class="price">
-                <p class="oldPrice"><s>$459</s></p>
-                <p class="newPrice">$365</p>
+            <div class="centre-text">
+                <a href="#">
+                    <div class="clickable-img" id="valentina-chair"></div>
+                    <p>Valentina Medium Back Chair</p>
+                </a>
+                <div class="price centre-horizontal">
+                    <p class="oldPrice"><s>$459</s></p>
+                    <p class="newPrice">$365</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <a href="#">
-                <img src="images/HunterChair.webp" alt="Hunter Medium Back Chair">
-                <img src="images/HunterChairHover.webp" alt="Hunter Medium Back Chair">
-                <p>Hunter Medium Back Chair</p>
-            </a>
-            <div class="price">
-                <p class="oldPrice"><s>$378</s></p>
-                <p class="newPrice">$295</p>
+            <div class="centre-text">
+                <a href="#">
+                    <div class="clickable-img" id="hunter-chair"></div>
+                    <p>Hunter Medium Back Chair</p>
+                </a>
+                <div class="price centre-horizontal">
+                    <p class="oldPrice"><s>$378</s></p>
+                    <p class="newPrice">$295</p>
+                </div>
             </div>
         </div>
     </section>
