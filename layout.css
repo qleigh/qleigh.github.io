@@ -29,6 +29,11 @@ nav {
     top: 0;
 }
 
+h1{
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
 h2{
     padding-top: 3em;
     padding-bottom: 1em;
@@ -52,6 +57,39 @@ footer{
     gap: 1em;
 }
 
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6em;
+}
+
+.sidebar{
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+.sidebar > li{
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.not-sidebar{
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+}
+
+.sidebar + .not-sidebar {
+    margin-left: 2.5em;
+}
+
+.filter-item + .filter-item{
+    margin-left: 1em;
+}
+
 .swap-position{
     flex-direction: row-reverse;
 }
@@ -68,9 +106,17 @@ footer{
     padding: 0em 5em 8em 5em;
 }
 
+.page-heading{
+    padding: 3em 2.5rem 5em 2.5rem;
+}
+
+.page-heading > p{
+    width: 70%;
+}
+
 .margin{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .trending-image{
@@ -169,6 +215,19 @@ footer{
 
 .social-links{
     margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.down-caret{
+    width: 1em;
+    margin-left: 0.25em;
+}
+
+.price{
+    display: inline-flex;
+}
+
+.oldPrice + .newPrice{
     margin-left: 0.5em;
 }
 

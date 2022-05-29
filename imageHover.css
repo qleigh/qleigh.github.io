@@ -4,6 +4,13 @@
     width: 15em;
 }
 
+.product > a > .clickable-img{
+    height: 18em;
+    width: 18em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
 #link-table{
     background-image: url("images/LinkMultiPurposeTable.webp");
 }
@@ -27,3 +34,92 @@
 #seychelles-bookcase:hover{
     background-image: url("images/SeychellesBookcaseHover.webp");
 }
+
+#chase-chair{
+    background-image: url("images/ChaseMeetingRoomChair.webp");
+}
+
+#chase-chair:hover{
+    background-image: url("images/ChaseMeetingRoomChairHover.webp");
+}
+
+#peer-chair{
+    background-image: url("images/PeerArmChair.jpeg");
+}
+
+#peer-chair:hover{
+    background-image: url("images/PeerArmChair.jpeg");
+}
+
+#bondi-chair{
+    background-image: url("images/BondiChair.webp");
+}
+
+#bondi-chair:hover{
+    background-image: url("images/BondiChairHover.webp");
+}
+
+#andes-chair{
+    background-image: url("images/AndesMeshBackChair.webp");
+}
+
+#andes-chair:hover{
+    background-image: url("images/AndesMeshBackChairHover.webp");
+}
+
+#sandon-chair{
+    background-image: url("images/SandonOfficeChair.webp");
+}
+
+#sandon-chair:hover{
+    background-image: url("images/SandonOfficeChairHover.webp");
+}
+
+#lynx-chair{
+    background-image: url("images/LynxVisitorChair.webp");
+}
+
+#lynx-chair:hover{
+    background-image: url("images/LynxVisitorChairHover.webp");
+}
+
+#randwick-chair{
+    background-image: url("images/RandwickChair.jpeg");
+}
+
+#randwick-chair:hover{
+    background-image: url("images/RandwickChairHover.jpeg");
+}
+
+#manly-chair{
+    background-image: url("images/ManlyChair.webp");
+}
+
+#manly-chair:hover{
+    background-image: url("images/ManlyChairHover.webp");
+}
+
+#mason-chair{
+    background-image: url("images/MasonChair.jpeg");
+}
+
+#mason-chair:hover{
+    background-image: url("images/MasonChairHover.jpeg");
+}
+
+#valentina-chair{
+    background-image: url();
+}
+
+#valentina-chair:hover{
+    background-image: url();
+}
+
+#hunter-chair{
+    background-image: url();
+}
+
+#hunter-chair:hover{
+    background-image: url();
+}
+

@@ -31,11 +31,11 @@
             <li><a href="#">Industrial</a></li>
             <li><a href="#">Chair Components</a></li>
         </ul>
-        <div class="cluster" id="navLinksLeft">
+        <div class="cluster centre-items" id="navLinksLeft">
             <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
             <a href="index.html">
                 <span>
-                    <img id="logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                    <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                 </span>
             </a>
         </div>
@@ -43,16 +43,16 @@
             <input class="searchbar" type="text">
             <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
         </div>
-        <div class="cluster" id="navLinksRight">
+        <div class="cluster centre-items" id="navLinksRight">
             <a id="contactUs" href="#">Contact Us</a>
             <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
         </div>
     </nav>
-    <div>
+    <div class="blue-background page-heading white-text">
         <h1>Meeting Room Chairs</h1>
         <p>We offer a well thought-out range of traditional and more modern and contemporary designed conference room chairs that will make a great impression on your guests</p>
     </div>
-    <main>
+    <main class="sidebar-container margin">
         <!-- sidebar -->
         <ul class="sidebar">
             <li><a href="#">Free Trial Chairs</a></li>
@@ -65,138 +65,135 @@
             <li><a href="#">Industrial</a></li>
             <li><a href="#">Chair Components</a></li>
         </ul>
-        <!-- filter and sort -->
-        <div class="filter">
-            <p>Filter:</p>
-            <div class="filterItem">
-                <p>Colour</p>
-                <img src="icons/caret-down-bold-black.svg" alt="">
-            </div>
-            <div class="filterItem">
-                <p>Price</p>
-                <img src="icons/caret-down-bold-black.svg" alt="">
-            </div>
-            <div class="filterItem">
-                <p>Other</p>
-                <img src="icons/caret-down-bold-black.svg" alt="">
-            </div>
-        </div>
-        <div>
-            <p>Sort By:</p>
-            <p>Default</p>
-            <img src="icons/caret-down-bold-black.svg" alt="">
-        </div>
-        <!-- products -->
-        <div class="productGrid">
-            <div class="product">
-                <a href="#">
-                    <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseMeetingRoomChairHover.webp" alt="Chase Meeting Room Chair">
-                    <p>Chase Meeting Room Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$529</s></p>
-                    <p class="newPrice">$458</p>
+        <div class="not-sidebar">
+            <div class="cluster">
+                <!-- filter and sort -->
+                <div class="filter cluster">
+                    <p class="filter-item semibold">Filter:</p>
+                    <div class="filter-item cluster">
+                        <p>Colour</p>
+                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                    </div>
+                    <div class="filter-item cluster">
+                        <p>Price</p>
+                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                    </div>
+                    <div class="filter-item cluster">
+                        <p>Other</p>
+                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                    </div>
                 </div>
-                <p>+3 styles</p>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/PeerArmChair.jpeg" alt="Peer Arm Chair">
-                    <img src="images/PeerArmChair.jpeg" alt="Peer Arm Chair">
-                    <p>Peer Arm Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$818</s></p>
-                    <p class="newPrice">$736</p>
+                <div class="filter cluster">
+                    <p class="filter-item semibold">Sort By:</p>
+                    <div class="filter-item cluster">
+                        <p>Default</p>
+                    <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/BondiChair.webp" alt="Bondi Chair">
-                    <img src="images/BondiChairHover.webp" alt="Bondi Chair">
-                    <p>Bondi Chair</p>
-                </a>
-                <div class="price">
-                    <p class="currentPrice">$379 - $453</p>
-                    <p>+3 styles</p>
+            <!-- products -->
+            <div class="cluster">
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="chase-chair"></div>
+                        <p class="semibold">Chase Meeting Room Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$529</s></p>
+                        <p class="newPrice">$458</p>
+                    </div>
+                    <p class="little">+3 styles</p>
                 </div>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/AndesMeshBackChair.webp" alt="Andes Mesh Back Chair">
-                    <img src="images/AndesMeshBackChairHover.webp" alt="Andes Mesh Back Chair">
-                    <p>Andes Mesh Back Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$259</s></p>
-                    <p class="newPrice">$225</p>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="peer-chair"></div>
+                        <p class="semibold">Peer Arm Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$818</s></p>
+                        <p class="newPrice">$736</p>
+                    </div>
                 </div>
-                <p>+3 colours</p>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/SandonOfficeChair.webp" alt="Sandon Office Chair">
-                    <img src="images/SandonOfficeChairHover.webp" alt="Sandon Office Chair">
-                    <p>Sandon Office Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$174</s></p>
-                    <p class="newPrice">$145</p>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="bondi-chair"></div>
+                        <p class="semibold">Bondi Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="currentPrice">$379 - $453</p>
+                    </div>
+                    <p class="little">+3 styles</p>
                 </div>
-                <p>+4 colours</p>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair">
-                    <img src="images/LynxVisitorChairHover.webp" alt="Lynx Visitor Chair">
-                    <p>Lynx Visitor Chair</p>
-                </a>
-                <div class="price">
-                    <p class="currentPrice">$193 - $226</p>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="andes-chair"></div>
+                        <p class="semibold">Andes Mesh Back Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$259</s></p>
+                        <p class="newPrice">$225</p>
+                    </div>
+                    <p class="little">+3 colours</p>
                 </div>
-                <p>+16 colours</p>
-                <p>+1 configuration</p>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/RandwickChair.jpeg" alt="Randwick Chair">
-                    <img src="images/RandwickChairHover.jpeg" alt="Randwick Chair">
-                    <p>Randwick Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$200</s></p>
-                    <p class="newPrice">$168</p>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="sandon-chair"></div>
+                        <p class="semibold">Sandon Office Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$174</s></p>
+                        <p class="newPrice">$145</p>
+                    </div>
+                    <p class="little">+4 colours</p>
                 </div>
-                <p>+1 colour</p>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/ManlyChair.webp" alt="Manly Chair">
-                    <img src="images/ManlyChairHover.webp" alt="Manly Chair">
-                    <p>Manly Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$471</s></p>
-                    <p class="newPrice">$403</p>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="lynx-chair"></div>
+                        <p class="semibold">Lynx Visitor Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="currentPrice">$193 - $226</p>
+                    </div>
+                    <p class="little">+16 colours</p>
+                    <p class="little">+1 configuration</p>
                 </div>
-            </div>
-            <div class="product">
-                <a href="#">
-                    <img src="images/MasonChair.jpeg" alt="Mason Chair">
-                    <img src="images/MasonChairHover.jpeg" alt="Mason Chair">
-                    <p>Mason Chair</p>
-                </a>
-                <div class="price">
-                    <p class="oldPrice"><s>$303</s></p>
-                    <p class="newPrice">$279</p>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="randwick-chair"></div>
+                        <p class="semibold">Randwick Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$200</s></p>
+                        <p class="newPrice">$168</p>
+                    </div>
+                    <p class="little">+1 colour</p>
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="manly-chair"></div>
+                        <p class="semibold">Manly Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$471</s></p>
+                        <p class="newPrice">$403</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <div class="clickable-img" id="mason-chair"></div>
+                        <p class="semibold">Mason Chair</p>
+                    </a>
+                    <div class="price">
+                        <p class="oldPrice"><s>$303</s></p>
+                        <p class="newPrice">$279</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- footer -->
-    <footer>
-        <ul>
+    <footer class="cluster">
+        <ul class="two-col">
             <li>Contact Us</li>
             <li>About Us</li>
             <li>FAQ</li>
@@ -207,15 +204,16 @@
             <li>Policies</li>
             <li>Terms and Conditions</li>
         </ul>
-        <div>
+        <div class="right-align">
             <a href="#">
-                <img src="icons/VOFLogo.svg" alt="Value Office Furniture logo">
+                <img class="footer-logo" src="icons/VOFLogo.svg" alt="Value Office Furniture logo">
             </a>
-            <div class="socialMedia">
-                <img src="icons/facebook-fill.svg" alt="Facebook logo">
-                <img src="icons/youtube-fill.svg" alt="Youtube logo">
-                <img src="icons/twitter-fill.svg" alt="Twitter logo">
+            <div class="cluster">
+                <img class="social-links" src="icons/facebook-fill.svg" alt="Facebook logo">
+                <img class="social-links" src="icons/youtube-fill.svg" alt="Youtube logo">
+                <img class="social-links" src="icons/twitter-fill.svg" alt="Twitter logo">
             </div>
+            <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment methods">
         </div>
     </footer>
 </body>

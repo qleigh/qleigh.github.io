@@ -67,7 +67,19 @@ footer{
     font-size: var(--text-xs);
 }
 
+.sidebar > li{
+    font-weight: 500;
+}
+
 #contactUs{
     font-size: var(--text-sm);
     font-weight: 500;
+}
+
+.semibold{
+    font-weight: 600;
+}
+
+.product{
+    line-height: 2.5em;
 }
