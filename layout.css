@@ -40,10 +40,25 @@ h2{
     padding-top: 3em;
     padding-bottom: 1em;
 }
+h3{
+    padding-bottom: 1em;
+}
 
 footer{
     margin-top: 5em;
     padding: 4em 4em 8em 4em;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding-bottom: 2em;
+}
+
+.table-price{
+    text-align: right;
 }
 
 .top{
@@ -85,10 +100,14 @@ footer{
 .not-sidebar{
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 50%;
+    min-width: 30%;
 }
 
 .sidebar + .not-sidebar {
+    margin-left: 2.5em;
+}
+
+.not-sidebar + .sidebar {
     margin-left: 2.5em;
 }
 
@@ -108,6 +127,14 @@ footer{
     text-align: left;
 }
 
+.right-text{
+    text-align: right;
+}
+
+.right-vertical{
+    float: right;
+}
+
 .centre-vertical{
     align-items: center;
 }
@@ -121,11 +148,22 @@ footer{
 }
 
 .page-heading{
-    padding: 3em 2.5rem 5em 2.5rem;
+    padding: 3em 2.5rem 2.5em 2.5rem;
 }
 
 .page-heading > p{
     width: 70%;
+}
+
+.back{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.back > img{
+    height: 1.5em;
+    width: 1.5em;
 }
 
 .margin{
@@ -245,6 +283,22 @@ footer{
     margin-left: 0.5em;
 }
 
+/* summary */
+.summary{
+    border-radius: 1.5em;
+    padding: 2em;
+    width: 100%;
+}
+
+.proceed{
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.socials{
+    padding-bottom: 2em;
+}
+
 #navLinksLeft {
     display: flex;
     width: 8em;
@@ -256,6 +310,9 @@ footer{
 }
 
 #payment-methods{
-    margin-top: 1.5em;
     width: 7em;
+}
+
+#right-arrow{
+    height: 1.5em;
 }

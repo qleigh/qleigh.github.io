@@ -75,6 +75,11 @@ footer{
     background-color: var(--colour-accent-light);
 }
 
+.summary{
+    background-color: var(--colour-accent);
+    color: var(--colour-bg);
+}
+
 #contactUs{
     color: var(--colour-bg);
 }

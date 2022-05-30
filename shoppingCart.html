@@ -49,75 +49,79 @@
                 <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
             </div>
         </nav>
-        <h1>Shopping Cart</h1>
+        <h1 class="blue-background page-heading white-text">Shopping Cart</h1>
     </section>
-    <section>
-        <div>
-            <div>
-                <div>
-                    <img src="icons/trash.svg" alt="Remove">
-                    <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+    <section class="top sidebar-container margin">
+        <div class="not-sidebar">
+            <div class="cart-item-row cluster">
+                <div class="left-wrapper">
+                    <div class="left-wrapper centre-vertical">
+                        <img id="trash" src="icons/trash.svg" alt="Remove">
+                        <img class="cart-item-img" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                    </div>
+                    <div class="stack">
+                        <h4>Chase Meeting Room Chair</h4>
+                        <p>Terracotta</p>
+                        <p>$458 / per item</p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Chase Meeting Room Chair</h4>
-                    <p>Terracotta</p>
-                    <p>$458 / per item</p>
-                </div>
-                <div>
+                <div class="stack right-wrapper">
                     <p>$916</p>
-                    <div>
+                    <div class="cluster">
                         <p>Qty: 2</p>
-                        <img src="icons/caret-down-bold-black.svg" alt="">
+                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                    </div>
+                </div>    
+            </div>
+            <div class="cart-item-row cluster">
+                <div class="left-wrapper">
+                    <div class="left-wrapper centre-vertical">
+                        <img id="trash" src="icons/trash.svg" alt="Remove">
+                        <img class="cart-item-img" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                    </div>
+                    <div class="stack">
+                            <h4>Edge Round Meeting Table</h4>
+                            <p>90cm x 73cm</p>
+                            <p>$211 / per item</p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="icons/trash.svg" alt="Remove">
-                    <img src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
-                </div>
-                <div>
-                    <h4>Edge Round Meeting Table</h4>
-                    <p>90cm x 73cm</p>
-                    <p>$211 / per item</p>
-                </div>
-                <div>
-                    <p>$$211</p>
-                    <div>
+                <div class="stack right-wrapper">
+                    <p>$211</p>
+                    <div class="cluster">
                         <p>Qty: 1</p>
-                        <img src="icons/caret-down-bold-black.svg" alt="">
+                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a class="back" href="#">
                 <img src="icons/caret-left-bold.svg" alt="Back">
                 <p>Back</p>
             </a>
         </div>
         <!-- Summary -->
-        <div>
-            <div>
+        <div class="stack sidebar">
+            <div class="summary">
                 <h3>Summary</h3>
                 <table>
                     <tr>
-                        <td>GST (incl.)</td>
-                        <td>$106.63</td>
+                        <td class="row-name">GST (incl.)</td>
+                        <td class="table-price">$106.63</td>
                     </tr>
                     <tr>
-                        <td>Subtotal</td>
-                        <td>$1173.00</td>
+                        <td class="row-name">Subtotal</td>
+                        <td class="table-price">$1173.00</td>
                     </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>$1173.00</td>
+                    <tr class="semibold">
+                        <td class="row-name">Total</td>
+                        <td class="table-price">$1173.00</td>
                     </tr>
                 </table>
-                <a href="#">
+                <a class="cluster blue-background proceed" href="#">
                     <p>Proceed to Checkout</p>
-                    <img src="icons/arrow-right-bold.svg" alt="Right Arrow">
+                    <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
                 </a>
             </div>
-            <img src="images/PaymentMethods.png" alt="Payment Methods">
+            <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
         </div>
     </section>
     <!-- footer -->
@@ -137,7 +141,7 @@
             <a href="#">
                 <img class="footer-logo" src="icons/VOFLogo.svg" alt="Value Office Furniture logo">
             </a>
-            <div class="cluster">
+            <div class="socials cluster">
                 <img class="social-links" src="icons/facebook-fill.svg" alt="Facebook logo">
                 <img class="social-links" src="icons/youtube-fill.svg" alt="Youtube logo">
                 <img class="social-links" src="icons/twitter-fill.svg" alt="Twitter logo">
