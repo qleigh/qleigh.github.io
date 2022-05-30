@@ -23,6 +23,14 @@ footer{
     background-color: var(--colour-main-light);
 }
 
+input[type="text"], textarea{
+    background-color: var(--colour-main-light);
+}
+
+::placeholder, textarea{
+    color: var(--colour-main);
+}
+
 .heroText{
     color: var(--colour-bg);
 }
@@ -78,6 +86,19 @@ footer{
 .summary{
     background-color: var(--colour-accent);
     color: var(--colour-bg);
+}
+
+.current-step{
+    color: var(--colour-accent);
+}
+
+.summary-img{
+    background-color: var(--colour-bg);
+}
+
+.proceed{
+    color: var(--colour-bg);
+    background-color: var(--colour-main);
 }
 
 #contactUs{

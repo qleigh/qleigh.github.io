@@ -82,6 +82,14 @@ footer{
     font-weight: 600;
 }
 
+.current-step{
+    font-weight: 500;
+}
+
+.medium{
+    font-weight: 500;
+}
+
 .product{
     line-height: 2.5em;
 }
