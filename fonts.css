@@ -44,6 +44,8 @@ h3{
 h4{
     font-size: var(--text-md);
     font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 p{
@@ -82,4 +84,9 @@ footer{
 
 .product{
     line-height: 2.5em;
+}
+
+
+.inline{
+    display: inline;
 }

@@ -24,3 +24,29 @@
     text-align: right;
 }
 
+.cart-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 2em;
+}
+
+.cart-img{
+    grid-column: 1;
+}
+
+.cart-item-name{
+    grid-column: 2 / 4;
+}
+
+.cart-item-price{
+    grid-column: 4;
+}
+
+.row-one{
+    grid-row: 1;
+}
+
+.row-two{
+    grid-row: 2;
+}

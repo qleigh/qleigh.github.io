@@ -50,8 +50,8 @@
             </div>
         </nav>
     </section>
-    <section>
-        <div>
+    <section class="top sidebar-container margin">
+        <div class="not-sidebar">
             <div>
                 <p><u>Shipping</u></p>
                 <p>Payment</p>
@@ -103,62 +103,56 @@
             </a>
         </div>
         <!-- Summary -->
-        <div>
-            <div>
-                <div>
+        <div class="stack sidebar">
+            <div class="summary">
                     <h3>Summary</h3>
                     <table>
                         <tr>
-                            <td>GST (incl.)</td>
-                            <td>$106.63</td>
+                            <td class="row-name">GST (incl.)</td>
+                            <td class="table-price">$106.63</td>
                         </tr>
                         <tr>
-                            <td>Subtotal</td>
-                            <td>$1173.00</td>
+                            <td class="row-name">Subtotal</td>
+                            <td class="table-price">$1173.00</td>
                         </tr>
                         <tr>
-                            <td>Total</td>
-                            <td>$1173.00</td>
+                            <td class="row-name">Total</td>
+                            <td class="table-price">$1173.00</td>
                         </tr>
                     </table>
-                    <div>
-                        <div>
-                            <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                    <div class="cart-item-row">
+                        <div class="left-wrapper cluster">
+                            <img class="summary-img" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                            <div class="stack">
+                                <h4>Chase Meeting Room Chair</h4>
+                                <p>Terracotta</p>
+                                <p>$458 / per item</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Chase Meeting Room Chair</h4>
-                            <p>Terracotta</p>
-                            <p>$458 / per item</p>
-                        </div>
-                        <div>
+                        <div class="stack right-wrapper">
                             <p>$916</p>
                             <p>Qty: 2</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <img src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                    <div class="cart-item-row cluster">
+                        <div class="left-wrapper">
+                            <img class="summary-img" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                            <div class="stack">
+                                <h4>Edge Round Meeting Table</h4>
+                                <p>90cm x 73cm</p>
+                                <p>$211 / per item</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Edge Round Meeting Table</h4>
-                            <p>90cm x 73cm</p>
-                            <p>$211 / per item</p>
-                        </div>
-                        <div>
-                            <p>$$211</p>
+                        <div class="stack right-wrapper">
+                            <p>$211</p>
                             <p>Qty: 1</p>
                         </div>
                     </div>
-                    <a href="#">
-                        <img src="icons/caret-left-bold.svg" alt="Back">
-                        <p>Back</p>
-                    </a>
-                </div>
             </div>
-                <img src="images/PaymentMethods.png" alt="Payment Methods">
-                <a href="#">
+                <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
+                <a class="cluster blue-background proceed" href="#">
                     <p>Proceed to Checkout</p>
-                    <img src="icons/arrow-right-bold.svg" alt="Right Arrow">
+                    <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
                 </a>
         </div>
     </section>
@@ -188,4 +182,5 @@
         </div>
     </footer>
 </body>
+</html>
 </html>
