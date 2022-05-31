@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="searchBarWrap">
-                <input class="searchbar" type="text">
+                <input class="searchbar" type="search">
                 <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
             </div>
             <div class="cluster centre-items" id="navLinksRight">
@@ -50,106 +50,104 @@
             </div>
         </nav>
     </section>
-    <section>
-        <div>
-            <div>
+    <section class="top sidebar-container margin">
+        <div class="top not-sidebar">
+            <div class="cluster checkout-steps">
                 <p>Shipping</p>
-                <p><u>Payment</u></p>
+                <p class="current-step"><u>Payment</u></p>
                 <p>Review</p>
                 <p>Confirmation</p>
             </div>
             <h1>Payment</h1>
             <!-- Form -->
-            <div>
+            <div class="radio-button-group">
                 <p>Payment Method</p>
-                <label for="Credit Card">Credit Card</label>
-                <input type="radio" id="Credit Card" name="payment" value="Credit Card">
-                <label for="Prepaid Invoice">Prepaid Invoice</label>
-                <input type="radio" id="Prepaid Invoice" name="payment" value="Prepaid Invoice">
-            </div>
-            <label for="cardNumber">Card Number</label>
-            <input type="text" id="cardNumber">
-            <div>
                 <div>
+                    <input type="radio" id="Credit Card" name="payment" value="Credit Card">
+                    <label for="Credit Card">Credit Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="Prepaid Invoice" name="payment" value="Prepaid Invoice">
+                    <label for="Prepaid Invoice">Prepaid Invoice</label>
+                </div> 
+            </div>
+            <div class="input-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber">
+            </div>
+            <div class="adjacent-input input-group">
+                <div class="stack grid-left">
                     <label for="expiryDate">Expiry Date</label>
                     <input type="text" id="expiryDate">
                 </div>
-                <div>
+                <div class="stack grid-right">
                     <label for="CVC">CVC/CVV</label>
                     <input type="text" id="CVC">
                 </div>
             </div>
-            <label for="cardholderName">Cardholder Name</label>
-            <input type="text" id="cardholderName">
-            <label for="billingAddress">Billing Address</label>
-            <input type="text" id="billingAddress" placeholder="Start typing…">
-            <button><u>Add New Address</u></button>
-            <a href="#">
+            <div class="input-group">
+                <label for="cardholderName">Cardholder Name</label>
+                <input type="text" id="cardholderName">
+            </div>
+            <div class="input-group">
+                <label for="billingAddress">Billing Address</label>
+                <input type="text" id="billingAddress" placeholder="Start typing…">
+                <button><p><u>Add New Address</u></p></button>
+            </div>
+            <a class="back" href="#">
                 <img src="icons/caret-left-bold.svg" alt="Back">
                 <p>Back</p>
             </a>
         </div>
         <!-- Summary -->
-        <div>
-            <div>
-                <div>
+        <div class="top stack sidebar">
+                <div class="summary">
                     <h3>Summary</h3>
                     <table>
                         <tr>
-                            <td>GST (incl.)</td>
-                            <td>$106.63</td>
+                            <td class="row-name">GST (incl.)</td>
+                            <td class="table-price">$106.63</td>
                         </tr>
                         <tr>
-                            <td>Subtotal</td>
-                            <td>$1173.00</td>
+                            <td class="row-name">Subtotal</td>
+                            <td class="table-price">$1173.00</td>
                         </tr>
                         <tr>
-                            <td>Shipping</td>
-                            <td>$39.00</td>
+                            <td class="row-name">Shipping</td>
+                            <td class="table-price">$39.00</td>
                         </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td>$1212.00</td>
+                        <tr class="semibold">
+                            <td class="row-name">Total</td>
+                            <td class="table-price">$1212.00</td>
                         </tr>
                     </table>
-                    <div>
-                        <div>
-                            <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                        </div>
-                        <div>
-                            <h4>Chase Meeting Room Chair</h4>
-                            <p>Terracotta</p>
-                            <p>$458 / per item</p>
-                        </div>
-                        <div>
+                    <div class="cart-grid">
+                        <img class="summary-img row-one" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                        <div class="cart-item-name row-one stack">
+                            <p class="semibold">Chase Meeting Room Chair</p>
+                            <p class="little">Terracotta</p>
+                            <p class="little">$458 / per item</p>
+                        </div>    
+                        <div class="cart-item-price row-one table-price stack right-align">
                             <p>$916</p>
-                            <p>Qty: 2</p>
+                            <p class="little">Qty: 2</p>
+                        </div>
+                        <img class="summary-img row-two" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                        <div class="cart-item-name row-two stack">
+                            <p class="semibold">Edge Round Meeting Table</p>
+                            <p class="little">90cm x 73cm</p>
+                            <p class="little">$211 / per item</p>
+                        </div>    
+                        <div class="cart-item-price row-two table-price stack right-align">
+                            <p>$211</p>
+                            <p class="little">Qty: 1</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <img src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
-                        </div>
-                        <div>
-                            <h4>Edge Round Meeting Table</h4>
-                            <p>90cm x 73cm</p>
-                            <p>$211 / per item</p>
-                        </div>
-                        <div>
-                            <p>$$211</p>
-                            <p>Qty: 1</p>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <img src="icons/caret-left-bold.svg" alt="Back">
-                        <p>Back</p>
-                    </a>
                 </div>
-            </div>
-                <img src="images/PaymentMethods.png" alt="Payment Methods">
-                <a href="#">
-                    <p>Proceed to Review</p>
-                    <img src="icons/arrow-right-bold.svg" alt="Right Arrow">
+                <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
+                <a class="cluster proceed" href="#">
+                    <p class="medium">Proceed to Review</p>
+                    <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
                 </a>
         </div>
     </section>
