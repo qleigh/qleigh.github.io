@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="searchBarWrap">
-                <input class="searchbar" type="text">
+                <input class="searchbar" type="search">
                 <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
             </div>
             <div class="cluster centre-items" id="navLinksRight">
@@ -50,12 +50,12 @@
             </div>
         </nav>
     </section>
-    <section>
-        <div>
-            <div>
+    <section class="top sidebar-container margin">
+        <div class="top not-sidebar">
+            <div class="cluster checkout-steps">
                 <p>Shipping</p>
                 <p>Payment</p>
-                <p><u>Review</u></p>
+                <p class="current-step"><u>Review</u></p>
                 <p>Confirmation</p>
             </div>
             <h1>Review</h1>
@@ -85,74 +85,62 @@
                     <td>Credit Card</td>
                 </tr>
             </table>
-            <a href="#">
+            <a class="back" href="#">
                 <img src="icons/caret-left-bold.svg" alt="Back">
                 <p>Back</p>
             </a>
         </div>
         <!-- Summary -->
-        <div>
-            <div>
-                <div>
-                    <h3>Summary</h3>
-                    <table>
-                        <tr>
-                            <td>GST (incl.)</td>
-                            <td>$106.63</td>
-                        </tr>
-                        <tr>
-                            <td>Subtotal</td>
-                            <td>$1173.00</td>
-                        </tr>
-                        <tr>
-                            <td>Shipping</td>
-                            <td>$39.00</td>
-                        </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td>$1212.00</td>
-                        </tr>
-                    </table>
-                    <div>
-                        <div>
-                            <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                        </div>
-                        <div>
-                            <h4>Chase Meeting Room Chair</h4>
-                            <p>Terracotta</p>
-                            <p>$458 / per item</p>
-                        </div>
-                        <div>
-                            <p>$916</p>
-                            <p>Qty: 2</p>
-                        </div>
+        <div class="top stack sidebar">
+            <div class="summary">
+                <h3>Summary</h3>
+                <table>
+                    <tr>
+                        <td class="row-name">GST (incl.)</td>
+                        <td class="table-price">$106.63</td>
+                    </tr>
+                    <tr>
+                        <td class="row-name">Subtotal</td>
+                        <td class="table-price">$1173.00</td>
+                    </tr>
+                    <tr>
+                        <td class="row-name">Shipping</td>
+                        <td class="table-price">$39.00</td>
+                    </tr>
+                    <tr class="semibold">
+                        <td class="row-name">Total</td>
+                        <td class="table-price">$1212.00</td>
+                    </tr>
+                </table>
+                <div class="cart-grid">
+                    <img class="summary-img row-one" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                    <div class="cart-item-name row-one stack">
+                        <p class="semibold">Chase Meeting Room Chair</p>
+                        <p class="little">Terracotta</p>
+                        <p class="little">$458 / per item</p>
+                    </div>    
+                    <div class="cart-item-price row-one table-price stack right-align">
+                        <p>$916</p>
+                        <p class="little">Qty: 2</p>
                     </div>
-                    <div>
-                        <div>
-                            <img src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
-                        </div>
-                        <div>
-                            <h4>Edge Round Meeting Table</h4>
-                            <p>90cm x 73cm</p>
-                            <p>$211 / per item</p>
-                        </div>
-                        <div>
-                            <p>$$211</p>
-                            <p>Qty: 1</p>
-                        </div>
+                    <img class="summary-img row-two" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                    <div class="cart-item-name row-two stack">
+                        <p class="semibold">Edge Round Meeting Table</p>
+                        <p class="little">90cm x 73cm</p>
+                        <p class="little">$211 / per item</p>
+                    </div>    
+                    <div class="cart-item-price row-two table-price stack right-align">
+                        <p>$211</p>
+                        <p class="little">Qty: 1</p>
                     </div>
-                    <a href="#">
-                        <img src="icons/caret-left-bold.svg" alt="Back">
-                        <p>Back</p>
-                    </a>
                 </div>
             </div>
-                <img src="images/PaymentMethods.png" alt="Payment Methods">
-                <a href="#">
-                    <p>Place Order</p>
-                    <img src="icons/arrow-right-bold.svg" alt="Right Arrow">
-                </a>
-        </div>
+            <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
+            <a class="cluster proceed" href="#">
+                <p class="medium">Place Order</p>
+                <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
+            </a>
+    </div>
     </section>
     <!-- footer -->
     <footer class="cluster">
