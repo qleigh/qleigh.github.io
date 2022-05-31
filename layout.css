@@ -289,6 +289,14 @@ td{
     margin-left: 0.5em;
 }
 
+.confirmation{
+    width: 75%;
+}
+
+.confirmation > p + p{
+    margin-top: 2em;
+}
+
 /* summary */
 .summary{
     border-radius: 1.5em;

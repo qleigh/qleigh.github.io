@@ -74,6 +74,10 @@ input[type="text"], textarea{
     color: var(--colour-bg);
 }
 
+.link{
+    color: var(--colour-accent);
+}
+
 .sidebar > li{
     color: var(--colour-bg);
     background-color: var(--colour-accent);
