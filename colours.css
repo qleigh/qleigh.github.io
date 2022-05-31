@@ -15,7 +15,7 @@ body{
     background-color: var(--colour-bg);
 }
 
-nav{
+nav.not-home, .rectangle{
     background-color: var(--colour-main);
 }
 

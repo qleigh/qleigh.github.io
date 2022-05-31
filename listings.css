@@ -52,7 +52,7 @@
         display: none;
     }
 
-    .sidebar{
+    .sidebar.product-categories{
         display: none;
     }
 
@@ -62,7 +62,12 @@
         margin-bottom: 4em;
         height: 4em;
         width: 100%;
-        padding: 1.5em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .image-row > * + * {
+        margin-left: 4em;
     }
 }
 

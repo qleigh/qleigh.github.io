@@ -35,6 +35,7 @@ nav, .nav-small {
 
     position: fixed;
     top: 0;
+    z-index: 3;
 }
 
 h1{
@@ -52,7 +53,6 @@ h1 + p {
 }
 
 h2{
-    padding-top: 3em;
     padding-bottom: 1em;
 }
 h3{
@@ -76,6 +76,11 @@ td{
     padding-bottom: 2em;
 }
 
+.header{
+    position: relative;
+    z-index: 2;
+}
+
 .table-price{
     text-align: right;
 }
@@ -84,7 +89,7 @@ td{
     margin-top: 5em;
 }
 
-.cluster {
+.cluster{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -123,11 +128,15 @@ td{
 .not-sidebar{
     flex-basis: 0;
     flex-grow: 10;
-    min-width: 50%;
+    min-width: 25%;
 }
 
 .sidebar.summary{
     flex-basis: 33%;
+}
+
+.sidebar.trending, .sidebar.features, .sidebar.product-info{
+    flex-basis: 50%;
 }
 
 .not-sidebar + .sidebar {
@@ -163,8 +172,13 @@ td{
     justify-content: center;
 }
 
-.image-row{
-    padding: 0em 5em 8em 5em;
+.value-difference{
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.row-padding{
+    padding: 0em 5em 0em 5em;
 }
 
 .page-heading{
@@ -188,13 +202,13 @@ td{
 }
 
 .trending-image{
-    height: 30%;
-    width: 30%;
+    height: 25%;
+    width: 25%;
     margin: 5% 12.5% 5% 12.5%;
 }
 
 .box{
-    width: 45%;
+    width: 35em;
     justify-content: center;
     padding-left: 6%;
     padding-right: 6%;
@@ -204,10 +218,12 @@ td{
 
 .left-box.box{
     border-radius: 0em 2em 2em 0em;
+    margin-right: 2em;
 }
 
 .right-box.box{
     border-radius: 2em 0em 0em 2em;
+    margin-left: 2em;
 }
 
 .trending > .box{
@@ -251,9 +267,9 @@ td{
 
 .searchIcon{
     position: absolute;
-    right: 10px;
-    height: 15px;
-    top: 5px;
+    right: 0.5em;
+    height: 1em;
+    top: 0.25em;
 }
 
 .heroText{
@@ -303,6 +319,11 @@ td{
 
 .confirmation > p + p{
     margin-top: 2em;
+}
+
+.section-title{
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 /* summary */
@@ -378,6 +399,34 @@ td{
     .small-nav{
         display: none;
     }
+
+    .rectangle{
+        width: 100%;
+        height: 5em;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .image-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .image-row{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        height: 25em;
+        width: 100%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 1000px){
@@ -401,9 +450,28 @@ td{
     .big-nav{
         display: none;
     }
+
+    .rectangle{
+        width: 100%;
+        height: 8em;
+        position: fixed;
+        z-index: 1;
+    }
 }
 
 @media only screen and (max-width: 700px){
+    :root{
+        font-size: 12px;
+    }
+
+    .row-padding{
+        padding: 0em 2em 0em 2em;
+    }
+
+    .header{
+        background-image: url("images/MeetingRoomSmall.jpg");
+    }
+
     footer{
         display: flex;
         flex-direction: column;
