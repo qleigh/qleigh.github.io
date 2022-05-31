@@ -4,10 +4,10 @@
 :root{
     --font-body: 'Montserrat', sans-serif;
 
-    --text-xxl: 3rem;
+    --text-xxl: 2.5rem;
     --text-xl: 2.25rem;
-    --text-lg: 2rem;
-    --text-md: 1.5rem;
+    --text-lg: 1.75rem;
+    --text-md: 1.25rem;
     --text-sm: 1rem;
     --text-xs: 0.75rem;
 }
@@ -69,7 +69,7 @@ footer{
     font-size: var(--text-xs);
 }
 
-.sidebar > li{
+.product-categories{
     font-weight: 500;
 }
 

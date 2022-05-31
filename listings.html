@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- header -->
-    <nav class="cluster">
+    <nav class="small-nav stack">
         <ul class="menu">
             <a href="javascript:void(0)" class="closebtn"></a>
             <li><a href="#">New In</a></li>
@@ -31,7 +31,41 @@
             <li><a href="#">Industrial</a></li>
             <li><a href="#">Chair Components</a></li>
         </ul>
-        <div class="cluster centre-items" id="navLinksLeft">
+        <div class="nav-small">
+            <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+            <a href="index.html">
+                <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+            </a>
+            <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+        </div>
+        <div class="searchBarWrap">
+            <input class="searchbar" type="search">
+            <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+        </div>
+    </nav>
+    <nav class="big-nav">
+        <ul class="menu">
+            <a href="javascript:void(0)" class="closebtn"></a>
+            <li><a href="#">New In</a></li>
+            <li><a href="#">Seating</a></li>
+            <li><a href="#">Desks & Tables</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Furniture Ranges</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">COVID-19 Products</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Free Trial Chairs</a></li>
+            <li><a href="#">Meeting Room</a></li>
+            <li><a href="#">Executive</a></li>
+            <li><a href="#">Ergonomic</a></li>
+            <li><a href="#">Visitor</a></li>
+            <li><a href="#">Lounges and Ottomans</a></li>
+            <li><a href="#">Hospitality</a></li>
+            <li><a href="#">Industrial</a></li>
+            <li><a href="#">Chair Components</a></li>
+        </ul>
+        <div class="nav-links" id="navLinksLeft">
             <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
             <a href="index.html">
                 <span>
@@ -40,21 +74,32 @@
             </a>
         </div>
         <div class="searchBarWrap">
-            <input class="searchbar" type="text">
+            <input class="searchbar" type="search">
             <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
         </div>
-        <div class="cluster centre-items" id="navLinksRight">
+        <div class="centre-vertical nav-links" id="navLinksRight">
             <a id="contactUs" href="#">Contact Us</a>
             <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
         </div>
     </nav>
-    <div class="blue-background page-heading white-text">
+    <div class="blue-background page-heading white-text top">
         <h1>Meeting Room Chairs</h1>
         <p>We offer a well thought-out range of traditional and more modern and contemporary designed conference room chairs that will make a great impression on your guests</p>
     </div>
     <main class="sidebar-container margin">
-        <!-- sidebar -->
-        <ul class="sidebar">
+        <!-- scrolling categories -->
+        <div class="product-categories x-scroll">
+            <a href="#">Free Trial Chairs</a>
+            <a href="#">Meeting Room</a>
+            <a href="#">Executive</a>
+            <a href="#">Visitor</a>
+            <a href="#">Lounges and Ottomans</a>
+            <a href="#">Hospitality</a>
+            <a href="#">Industrial</a>
+            <a href="#">Chair Components</a>
+        </div>
+        <!-- sidebar categories -->
+        <ul class="sidebar product-categories">
             <li><a href="#">Free Trial Chairs</a></li>
             <li><a href="#">Meeting Room</a></li>
             <li><a href="#">Executive</a></li>
@@ -68,8 +113,9 @@
         <div class="not-sidebar">
             <div class="cluster">
                 <!-- filter and sort -->
-                <div class="filter cluster">
-                    <p class="filter-item semibold">Filter:</p>
+                <div class="filter cluster centre-vertical">
+                    <p class="semibold">Filter</p>
+                    <img class="filter-icon" src="icons/funnel-bold.svg" alt="filter">
                     <div class="filter-item cluster">
                         <p>Colour</p>
                         <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
@@ -83,8 +129,9 @@
                         <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
                     </div>
                 </div>
-                <div class="filter cluster">
-                    <p class="filter-item semibold">Sort By:</p>
+                <div class="filter cluster centre-vertical">
+                    <p class="semibold">Sort</p>
+                    <img class="filter-icon" src="icons/sort-ascending-bold.svg" alt="sort">
                     <div class="filter-item cluster">
                         <p>Default</p>
                     <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
@@ -92,7 +139,7 @@
                 </div>
             </div>
             <!-- products -->
-            <div class="cluster">
+            <div class="product-grid">
                 <div class="product">
                     <a href="#">
                         <div class="clickable-img" id="chase-chair"></div>
@@ -106,12 +153,11 @@
                 </div>
                 <div class="product">
                     <a href="#">
-                        <div class="clickable-img" id="peer-chair"></div>
-                        <p class="semibold">Peer Arm Chair</p>
+                        <div class="clickable-img" id="rift-seat"></div>
+                        <p class="semibold">Rift Beam Seat</p>
                     </a>
                     <div class="price">
-                        <p class="oldPrice"><s>$818</s></p>
-                        <p class="newPrice">$736</p>
+                        <p class="currentPrice">$653 - $1153</p>
                     </div>
                 </div>
                 <div class="product">
@@ -192,8 +238,8 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="cluster">
-        <ul class="two-col">
+    <footer>
+        <ul class="footer-col">
             <li>Contact Us</li>
             <li>About Us</li>
             <li>FAQ</li>
@@ -204,14 +250,14 @@
             <li>Policies</li>
             <li>Terms and Conditions</li>
         </ul>
-        <div class="right-align">
+        <div class="footer-icons">
             <a href="#">
                 <img class="footer-logo" src="icons/VOFLogo.svg" alt="Value Office Furniture logo">
             </a>
-            <div class="cluster">
-                <img class="social-links" src="icons/facebook-fill.svg" alt="Facebook logo">
-                <img class="social-links" src="icons/youtube-fill.svg" alt="Youtube logo">
-                <img class="social-links" src="icons/twitter-fill.svg" alt="Twitter logo">
+            <div class="cluster social-links-wrapper">
+                <img src="icons/facebook-fill.svg" alt="Facebook logo">
+                <img src="icons/youtube-fill.svg" alt="Youtube logo">
+                <img src="icons/twitter-fill.svg" alt="Twitter logo">
             </div>
             <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment methods">
         </div>

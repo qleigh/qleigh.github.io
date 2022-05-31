@@ -48,14 +48,30 @@ input[type="text"], textarea{
     background-color: var(--colour-main);
 }
 
-.left{
+.accent-background{
+    background-color: var(--colour-accent);
+}
+
+.configuration-img{
+    background-color: var(--colour-bg);
+}
+
+.configuration-img:hover{
+    border: 4px solid var(--colour-main);
+}
+
+.left-box{
     color: var(--colour-bg);
     background-color: var(--colour-main);
 }
 
-.right{
+.right-box{
     color: var(--colour-bg);
     background-color: var(--colour-accent);
+}
+
+.chosen-config{
+    border: 4px solid var(--colour-main);
 }
 
 .link-btn{
@@ -66,7 +82,7 @@ input[type="text"], textarea{
     background-color: var(--colour-grey);
 }
 
-.btn:hover{
+.btn:hover, .add-to-cart:hover{
     background-color: var(--colour-main-light);
 }
 
@@ -78,12 +94,12 @@ input[type="text"], textarea{
     color: var(--colour-accent);
 }
 
-.sidebar > li{
+.product-categories > li, .product-categories > a{
     color: var(--colour-bg);
     background-color: var(--colour-accent);
 }
 
-.sidebar > li:hover{
+.product-categories > li:hover, .product-categories > a:hover{
     background-color: var(--colour-accent-light);
 }
 
@@ -95,7 +111,6 @@ input[type="text"], textarea{
 .current-step{
     color: var(--colour-accent);
 }
-
 .summary-img{
     background-color: var(--colour-bg);
 }
@@ -107,4 +122,21 @@ input[type="text"], textarea{
 
 #contactUs{
     color: var(--colour-bg);
+}
+
+/* tab */
+.tablinks{
+    background-color: var(--colour-main-light);
+}
+
+.tablinks:hover{
+    background-color: var(--colour-main-light);
+}
+
+.tablinks:active{
+    background-color: var(--colour-main);
+}
+
+.tab-content{
+    background-color: var(--colour-main);
 }

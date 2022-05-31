@@ -1,14 +1,8 @@
 .clickable-img{
+    margin-bottom: 2em;
     background-size: contain;
     height: 18em;
     width: 18em;
-}
-
-.product > a > .clickable-img{
-    height: 18em;
-    width: 18em;
-    margin-top: 5em;
-    margin-bottom: 2em;
 }
 
 #link-table{
@@ -43,7 +37,7 @@
     background-image: url("images/ChaseMeetingRoomChairHover.webp");
 }
 
-#peer-chair{
+#rift-seat{
     background-image: url("images/PeerArmChair.jpeg");
 }
 

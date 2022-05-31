@@ -1,3 +1,16 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance:textfield;
+    width: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
 .features > .box{
     height: 6em;
     padding: 3%;
@@ -5,7 +18,6 @@
 
 .productWrapper{
     margin-top: 10em;
-    align-items: center;
 }
 
 .product-image-caret{
@@ -22,6 +34,27 @@
     padding: 0.5em;
 }
 
+.configuration{
+    border-radius: 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+.configuration-img{
+    width: 7em;
+    height: 7em;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.minus, .plus{
+    height: 1em;
+    width: 1em;
+    margin: 0.5em;
+}
+
 .main-image{
     height: 25em;
     width: 25em;
@@ -29,4 +62,86 @@
 
 .dropdownContent{
     display: none;
+}
+
+.product-info{
+    width: 50%;
+}
+
+.product-btn{
+    border-radius: 1em;
+    align-items: center;
+    width: 48.5%;
+    padding: 1em;
+}
+
+.button-wrapper{
+    margin-top: 2em;
+}
+
+.product-info > * + *{
+    margin-top: 2em;
+}
+
+.product-info-options > * + *{
+    margin-top: 1em;
+}
+
+/* tab */
+.none{
+    display: none;
+}
+
+.tab{
+    overflow: hidden;
+}
+
+.tablinks{
+    border-radius: 1em 1em 0em 0em;
+    padding: 1.5em 2em 1.5em 2em;
+    float: left;
+}
+
+.tab-content{
+    padding: 2em;
+}
+
+.feature + .feature{
+    margin-top: 1em;
+}
+
+.measurements{
+    width: 100%;
+    max-width: 20em;
+    height: auto;
+}
+
+.delivery-text > p+p{
+    margin-top: 1em;
+}
+
+.stars > img{
+    height: 100%;
+    width: auto;
+    max-height: 1em;
+}
+
+.review + .review{
+    margin-top: 2em;
+}
+
+.review > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review > * + * {
+    margin-top: 0.5em;
+}
+
+.review > div > * + * {
+    margin-left: 1em;
 }

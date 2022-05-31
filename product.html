@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="cluster">
+    <nav class="small-nav stack">
         <ul class="menu">
             <a href="javascript:void(0)" class="closebtn"></a>
             <li><a href="#">New In</a></li>
@@ -31,7 +31,41 @@
             <li><a href="#">Industrial</a></li>
             <li><a href="#">Chair Components</a></li>
         </ul>
-        <div class="cluster centre-vertical" id="navLinksLeft">
+        <div class="nav-small">
+            <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+            <a href="index.html">
+                <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+            </a>
+            <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+        </div>
+        <div class="searchBarWrap">
+            <input class="searchbar" type="search">
+            <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+        </div>
+    </nav>
+    <nav class="big-nav">
+        <ul class="menu">
+            <a href="javascript:void(0)" class="closebtn"></a>
+            <li><a href="#">New In</a></li>
+            <li><a href="#">Seating</a></li>
+            <li><a href="#">Desks & Tables</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Furniture Ranges</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">COVID-19 Products</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Free Trial Chairs</a></li>
+            <li><a href="#">Meeting Room</a></li>
+            <li><a href="#">Executive</a></li>
+            <li><a href="#">Ergonomic</a></li>
+            <li><a href="#">Visitor</a></li>
+            <li><a href="#">Lounges and Ottomans</a></li>
+            <li><a href="#">Hospitality</a></li>
+            <li><a href="#">Industrial</a></li>
+            <li><a href="#">Chair Components</a></li>
+        </ul>
+        <div class="nav-links" id="navLinksLeft">
             <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
             <a href="index.html">
                 <span>
@@ -40,10 +74,10 @@
             </a>
         </div>
         <div class="searchBarWrap">
-            <input class="searchbar" type="text">
+            <input class="searchbar" type="search">
             <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
         </div>
-        <div class="cluster centre-vertical" id="navLinksRight">
+        <div class="centre-vertical nav-links" id="navLinksRight">
             <a id="contactUs" href="#">Contact Us</a>
             <a href="#"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
         </div>
@@ -51,8 +85,8 @@
     <!-- product info -->
     <section class="top">
         <div class="productWrapper cluster margin">
-            <div class="product-images stack centre-vertical">
-                <div class="cluster centre-vertical">
+            <div class="stack centre-vertical">
+                <div class="centre-vertical">
                     <img class="product-image-caret" src="icons/caret-left-bold.svg" alt="">
                     <img class="main-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
                     <img class="product-image-caret" src="icons/caret-right-bold.svg" alt="">
@@ -64,117 +98,132 @@
                     <img class="alt-image" src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
                 </div>
             </div>
-            <div>
+            <div class="stack product-info">
                 <h1 class="left-text">Chase Meeting Room Chair</h1>
-                <h4 class="oldPrice">$529</h4>
-                <h4 class="newPrice">$458</h4>
-                <p>Chase Meeting Room Chair upholstered in soft man-made leather. Perfect for your conference room or office desk.</p>
-                <button>
-                    <p>Style</p>
-                    <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                    <img src="icons/caret-down-bold.svg" alt="">
-                </button>
-                <div class="dropdownContent">
-                    <img src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseMeetingRoomChairHover.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseChairTan.webp" alt="Chase Meeting Room Chair">
-                    <img src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
+                <div class="price">
+                    <h4 class="oldPrice"><s>$529</s></h4>
+                    <h4 class="newPrice">$458</h4>
                 </div>
-                <div class="buttonWrapper">
-                    <div class="quantity">
-                        <p>Quantity</p>
-                        <button><img src="icons/minus-bold.svg" alt=""></button>
-                        <p>1</p>
-                        <button><img src="icons/plus-bold.svg" alt=""></button>
+                <p>Chase Meeting Room Chair upholstered in soft man-made leather. Perfect for your conference room or office desk.</p>
+                <div class="product-info-options">
+                    <div class="accent-background configuration stack">
+                        <p class="white-text medium">Style</p>
+                        <div class="cluster-left">
+                            <img class="configuration-img chosen-config" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                            <img class="configuration-img" src="images/ChaseMeetingRoomChairHover.webp" alt="Chase Meeting Room Chair">
+                            <img class="configuration-img" src="images/ChaseChairTan.webp" alt="Chase Meeting Room Chair">
+                            <img class="configuration-img" src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
+                        </div>
                     </div>
-                    <button class="addToCart">
-                        <p>Add to cart</p>
-                        <img src="icons/plus-bold.svg" alt="">
-                    </button>
+                    <div class="button-wrapper cluster">
+                        <div class="blue-background product-btn cluster">
+                            <p class="white-text medium">Quantity</p>
+                            <div class="cluster">
+                                <input type="image" src="icons/minus-bold.svg" class="minus" data-field="quantity">
+                                <input type="number" step="1" min="0" max="" value="1" name="quantity" class="quantity-field">
+                                <input type="image" src="icons/plus-bold.svg" class="plus" data-field="quantity">
+                            </div>
+                        </div>
+                        <button class="blue-background product-btn cluster add-to-cart">
+                            <p class="white-text medium">Add to cart</p>
+                            <img class="plus" src="icons/plus-bold.svg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- info tabs -->
-    <section>
+    <section class="white-text">
         <!-- tab links -->
-        <button>Details</button>
-        <button>Delivery</button>
-        <button>Reviews</button>
+        <div class="tab medium">
+            <button class="tablinks" onclick="">Details</button>
+            <button class="tablinks" onclick="">Delivery</button>
+            <button class="tablinks" onclick="">Reviews</button>
+        </div>
+        
         <!-- tab content -->
-        <div id="Details" class="tabContent">
+        <div id="Details" class="tab-content blue-background cluster none">
             <div>
-                <ul>
-                    <li>Weight rating: 130kg</li>
-                    <li>User weight tension control</li>
-                    <li>Generous seat size</li>
-                    <li>5 year warranty</li>
-                    <li>Prices include GST</li>
+                <ul class="features">
+                    <li class="feature">Weight rating: 130kg</li>
+                    <li class="feature">User weight tension control</li>
+                    <li class="feature">Generous seat size</li>
+                    <li class="feature">5 year warranty</li>
+                    <li class="feature">Prices include GST</li>
                 </ul>
                 <p>Scroll down for more details</p>
             </div>
-            <img src="images/ChaseChairDimensions.webp" alt="Chase Meeting Room Chair Dimensions">
+            <img class="measurements" src="images/ChaseChairDimensions.webp" alt="Chase Meeting Room Chair Dimensions">
         </div>
-        <div id="Delivery" class="tabContent">
-            <p>Delivery only, no pick-up available on this item.
-
-                Deliveries to WA for this chair will take approx. 5-7 business days
-                
-                Click here for our Delivery policy.</p>
+        <div id="Delivery" class="tab-content none">
+            <div class="delivery-text">
+                <p>Delivery only, no pick-up available on this item.</p>
+                <p>Deliveries to WA for this chair will take approx. 5-7 business days</p>
+                <p>Click <a class="link" href="#"><u>here</u></a> for our Delivery policy.</p>
+            </div>
         </div>
-        <div id="Reviews" class="tabContent">
+        <div id="Reviews" class="tab-content">
+            <div class="review">
                 <div>
-                    <div>
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                    </div>
-                    <p>John S.</p>
-                    <p>•  5 days ago</p>
-                </div>
-                <p>This chair is amazing! Matches my home office perfectly and very comfortable. Would 100% recommend.</p>
-                <div>
-                    <div>
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
+                    <div class="stars">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
                         <img src="icons/star-fill.svg" alt="">
                     </div>
-                    <p>Alice A.</p>
-                    <p>•  2 weeks ago</p>
+                    <p>John S.</p>
+                    <p>•</p>
+                    <p>5 days ago</p>
                 </div>
-                <p>This chair is great for a meeting room or any office space. The quality is great and is very comfy. However, the only bad thing I have to say is that sometimes the wheels don’t roll properly but the chair itself is amazing. I may just buy some new wheels to fix this problem.
-                </p>
+                <p>This chair is amazing! Matches my home office perfectly and very comfortable. Would 100% recommend.</p>
+            </div>
+            <div class="review">
                 <div>
-                    <div>
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
-                        <img src="icons/star-bold.svg" alt="">
+                    <div class="stars">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
                         <img src="icons/star-bold.svg" alt="">
                     </div>
+                    <p>Alice A.</p>
+                    <p>•</p>
+                    <p>2 weeks ago</p>
+                </div>
+                <p>This chair is great for a meeting room or any office space. The quality is great and is very comfy. However, the only bad thing I have to say is that sometimes the wheels don’t roll properly but the chair itself is amazing. I may just buy some new wheels to fix this problem.</p>
+            </div>
+            <div class="review">
+                <div>
+                    <div class="stars">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                    </div>
                     <p>Bob F.</p>
-                    <p>•  3 weeks ago</p>
+                    <p>•</p>
+                    <p>3 weeks ago</p>
                 </div>
                 <p>I got this chair in the colour Tan and it looks exactly the same as the photo. Looks amazing in my office. Definitely buying from Value Office Furniture again in the future.</p>
+            </div>
         </div>
     </section>
     <!-- additional info -->
     <section>
         <div class="stack">
             <div class="cluster centre-vertical features">
-                <p class="centre-text left box">Gas lift, multi position tilt lock mechanism</p>
+                <p class="centre-text left-box box">Gas lift, multi position tilt lock mechanism</p>
                 <img class="trending-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
             </div>
             <div class="cluster swap-position centre-vertical features">
-                <p class="centre-text right box">Modern slimline thin pad design</p>
+                <p class="centre-text right-box box">Modern slimline thin pad design</p>
                 <img class="trending-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
             </div>
             <div class="cluster centre-vertical features">
-                <p class="centre-text left box">Unique matte black satin alloy arms</p>
+                <p class="centre-text left-box box">Unique matte black satin alloy arms</p>
                 <img class="trending-image" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
             </div>
         </div>
@@ -215,8 +264,8 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="cluster">
-        <ul class="two-col">
+    <footer>
+        <ul class="footer-col">
             <li>Contact Us</li>
             <li>About Us</li>
             <li>FAQ</li>
@@ -227,14 +276,14 @@
             <li>Policies</li>
             <li>Terms and Conditions</li>
         </ul>
-        <div class="right-align">
+        <div class="footer-icons">
             <a href="#">
                 <img class="footer-logo" src="icons/VOFLogo.svg" alt="Value Office Furniture logo">
             </a>
-            <div class="cluster">
-                <img class="social-links" src="icons/facebook-fill.svg" alt="Facebook logo">
-                <img class="social-links" src="icons/youtube-fill.svg" alt="Youtube logo">
-                <img class="social-links" src="icons/twitter-fill.svg" alt="Twitter logo">
+            <div class="cluster social-links-wrapper">
+                <img src="icons/facebook-fill.svg" alt="Facebook logo">
+                <img src="icons/youtube-fill.svg" alt="Youtube logo">
+                <img src="icons/twitter-fill.svg" alt="Twitter logo">
             </div>
             <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment methods">
         </div>
