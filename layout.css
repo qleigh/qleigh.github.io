@@ -295,7 +295,7 @@ td{
 .confirmation{
     width: 75%;
     margin-top: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .confirmation > p + p{
@@ -361,7 +361,7 @@ td{
 
 #navLinksRight {
     display: flex;
-    width: 10em;
+    width: 13em;
     margin-left: 5em;
 }
 
@@ -427,6 +427,10 @@ td{
 }
 
 @media only screen and (max-width: 1000px){
+    #account + #cart{
+        margin-left: 1em;
+    }
+
     .not-summary{
         min-width: 42rem;
     }

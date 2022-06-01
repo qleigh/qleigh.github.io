@@ -15,13 +15,13 @@
             <!-- menu -->
             <ul class="menu-one" id="this-menu-one">
                 <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-                <li><button id="1" onmouseover="openNavTwo(id)">New In</button></li>
-                <li><button id="2" onmouseover="openNavTwo(id)">Seating</button></li>
-                <li><button id="3" onmouseover="openNavTwo(id)">Desks & Tables</button></li>
-                <li><button id="4" onmouseover="openNavTwo(id)">Storage</button></li>
-                <li><button id="5" onmouseover="openNavTwo(id)">Furniture Ranges</button></li>
-                <li><button id="6" onmouseover="openNavTwo(id)">Accessories</button></li>
-                <li><button id="7" onmouseover="openNavTwo(id)">COVID-19 Products</button></li>
+                <li><button onmouseover="openNavTwo()">New In</button></li>
+                <li><button onmouseover="openNavTwo()">Seating</button></li>
+                <li><button onmouseover="openNavTwo()">Desks & Tables</button></li>
+                <li><button onmouseover="openNavTwo()">Storage</button></li>
+                <li><button onmouseover="openNavTwo()">Furniture Ranges</button></li>
+                <li><button onmouseover="openNavTwo()">Accessories</button></li>
+                <li><button onmouseover="openNavTwo()">COVID-19 Products</button></li>
             </ul>
             <ul class="menu-two" id="this-menu-two">
                 <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
@@ -42,7 +42,10 @@
                     <a href="index.html">
                         <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                     </a>
-                    <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                    <div class="cluster">
+                        <a id="account" href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
+                        <a id="cart" href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                    </div>
                 </div>
                 <div class="searchBarWrap">
                     <input class="searchbar" type="search">
@@ -64,6 +67,7 @@
                 </div>
                 <div class="centre-vertical nav-links" id="navLinksRight">
                     <a id="contactUs" href="#">Contact Us</a>
+                    <a href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
                     <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
                 </div>
             </nav>
@@ -83,6 +87,13 @@
                 <p>Thank you, John.</p>
                 <p>Your order number is 873469.</p>
                 <p>We have emailed you an order summary and confirmation. If you have any questions, please feel free to <a class="link" href="#"><u>contact us.</u></a></p>   
+            </div>
+            <div class="stack">
+                <h4>To view your previous purchases or link this purchase to your account:</h4>
+                <div class="button-wrapper cluster">
+                    <button class="secondary-btn product-btn">Sign In</button>
+                    <button class="blue-background product-btn white-text">Sign Up</button>
+                </div>
             </div>
         </div>
         <!-- Summary -->

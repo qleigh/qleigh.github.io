@@ -152,3 +152,7 @@ input[type="text"], textarea{
 .tab-content{
     background-color: var(--colour-main);
 }
+
+.secondary-btn{
+    border: 2px solid var(--colour-main);
+}
