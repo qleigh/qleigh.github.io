@@ -109,6 +109,7 @@ footer{
     }
 }
 
-nav > ul > li{
-    font-size: medium;
+.menu-one > li, .menu-two > li{
+    font-size: var(--text-md);
+    font-weight: 500;
 }

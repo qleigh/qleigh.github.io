@@ -11,10 +11,6 @@
     background-repeat: no-repeat;
 }
 
-.menu{
-    display: none;
-}
-
 .menuIcon{
     height: 1.5em;
 }
@@ -40,21 +36,44 @@
     top: 0.25em;
 }
 
+.what{
+    display: none;
+}
+
 /* navbar */
-.menu-one {
+.menu-one, .menu-two {
     height: 100%;
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed;
-    z-index: 1; /* Stay on top */
-    top: 0;
     left: 0;
+    top: 0;
     overflow-x: hidden;
     padding-top: 2em;
-    padding-left: 2em;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.menu.closebtn{
+.menu-one{
+    z-index: 5;
+}
+
+.menu-two{
+    padding-top: 9em;
+    z-index: 4;
+
+}
+
+.menu-one > li{
     padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+.menu-two > li{
+    padding-left: 22em;
+    padding-bottom: 2em;
+}
+
+.closebtn > .menuIcon{
+    padding-left: 2em;
+    margin-bottom: 2em;
 }
 

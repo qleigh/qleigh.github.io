@@ -35,7 +35,11 @@ input[type="text"], textarea{
     background-color: var(--colour-main-light);
 }
 
-.menu-one > li:hover {
+.menu-two{
+    background-color: var(--colour-accent-light);
+}
+
+.menu-one > li > button:hover, .menu-two > li > a:hover {
     color: var(--colour-bg);
 }
 
