@@ -31,6 +31,14 @@ input[type="text"], textarea{
     color: var(--colour-main);
 }
 
+.menu-one{
+    background-color: var(--colour-main-light);
+}
+
+.menu-one > li:hover {
+    color: var(--colour-bg);
+}
+
 .heroText{
     color: var(--colour-bg);
 }

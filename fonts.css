@@ -108,3 +108,7 @@ footer{
         font-size: var(--text-sm);
     }
 }
+
+nav > ul > li{
+    font-size: medium;
+}

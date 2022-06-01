@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chase Meeting Room Chair</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- nav bar -->
     <nav class="small-nav stack not-home">
-        <ul class="menu">
-            <a href="javascript:void(0)" class="closebtn"></a>
-            <li><button>New In</button></li>
-            <li><button>Seating</button></li>
-            <li><button>Desks & Tables</button></li>
-            <li><button>Storage</button></li>
-            <li><button>Furniture Ranges</button></li>
-            <li><button>Accessories</button></li>
-            <li><button>COVID-19 Products</button></li>
+        <ul class="menu-one" id="menu-one">
+            <a href="javascript:void(0)" class="closebtn menuIcon" onclick="closeNav()"><img src="icons/x-bold.svg" alt=""></a>
+            <li><button onmouseover="openNavTwo()">New In</button></li>
+            <li><button onmouseover="openNavTwo()">Seating</button></li>
+            <li><button onmouseover="openNavTwo()">Desks & Tables</button></li>
+            <li><button onmouseover="openNavTwo()">Storage</button></li>
+            <li><button onmouseover="openNavTwo()">Furniture Ranges</button></li>
+            <li><button onmouseover="openNavTwo()">Accessories</button></li>
+            <li><button onmouseover="openNavTwo()">COVID-19 Products</button></li>
         </ul>
-        <ul class="menu">
+        <ul class="menu-two">
             <li><a href="listings.html">Free Trial Chairs</a></li>
             <li><a href="listings.html">Meeting Room</a></li>
             <li><a href="listings.html">Executive</a></li>
@@ -32,7 +33,7 @@
             <li><a href="listings.html">Chair Components</a></li>
         </ul>
         <div class="nav-small">
-            <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+            <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
             <a href="index.html">
                 <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
             </a>
@@ -66,7 +67,7 @@
             <li><a href="listings.html">Chair Components</a></li>
         </ul>
         <div class="nav-links" id="navLinksLeft">
-            <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+            <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
             <a href="index.html">
                 <span>
                     <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
@@ -214,15 +215,15 @@
         <div class="stack">
             <div class="centre-vertical features sidebar-container">
                 <p class="centre-text left-box box sidebar">Gas lift, multi position tilt lock mechanism</p>
-                <img class="trending-image not-sidebar" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                <img class="trending-image not-sidebar" src="images/ChaseDetailsjpg.jpg" alt="Chase Meeting Room Chair">
             </div>
             <div class="swap-position centre-vertical features sidebar-container">
                 <p class="centre-text right-box box sidebar">Modern slimline thin pad design</p>
-                <img class="trending-image not-sidebar" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                <img class="trending-image not-sidebar" src="images/ChaseDetails2.jpg" alt="Chase Meeting Room Chair">
             </div>
             <div class="centre-vertical features sidebar-container">
                 <p class="centre-text left-box box sidebar">Unique matte black satin alloy arms</p>
-                <img class="trending-image not-sidebar" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                <img class="trending-image not-sidebar" src="images/ChaseDetails3.jpg" alt="Chase Meeting Room Chair">
             </div>
         </div>
     </section>
