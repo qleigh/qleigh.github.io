@@ -84,125 +84,131 @@
             </div>
         </nav>
     </section>
-    <section class="top sidebar-container">
-        <div class="top not-sidebar not-summary">
-            <div class="cluster checkout-steps">
-                <p class="current-step"><u>Shipping</u></p>
-                <p>Payment</p>
-                <p>Review</p>
-                <p>Confirmation</p>
-            </div>
-            <h1>Shipping</h1>
-            <!-- Form -->
-            <div>
-                <div class="adjacent-input input-group">
-                    <div class="stack grid-left">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName">
-                    </div>
-                    <div class="stack grid-right">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName">
-                    </div>
+    <section>
+        <div class="top page-start sidebar-container">
+            <div class="not-sidebar not-summary">
+                <div class="cluster checkout-steps">
+                    <p class="current-step"><u>Shipping</u></p>
+                    <p>Payment</p>
+                    <p>Review</p>
+                    <p>Confirmation</p>
                 </div>
-                <div class="input-group">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" id="phoneNumber">
-                </div>
-                <div class="input-group">
-                    <label for="companyName">Company Name</label>
-                    <input type="text" id="companyName">
-                </div>
-                <div class="input-group">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" placeholder="Start typing…">
-                    <button><p><u>Enter Address Manually</u></p></button>
-                </div>
-                <div class="radio-button-group">
-                    <p>Delivery/Pickup</p>
-                    <div>
-                        <input type="radio" id="clickAndCollect" name="delivery" value="Click and Collect">
-                        <label for="clickAndCollect">Click and Collect</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery">
-                        <label for="flatPackDelivery">Flat Pack Delivery</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="deliveryAndAssembly" name="delivery" value="Delivery and Assembly">
-                        <label for="deliveryAndAssembly">Delivery and Assembly</label>
-                    </div>   
-                </div>
-                <div class="radio-button-group">
-                    <p>Delivery Location</p>
-                    <div>
-                        <input type="radio" id="residentialAddress" name="location" value="Residential Address">
-                        <label for="residentialAddress">Residential Address</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="commercialAddress" name="location" value="Commercial Address">
-                        <label for="commercialAddress">Commercial Address</label>
-                    </div>  
-                </div>
-                <div class="input-group">
-                    <label for="additionalInfo">Comments and additional delivery info</label>
-                    <textarea name="" id="additionalInfo" placeholder="Provide as much info as possible (e.g. parking, vehicle height restrictions, lift access, stairs etc.)"></textarea>
-                </div>
-            </div>
-            <a class="back" href="#">
-                <img src="icons/caret-left-bold.svg" alt="Back">
-                <p>Back</p>
-            </a>
-        </div>
-        <!-- Summary -->
-        <div class="top stack sidebar summary-wrapper">
-            <div class="summary">
-                    <h3>Summary</h3>
-                    <table>
-                        <tr>
-                            <td class="row-name">GST (incl.)</td>
-                            <td class="table-price">$106.63</td>
-                        </tr>
-                        <tr>
-                            <td class="row-name">Subtotal</td>
-                            <td class="table-price">$1173.00</td>
-                        </tr>
-                        <tr class="semibold">
-                            <td class="row-name">Total</td>
-                            <td class="table-price">$1173.00</td>
-                        </tr>
-                    </table>
-                    <div class="cart-grid">
-                        <img class="summary-img row-one" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                        <div class="cart-item-name row-one stack">
-                            <p class="semibold">Chase Meeting Room Chair</p>
-                            <p class="little">Terracotta</p>
-                            <p class="little">$458 / per item</p>
-                        </div>    
-                        <div class="cart-item-price row-one table-price stack right-align">
-                            <p>$916</p>
-                            <p class="little">Qty: 2</p>
+                <h1>Shipping</h1>
+                <!-- Form -->
+                <div class="form">
+                    <div class="adjacent-input input-group">
+                        <div class="stack grid-left">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName">
                         </div>
-                        <img class="summary-img row-two" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
-                        <div class="cart-item-name row-two stack">
-                            <p class="semibold">Edge Round Meeting Table</p>
-                            <p class="little">90cm x 73cm</p>
-                            <p class="little">$211 / per item</p>
-                        </div>    
-                        <div class="cart-item-price row-two table-price stack right-align">
-                            <p>$211</p>
-                            <p class="little">Qty: 1</p>
+                        <div class="stack grid-right">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName">
                         </div>
                     </div>
+                    <div class="input-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber">
+                    </div>
+                    <div class="input-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName">
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Start typing…">
+                        <button><p><u>Enter Address Manually</u></p></button>
+                    </div>
+                    <div class="radio-button-group">
+                        <p>Delivery/Pickup</p>
+                        <div>
+                            <input type="radio" id="clickAndCollect" name="delivery" value="Click and Collect">
+                            <label for="clickAndCollect">Click and Collect</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery">
+                            <label for="flatPackDelivery">Flat Pack Delivery</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="deliveryAndAssembly" name="delivery" value="Delivery and Assembly">
+                            <label for="deliveryAndAssembly">Delivery and Assembly</label>
+                        </div>   
+                    </div>
+                    <div class="radio-button-group">
+                        <p>Delivery Location</p>
+                        <div>
+                            <input type="radio" id="residentialAddress" name="location" value="Residential Address">
+                            <label for="residentialAddress">Residential Address</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="commercialAddress" name="location" value="Commercial Address">
+                            <label for="commercialAddress">Commercial Address</label>
+                        </div>  
+                    </div>
+                    <div class="input-group">
+                        <label for="additionalInfo">Comments and additional delivery info</label>
+                        <textarea name="" id="additionalInfo" placeholder="Provide as much info as possible (e.g. parking, vehicle height restrictions, lift access, stairs etc.)"></textarea>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
-                <a class="cluster proceed" href="#">
+            <!-- Summary -->
+            <div class="stack sidebar summary-wrapper">
+                <a class="cluster proceed start" href="#">
                     <p class="medium">Proceed to Checkout</p>
                     <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
                 </a>
+                <div class="summary">
+                        <h3>Summary</h3>
+                        <table>
+                            <tr>
+                                <td class="row-name">GST (incl.)</td>
+                                <td class="table-price">$106.63</td>
+                            </tr>
+                            <tr>
+                                <td class="row-name">Subtotal</td>
+                                <td class="table-price">$1173.00</td>
+                            </tr>
+                            <tr class="semibold">
+                                <td class="row-name">Total</td>
+                                <td class="table-price">$1173.00</td>
+                            </tr>
+                        </table>
+                        <div class="cart-grid">
+                            <img class="summary-img row-one" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                            <div class="cart-item-name row-one stack">
+                                <p class="semibold">Chase Meeting Room Chair</p>
+                                <p class="little">Terracotta</p>
+                                <p class="little">$458 / per item</p>
+                            </div>    
+                            <div class="cart-item-price row-one table-price stack right-align">
+                                <p>$916</p>
+                                <p class="little">Qty: 2</p>
+                            </div>
+                            <img class="summary-img row-two" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                            <div class="cart-item-name row-two stack">
+                                <p class="semibold">Edge Round Meeting Table</p>
+                                <p class="little">90cm x 73cm</p>
+                                <p class="little">$211 / per item</p>
+                            </div>    
+                            <div class="cart-item-price row-two table-price stack right-align">
+                                <p>$211</p>
+                                <p class="little">Qty: 1</p>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
+                    <a class="cluster proceed end" href="#">
+                        <p class="medium">Proceed to Checkout</p>
+                        <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
+                    </a>
+                </div>
             </div>
         </div>
+        <a class="back" href="#">
+            <img src="icons/caret-left-bold.svg" alt="Back">
+            <p>Back</p>
+        </a>
     </section>
     <!-- footer -->
     <footer>

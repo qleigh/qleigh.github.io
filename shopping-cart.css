@@ -30,6 +30,7 @@
     grid-auto-rows: auto;
     grid-gap: 8%;
     row-gap: 2em;
+    margin-bottom: 2em;
 }
 
 .cart-img{
@@ -50,4 +51,17 @@
 
 .row-two{
     grid-row: 2;
+}
+
+@media only screen and (max-width: 500px){
+    .cart-item-img{
+        height: 6em;
+        max-width: 6em;
+        object-fit: cover;
+    }
+
+    #trash{
+        height: 1.5em;
+        width: 1.5em;
+    }
 }

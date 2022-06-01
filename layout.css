@@ -89,6 +89,14 @@ td{
     margin-top: 5em;
 }
 
+.top.page-start{
+    margin-top: 9em;
+}
+
+.page-start{
+    margin-top: 4em;
+}
+
 .cluster{
     display: flex;
     flex-wrap: wrap;
@@ -135,6 +143,7 @@ td{
     flex-basis: 0;
     flex-grow: 999;
     min-width: 25%;
+    overflow: hidden;
 }
 
 .not-summary{
@@ -195,6 +204,8 @@ td{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 2em;
+    margin-left: 2em;
 }
 
 .back > img{
@@ -369,6 +380,11 @@ td{
 
 .checkout-steps{
     margin-right: 25%;
+    margin-bottom: 4em;
+}
+
+.form{
+    margin-top: 3em;
 }
 
 .nav-links{
@@ -412,6 +428,10 @@ td{
     margin: 2em;
 }
 
+.proceed.start, .proceed.end{
+    margin-bottom: 2em;
+}
+
 @media only screen and (min-width: 1000px){
     .small-nav{
         display: none;
@@ -447,6 +467,10 @@ td{
 }
 
 @media only screen and (max-width: 1000px){
+    .not-summary{
+        min-width: 55rem;
+    }
+
     .top{
         margin-top: 8em;
     }
@@ -480,15 +504,50 @@ td{
     }
 }
 
+@media only screen and (min-width: 700px){
+    .proceed.start{
+        display: none;
+    }
+}
 
 
-@media only screen and (max-width: 700px){
-    :root{
-        font-size: 12px;
+@media only screen and (max-width: 700px){ 
+    .not-summary{
+        min-width: 40rem;
+    }
+
+    .proceed.end{
+        display: none;
+    }
+
+    .summary-img{
+        margin-right: 0em;
+    }
+
+    .summary-wrapper, .not-summary{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .page-start{
+        margin-top: 1em;
+    }
+
+    .top.page-start{
+        margin-top: 12em;
+    }
+
+    .section-title{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .checkout-steps{
+        margin-right: 0em;
     }
 
     .row-padding{
-        padding: 0em 2em 0em 2em;
+        padding: 0em 1em 0em 1em;
     }
 
     .header{
@@ -518,5 +577,11 @@ td{
 
     .footer-icons > #payment-methods{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .not-summary{
+        min-width: 25rem;
     }
 }
