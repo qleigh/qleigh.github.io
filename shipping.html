@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -48,8 +49,8 @@
                     </div>
                 </div>
                 <div class="searchBarWrap">
-                    <input class="searchbar" type="search">
-                    <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+                    <input id="searchInput" class="searchbar" type="search" onchange="search(searchInput)">
+                    <a href="listings.html"><img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
                 </div>
             </nav>
             <nav class="big-nav not-home">
@@ -85,7 +86,7 @@
                 </div>
                 <h1>Shipping</h1>
                 <!-- Form -->
-                <div class="form">
+                <form class="form" id="shipping-form">
                     <div class="adjacent-input input-group">
                         <div class="stack grid-left">
                             <label for="firstName">First Name*</label>
@@ -139,7 +140,7 @@
                         <label for="additionalInfo">Comments and additional delivery info</label>
                         <textarea name="" id="additionalInfo" placeholder="Provide as much info as possible (e.g. parking, vehicle height restrictions, lift access, stairs etc.)"></textarea>
                     </div>
-                </div>
+                </form>
             </div>
             <!-- Summary -->
             <div class="stack sidebar summary-wrapper">

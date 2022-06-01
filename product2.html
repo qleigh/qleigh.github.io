@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chase Meeting Room Chair</title>
+    <title>Lynx Visitor Chair</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- nav bar and menu -->
@@ -96,49 +97,51 @@
                 </div>
                 <p>Lynx Visitor Chair available in 17 different colours including commercial quality black vinyl to match your waiting room or office area.</p>
                 <div class="product-info-options">
-                    <div class="accent-background configuration stack closed">
-                        <div class="cluster">
-                            <p class="white-text medium">Colour</p>
-                            <img class="down-caret" src="icons/caret-down-bold.svg" alt="">
+                    <div>
+                        <div class="accent-background configuration stack closed" id="collapsed-config">
+                            <div class="cluster">
+                                <p class="white-text medium">Colour</p>
+                                <button onclick="openConfig()"><img class="down-caret" src="icons/caret-down-bold.svg" alt=""></button>
+                            </div>
+                            <div class="configuration-grid">
+                                <img class="configuration-img" id="1" onclick="selectLynxColour(id)" src="images/LynxColours.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="2" onclick="selectLynxColour(id)" src="images/LynxColours 2.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="3" onclick="selectLynxColour(id)" src="images/LynxColours 3.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="4" onclick="selectLynxColour(id)" src="images/LynxColours 4.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="5" onclick="selectLynxColour(id)" src="images/LynxColours 5.jpg" alt="Lynx Colour">
+                            </div>
                         </div>
-                        <div class="configuration-grid">
-                            <img class="configuration-img" src="images/LynxColours.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 2.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 3.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 4.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 5.jpg" alt="Lynx Colour">
-                        </div>
-                    </div>
-                    <div class="accent-background configuration stack open">
-                        <div class="cluster">
-                            <p class="white-text medium">Colour</p>
-                            <img class="down-caret" src="icons/caret-up-bold.svg" alt="">
-                        </div>
-                        <div class="configuration-grid">
-                            <img class="configuration-img" src="images/LynxColours.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 2.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 3.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 4.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 5.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 6.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 7.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 8.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 9.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 10.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 11.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 12.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 13.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 14.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 15.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 16.jpg" alt="Lynx Colour">
-                            <img class="configuration-img" src="images/LynxColours 17.jpg" alt="Lynx Colour">
+                        <div class="accent-background configuration stack open" id="expanded-config">
+                            <div class="cluster">
+                                <p class="white-text medium">Colour</p>
+                                <button onclick="closeConfig()"><img class="down-caret" src="icons/caret-up-bold.svg" alt=""></button>
+                            </div>
+                            <div class="configuration-grid">
+                                <img class="configuration-img" id="1" onclick="selectLynxColour(id)" src="images/LynxColours.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="2" onclick="selectLynxColour(id)" src="images/LynxColours 2.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="3" onclick="selectLynxColour(id)" src="images/LynxColours 3.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="4" onclick="selectLynxColour(id)" src="images/LynxColours 4.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="5" onclick="selectLynxColour(id)" src="images/LynxColours 5.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="6" onclick="selectLynxColour(id)" src="images/LynxColours 6.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="7" onclick="selectLynxColour(id)" src="images/LynxColours 7.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="8" onclick="selectLynxColour(id)" src="images/LynxColours 8.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="9" onclick="selectLynxColour(id)" src="images/LynxColours 9.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="10" onclick="selectLynxColour(id)" src="images/LynxColours 10.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="11" onclick="selectLynxColour(id)" src="images/LynxColours 11.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="12" onclick="selectLynxColour(id)" src="images/LynxColours 12.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="13" onclick="selectLynxColour(id)" src="images/LynxColours 13.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="14" onclick="selectLynxColour(id)" src="images/LynxColours 14.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="15" onclick="selectLynxColour(id)" src="images/LynxColours 15.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="16" onclick="selectLynxColour(id)" src="images/LynxColours 16.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="17" onclick="selectLynxColour(id)" src="images/LynxColours17.jpg" alt="Lynx Colour">
+                            </div>
                         </div>
                     </div>
                     <div class="accent-background configuration stack">
                         <p class="white-text medium">Configuration</p>
                         <div class="configuration-grid">
-                            <img class="configuration-img" src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair">
-                            <img class="configuration-img" src="images/LynxArm.webp" alt="Lynx Visitor Chair">
+                            <img class="configuration-img" id="18" onclick="selectLynxConfig(id)" src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair">
+                            <img class="configuration-img" id="19" onclick="selectLynxConfig(id)" src="images/LynxArm.webp" alt="Lynx Visitor Chair">
                         </div>
                     </div>
                     <div class="button-wrapper cluster">
