@@ -9,62 +9,68 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <ul class="menu-one" id="this-menu-one">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-        <li><button id="1" onmouseover="openNavTwo(id)">New In</button></li>
-        <li><button id="2" onmouseover="openNavTwo(id)">Seating</button></li>
-        <li><button id="3" onmouseover="openNavTwo(id)">Desks & Tables</button></li>
-        <li><button id="4" onmouseover="openNavTwo(id)">Storage</button></li>
-        <li><button id="5" onmouseover="openNavTwo(id)">Furniture Ranges</button></li>
-        <li><button id="6" onmouseover="openNavTwo(id)">Accessories</button></li>
-        <li><button id="7" onmouseover="openNavTwo(id)">COVID-19 Products</button></li>
-    </ul>
-    <ul class="menu-two" id="this-menu-two">
-        <li><a href="listings.html">Free Trial Chairs</a></li>
-        <li><a href="listings.html">Meeting Room</a></li>
-        <li><a href="listings.html">Executive</a></li>
-        <li><a href="listings.html">Ergonomic</a></li>
-        <li><a href="listings.html">Visitor</a></li>
-        <li><a href="listings.html">Lounges and Ottomans</a></li>
-        <li><a href="listings.html">Hospitality</a></li>
-        <li><a href="listings.html">Industrial</a></li>
-        <li><a href="listings.html">Chair Components</a></li>
-    </ul>
-    <!-- nav bar -->
-    <nav class="small-nav stack not-home">
-        <div class="nav-small">
-            <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-            <a href="index.html">
-                <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-            </a>
-            <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-        </div>
-        <div class="searchBarWrap">
-            <input class="searchbar" type="search">
-            <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-        </div>
-    </nav>
-    <nav class="big-nav not-home">
-        <div class="nav-links" id="navLinksLeft">
-            <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-            <a href="index.html">
-                <span>
+    <!-- nav bar and menu -->
+    <div>
+        <!-- menu -->
+        <ul class="menu-one" id="this-menu-one">
+            <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+            <li><button id="1" onmouseover="openNavTwo(id)">New In</button></li>
+            <li><button id="2" onmouseover="openNavTwo(id)">Seating</button></li>
+            <li><button id="3" onmouseover="openNavTwo(id)">Desks & Tables</button></li>
+            <li><button id="4" onmouseover="openNavTwo(id)">Storage</button></li>
+            <li><button id="5" onmouseover="openNavTwo(id)">Furniture Ranges</button></li>
+            <li><button id="6" onmouseover="openNavTwo(id)">Accessories</button></li>
+            <li><button id="7" onmouseover="openNavTwo(id)">COVID-19 Products</button></li>
+        </ul>
+        <ul class="menu-two" id="this-menu-two">
+            <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+            <li><a href="listings.html">Free Trial Chairs</a></li>
+            <li><a href="listings.html">Meeting Room</a></li>
+            <li><a href="listings.html">Executive</a></li>
+            <li><a href="listings.html">Ergonomic</a></li>
+            <li><a href="listings.html">Visitor</a></li>
+            <li><a href="listings.html">Lounges and Ottomans</a></li>
+            <li><a href="listings.html">Hospitality</a></li>
+            <li><a href="listings.html">Industrial</a></li>
+            <li><a href="listings.html">Chair Components</a></li>
+        </ul>
+        <!-- nav bar -->
+        <nav class="small-nav stack not-home">
+            <div class="nav-small">
+                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <a href="index.html">
                     <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-                </span>
-            </a>
-        </div>
-        <div class="searchBarWrap">
-            <input class="searchbar" type="search">
-            <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-        </div>
-        <div class="centre-vertical nav-links" id="navLinksRight">
-            <a id="contactUs" href="#">Contact Us</a>
-            <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-        </div>
-    </nav>
+                </a>
+                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            </div>
+            <div class="searchBarWrap">
+                <input class="searchbar" type="search">
+                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+            </div>
+        </nav>
+        <nav class="big-nav not-home">
+            <div class="nav-links" id="navLinksLeft">
+                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <a href="index.html">
+                    <span>
+                        <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                    </span>
+                </a>
+            </div>
+            <div class="searchBarWrap">
+                <input class="searchbar" type="search">
+                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+            </div>
+            <div class="centre-vertical nav-links" id="navLinksRight">
+                <a id="contactUs" href="#">Contact Us</a>
+                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            </div>
+        </nav>
+    </div>
     <!-- product info -->
     <section class="top">
         <div class="productWrapper sidebar-container">
+            <!-- Images -->
             <div class="page-start stack centre-vertical not-sidebar product-padding">
                 <div class="centre-vertical">
                     <img class="product-image-caret" src="icons/caret-left-bold.svg" alt="">
@@ -78,6 +84,7 @@
                     <img class="alt-image" src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
                 </div>
             </div>
+            <!-- Product info and coniguration -->
             <div class="page-start stack sidebar product-info product-padding">
                 <h1 class="left-text">Chase Meeting Room Chair</h1>
                 <div class="price">
@@ -123,6 +130,7 @@
         </div>
         
         <!-- tab content -->
+        <!-- Details -->
         <div id="Details" class="tab-content blue-background cluster">
                 <ul class="features">
                     <li>Weight rating: 130kg</li>
@@ -134,6 +142,7 @@
                 </ul>
             <img class="measurements" src="images/ChaseChairDimensions.webp" alt="Chase Meeting Room Chair Dimensions">
         </div>
+        <!-- Delivery -->
         <div id="Delivery" class="tab-content none">
             <div class="delivery-text">
                 <p>Delivery only, no pick-up available on this item.</p>
@@ -141,6 +150,7 @@
                 <p>Click <a class="link" href="#"><u>here</u></a> for our Delivery policy.</p>
             </div>
         </div>
+        <!-- Reviews -->
         <div id="Reviews" class="tab-content none">
             <div class="review">
                 <div>

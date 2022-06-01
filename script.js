@@ -4,9 +4,19 @@ function closeNav() {
 }
 
 function openNav() {
-    document.getElementById("this-menu-one").style.width = "25em";
+    if (screen.width > 700){
+        document.getElementById("this-menu-one").style.width = "350px";
+    } else {
+        document.getElementById("this-menu-one").style.width = "100vw";
+    }
 }
 
-function openNavTwo(category) {
-    document.getElementById("this-menu-two").style.width = "50em";
+function openNavTwo() {
+    if (screen.width > 700){
+        document.getElementById("this-menu-two").style.width = "700px";
+    } else {
+        document.getElementById("this-menu-one").style.width = "0";
+        document.getElementById("this-menu-two").style.width = "100vw";
+        document.getElementById("this-close-menu-two").style.height = "1.5em";
+    } 
 }

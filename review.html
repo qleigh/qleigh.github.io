@@ -10,18 +10,21 @@
 <body>
     <!-- header -->
     <section>
-        <nav class="small-nav stack not-home">
-            <ul class="menu">
-                <a href="javascript:void(0)" class="closebtn"></a>
-                <li><button>New In</button></li>
-                <li><button>Seating</button></li>
-                <li><button>Desks & Tables</button></li>
-                <li><button>Storage</button></li>
-                <li><button>Furniture Ranges</button></li>
-                <li><button>Accessories</button></li>
-                <li><button>COVID-19 Products</button></li>
+        <!-- nav bar and menu -->
+        <div>
+            <!-- menu -->
+            <ul class="menu-one" id="this-menu-one">
+                <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+                <li><button id="1" onmouseover="openNavTwo(id)">New In</button></li>
+                <li><button id="2" onmouseover="openNavTwo(id)">Seating</button></li>
+                <li><button id="3" onmouseover="openNavTwo(id)">Desks & Tables</button></li>
+                <li><button id="4" onmouseover="openNavTwo(id)">Storage</button></li>
+                <li><button id="5" onmouseover="openNavTwo(id)">Furniture Ranges</button></li>
+                <li><button id="6" onmouseover="openNavTwo(id)">Accessories</button></li>
+                <li><button id="7" onmouseover="openNavTwo(id)">COVID-19 Products</button></li>
             </ul>
-            <ul class="menu">
+            <ul class="menu-two" id="this-menu-two">
+                <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
                 <li><a href="listings.html">Free Trial Chairs</a></li>
                 <li><a href="listings.html">Meeting Room</a></li>
                 <li><a href="listings.html">Executive</a></li>
@@ -32,61 +35,44 @@
                 <li><a href="listings.html">Industrial</a></li>
                 <li><a href="listings.html">Chair Components</a></li>
             </ul>
-            <div class="nav-small">
-                <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-                <a href="index.html">
-                    <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-                </a>
-                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-            </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
-        </nav>
-        <nav class="big-nav not-home">
-            <ul class="menu">
-                <a href="javascript:void(0)" class="closebtn"></a>
-                <li><button>New In</button></li>
-                <li><button>Seating</button></li>
-                <li><button>Desks & Tables</button></li>
-                <li><button>Storage</button></li>
-                <li><button>Furniture Ranges</button></li>
-                <li><button>Accessories</button></li>
-                <li><button>COVID-19 Products</button></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="listings.html">Free Trial Chairs</a></li>
-                <li><a href="listings.html">Meeting Room</a></li>
-                <li><a href="listings.html">Executive</a></li>
-                <li><a href="listings.html">Ergonomic</a></li>
-                <li><a href="listings.html">Visitor</a></li>
-                <li><a href="listings.html">Lounges and Ottomans</a></li>
-                <li><a href="listings.html">Hospitality</a></li>
-                <li><a href="listings.html">Industrial</a></li>
-                <li><a href="listings.html">Chair Components</a></li>
-            </ul>
-            <div class="nav-links" id="navLinksLeft">
-                <button><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-                <a href="index.html">
-                    <span>
+            <!-- nav bar -->
+            <nav class="small-nav stack not-home">
+                <div class="nav-small">
+                    <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                    <a href="index.html">
                         <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-                    </span>
-                </a>
-            </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
-            <div class="centre-vertical nav-links" id="navLinksRight">
-                <a id="contactUs" href="#">Contact Us</a>
-                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-            </div>
-        </nav>
+                    </a>
+                    <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                </div>
+                <div class="searchBarWrap">
+                    <input class="searchbar" type="search">
+                    <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+                </div>
+            </nav>
+            <nav class="big-nav not-home">
+                <div class="nav-links" id="navLinksLeft">
+                    <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                    <a href="index.html">
+                        <span>
+                            <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                        </span>
+                    </a>
+                </div>
+                <div class="searchBarWrap">
+                    <input class="searchbar" type="search">
+                    <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
+                </div>
+                <div class="centre-vertical nav-links" id="navLinksRight">
+                    <a id="contactUs" href="#">Contact Us</a>
+                    <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                </div>
+            </nav>
+        </div>
     </section>
     <section>
         <div class="top page-start sidebar-container">
             <div class="not-sidebar not-summary">
+                <!-- Checkout steps -->
                 <div class="cluster checkout-steps">
                     <p>Shipping</p>
                     <p>Payment</p>

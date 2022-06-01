@@ -56,24 +56,40 @@
     z-index: 5;
 }
 
-.menu-two{
-    padding-top: 9em;
-    z-index: 4;
-
-}
-
 .menu-one > li{
     padding-left: 2em;
     padding-bottom: 2em;
 }
 
+.menu-two{
+    z-index: 4;
+}
+
 .menu-two > li{
-    padding-left: 22em;
     padding-bottom: 2em;
 }
 
-.closebtn > .menuIcon{
+.close-menu-one > .menuIcon, .close-menu-two > .menuIcon{
     padding-left: 2em;
     margin-bottom: 2em;
 }
 
+.close-menu-two{
+    height: 0;
+}
+
+@media only screen and (min-width: 700px){
+    .menu-two{
+        padding-top: 9em;
+    }
+
+    .menu-two > li{
+        padding-left: 390px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .menu-two > li{
+        padding-left: 2em;
+    }
+}
