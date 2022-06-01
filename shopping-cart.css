@@ -1,6 +1,7 @@
 .cart-item-img{
     height: 12em;
-    width: 12em;
+    max-width: 12em;
+    object-fit: cover;
 }
 
 #trash{
@@ -17,7 +18,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: start;
-    margin-right: 1em;
 }
 
 .right-wrapper{
@@ -28,6 +28,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
+    grid-gap: 8%;
     row-gap: 2em;
 }
 

@@ -103,6 +103,13 @@ td{
     flex-direction: row;
 }
 
+.cluster-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    flex-direction: row;
+}
+
 .stack{
     display: flex;
     flex-direction: column;
@@ -118,7 +125,6 @@ td{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 6em;
 }
 
 .sidebar{
@@ -127,20 +133,20 @@ td{
 
 .not-sidebar{
     flex-basis: 0;
-    flex-grow: 10;
+    flex-grow: 999;
     min-width: 25%;
 }
 
-.sidebar.summary{
-    flex-basis: 33%;
+.cart > .not-sidebar{
+    min-width: 70%;
 }
 
-.sidebar.trending, .sidebar.features, .sidebar.product-info{
+.sidebar.summary-wrapper{
+    flex-basis: 30%;
+}
+
+.sidebar.trending, .sidebar.features, .productWrapper > .sidebar{
     flex-basis: 50%;
-}
-
-.not-sidebar + .sidebar {
-    margin-left: 2.5em;
 }
 
 .swap-position{
@@ -182,7 +188,7 @@ td{
 }
 
 .page-heading{
-    padding: 3em 2.5rem 2.5em 2.5rem;
+    padding: 4em 2.5rem 2.5em 2.5rem;
 }
 
 .back{
@@ -199,6 +205,10 @@ td{
 .margin{
     margin-left: 3rem;
     margin-right: 3rem;
+}
+
+.margin-left{
+    margin-left: 3rem;
 }
 
 .trending-image{
@@ -327,10 +337,19 @@ td{
 }
 
 /* summary */
+.summary-wrapper, .not-summary{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
 .summary{
     border-radius: 1.5em;
     padding: 2em;
     width: 100%;
+}
+
+.summary-img{
+    align-self: center;
 }
 
 .proceed{
@@ -339,8 +358,6 @@ td{
 }
 
 .summary-img{
-    height: 5.5em;
-    width: 5.5em;
     padding: 0.25em;
     border-radius: 0.5em;
     margin-right: 1em;
@@ -436,6 +453,10 @@ td{
 
     nav{
         height: 8em;
+    }
+
+    .page-heading{
+        padding: 6em 2.5rem 2.5em 2.5rem;
     }
 
     .searchBarWrap{

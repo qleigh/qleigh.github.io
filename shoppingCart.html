@@ -10,7 +10,7 @@
 <body>
     <!-- header -->
     <section>
-        <nav class="small-nav stack">
+        <nav class="small-nav stack not-home">
             <ul class="menu">
                 <a href="javascript:void(0)" class="closebtn"></a>
                 <li><a href="#">New In</a></li>
@@ -44,7 +44,7 @@
                 <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
             </div>
         </nav>
-        <nav class="big-nav">
+        <nav class="big-nav not-home">
             <ul class="menu">
                 <a href="javascript:void(0)" class="closebtn"></a>
                 <li><a href="#">New In</a></li>
@@ -85,72 +85,74 @@
         </nav>
         <h1 class="blue-background page-heading white-text">Shopping Cart</h1>
     </section>
-    <section class="top sidebar-container margin">
-        <div class="not-sidebar">
-            <div class="cart-grid">
-                <div class="cart-img row-one centre-vertical">
-                    <img id="trash" src="icons/trash.svg" alt="Remove">
-                    <img class="cart-item-img" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                </div>
-                <div class="cart-item-name row-one stack">
-                    <h4>Chase Meeting Room Chair</h4>
-                    <p>Terracotta</p>
-                    <p>$458 / per item</p>
-                </div>
-                <div class="cart-item-price row-one table-price stack right-align">
-                    <p>$916</p>
-                    <div class="cluster">
-                        <p>Qty: 2</p>
-                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+    <section>
+        <div class="top sidebar-container cart">
+            <div class="not-sidebar not-summary">
+                <div class="cart-grid">
+                    <div class="cart-img row-one centre-vertical">
+                        <img id="trash" src="icons/trash.svg" alt="Remove">
+                        <img class="cart-item-img" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                    </div>
+                    <div class="cart-item-name row-one stack">
+                        <h4>Chase Meeting Room Chair</h4>
+                        <p>Terracotta</p>
+                        <p>$458 / per item</p>
+                    </div>
+                    <div class="cart-item-price row-one table-price stack right-align">
+                        <p>$916</p>
+                        <div class="cluster-right">
+                            <p>Qty: 2</p>
+                            <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                        </div> 
                     </div> 
-                </div> 
-                <div class="cart-img row-two centre-vertical">
-                    <img id="trash" src="icons/trash.svg" alt="Remove">
-                    <img class="cart-item-img" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
-                </div>
-                <div class="cart-item-name row-two stack">
-                        <h4>Edge Round Meeting Table</h4>
-                        <p>90cm x 73cm</p>
-                        <p>$211 / per item</p>
-                </div>
-                <div class="cart-item-price row-two table-price stack right-align">
-                    <p>$211</p>
-                    <div class="cluster">
-                        <p>Qty: 1</p>
-                        <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                    <div class="cart-img row-two centre-vertical">
+                        <img id="trash" src="icons/trash.svg" alt="Remove">
+                        <img class="cart-item-img" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                    </div>
+                    <div class="cart-item-name row-two stack">
+                            <h4>Edge Round Meeting Table</h4>
+                            <p>90cm x 73cm</p>
+                            <p>$211 / per item</p>
+                    </div>
+                    <div class="cart-item-price row-two table-price stack right-align">
+                        <p>$211</p>
+                        <div class="cluster-right">
+                            <p>Qty: 1</p>
+                            <img class="down-caret" src="icons/caret-down-bold-black.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <a class="back" href="#">
-                <img src="icons/caret-left-bold.svg" alt="Back">
-                <p>Back</p>
-            </a>
-        </div>
-        <!-- Summary -->
-        <div class="stack sidebar">
-            <div class="summary">
-                <h3>Summary</h3>
-                <table>
-                    <tr>
-                        <td class="row-name">GST (incl.)</td>
-                        <td class="table-price">$106.63</td>
-                    </tr>
-                    <tr>
-                        <td class="row-name">Subtotal</td>
-                        <td class="table-price">$1173.00</td>
-                    </tr>
-                    <tr class="semibold">
-                        <td class="row-name">Total</td>
-                        <td class="table-price">$1173.00</td>
-                    </tr>
-                </table>
-                <a class="cluster blue-background proceed" href="#">
-                    <p>Proceed to Checkout</p>
-                    <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
-                </a>
+            <!-- Summary -->
+            <div class="stack sidebar summary-wrapper">
+                <div class="summary">
+                    <h3>Summary</h3>
+                    <table>
+                        <tr>
+                            <td class="row-name">GST (incl.)</td>
+                            <td class="table-price">$106.63</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name">Subtotal</td>
+                            <td class="table-price">$1173.00</td>
+                        </tr>
+                        <tr class="semibold">
+                            <td class="row-name">Total</td>
+                            <td class="table-price">$1173.00</td>
+                        </tr>
+                    </table>
+                    <a class="cluster blue-background proceed" href="#">
+                        <p>Proceed to Checkout</p>
+                        <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
+                    </a>
+                </div>
+                <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
             </div>
-            <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
         </div>
+        <a class="back margin" href="#">
+            <img src="icons/caret-left-bold.svg" alt="Back">
+            <p>Back</p>
+        </a>
     </section>
     <!-- footer -->
     <footer>

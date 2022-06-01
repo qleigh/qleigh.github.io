@@ -11,9 +11,13 @@ input[type="number"] {
     border-radius: 0.5em;
 }
 
+.features{
+    margin-bottom: 2em;
+}
+
 .features > .box{
-    height: 6em;
-    padding: 3%;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .productWrapper{
@@ -75,11 +79,7 @@ input[type="number"] {
     padding: 1em;
 }
 
-.button-wrapper{
-    margin-top: 2em;
-}
-
-.product-info > * + *{
+.button-wrapper, .product-info > * + *{
     margin-top: 2em;
 }
 
@@ -106,7 +106,7 @@ input[type="number"] {
     padding: 2em;
 }
 
-.feature + .feature{
+.features > li + li, .delivery-text > p+p{
     margin-top: 1em;
 }
 
@@ -114,10 +114,8 @@ input[type="number"] {
     width: 100%;
     max-width: 20em;
     height: auto;
-}
-
-.delivery-text > p+p{
-    margin-top: 1em;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 .stars > img{
