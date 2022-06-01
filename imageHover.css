@@ -42,7 +42,7 @@
 }
 
 #peer-chair:hover{
-    background-image: url("images/PeerArmChair.jpeg");
+    background-image: url("images/PeerArmChairHover.jpeg");
 }
 
 #bondi-chair{
@@ -117,3 +117,26 @@
     background-image: url("images/HunterChairHover.webp");
 }
 
+#nerang-chair{
+    background-image: url("images/NerangOfficeChair.webp");
+}
+
+#nerang-chair:hover{
+    background-image: url("images/NerangOfficeChairHover.webp");
+}
+
+#alpha-chair{
+    background-image: url("images/AlphaVisitorChair.webp");
+}
+
+#alpha-chair:hover{
+    background-image: url("images/AlphaVisitorChairHover.webp");
+}
+
+#apollo-chair{
+    background-image: url("images/ApolloVisitorChair.jpeg");
+}
+
+#apollo-chair:hover{
+    background-image: url("images/ApolloVisitorChairHover.jpegs");
+}
