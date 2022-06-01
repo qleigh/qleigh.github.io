@@ -147,11 +147,11 @@ td{
 }
 
 .not-summary{
-    min-width: 55rem;
+    min-width: 45rem;
 }
 
 .sidebar.summary-wrapper{
-    flex-basis: 30%;
+    flex-basis: 35%;
 }
 
 .sidebar.trending, .sidebar.features, .productWrapper > .sidebar{
@@ -336,6 +336,8 @@ td{
 
 .confirmation{
     width: 75%;
+    margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 .confirmation > p + p{
@@ -468,7 +470,7 @@ td{
 
 @media only screen and (max-width: 1000px){
     .not-summary{
-        min-width: 55rem;
+        min-width: 42rem;
     }
 
     .top{

@@ -10,7 +10,7 @@
 <body>
     <!-- header -->
     <section>
-        <nav class="small-nav stack">
+        <nav class="small-nav stack not-home">
             <ul class="menu">
                 <a href="javascript:void(0)" class="closebtn"></a>
                 <li><a href="#">New In</a></li>
@@ -44,7 +44,7 @@
                 <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
             </div>
         </nav>
-        <nav class="big-nav">
+        <nav class="big-nav not-home">
             <ul class="menu">
                 <a href="javascript:void(0)" class="closebtn"></a>
                 <li><a href="#">New In</a></li>
@@ -84,8 +84,8 @@
             </div>
         </nav>
     </section>
-    <section class="top sidebar-container margin">
-        <div class="top not-sidebar">
+    <section class="top page-start sidebar-container">
+        <div class="not-sidebar not-summary">
             <div class="cluster checkout-steps">
                 <p>Shipping</p>
                 <p>Payment</p>
@@ -100,56 +100,62 @@
             </div>
         </div>
         <!-- Summary -->
-        <div class="top stack sidebar">
-            <div class="summary">
-                <h3>Summary</h3>
-                <table>
-                    <tr>
-                        <td class="row-name">GST (incl.)</td>
-                        <td class="table-price">$106.63</td>
-                    </tr>
-                    <tr>
-                        <td class="row-name">Subtotal</td>
-                        <td class="table-price">$1173.00</td>
-                    </tr>
-                    <tr>
-                        <td class="row-name">Shipping</td>
-                        <td class="table-price">$39.00</td>
-                    </tr>
-                    <tr class="semibold">
-                        <td class="row-name">Total</td>
-                        <td class="table-price">$1212.00</td>
-                    </tr>
-                </table>
-                <div class="cart-grid">
-                    <img class="summary-img row-one" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
-                    <div class="cart-item-name row-one stack">
-                        <p class="semibold">Chase Meeting Room Chair</p>
-                        <p class="little">Terracotta</p>
-                        <p class="little">$458 / per item</p>
-                    </div>    
-                    <div class="cart-item-price row-one table-price stack right-align">
-                        <p>$916</p>
-                        <p class="little">Qty: 2</p>
-                    </div>
-                    <img class="summary-img row-two" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
-                    <div class="cart-item-name row-two stack">
-                        <p class="semibold">Edge Round Meeting Table</p>
-                        <p class="little">90cm x 73cm</p>
-                        <p class="little">$211 / per item</p>
-                    </div>    
-                    <div class="cart-item-price row-two table-price stack right-align">
-                        <p>$211</p>
-                        <p class="little">Qty: 1</p>
-                    </div>
-                </div>
-            </div>
-            <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
-            <a class="cluster proceed" href="#">
-                <p class="medium">Back to Home</p>
+        <div class="stack sidebar summary-wrapper">
+            <a class="cluster proceed start" href="#">
+                <p class="medium">Back to Homepage</p>
                 <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
             </a>
-    </div>
+            <div class="summary">
+                    <h3>Summary</h3>
+                    <table>
+                        <tr>
+                            <td class="row-name">GST (incl.)</td>
+                            <td class="table-price">$106.63</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name">Subtotal</td>
+                            <td class="table-price">$1173.00</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name">Shipping</td>
+                            <td class="table-price">$39.00</td>
+                        </tr>
+                        <tr class="semibold">
+                            <td class="row-name">Total</td>
+                            <td class="table-price">$1212.00</td>
+                        </tr>
+                    </table>
+                    <div class="cart-grid">
+                        <img class="summary-img row-one" src="images/ChaseMeetingRoomChair.webp" alt="Chase Meeting Room Chair">
+                        <div class="cart-item-name row-one stack">
+                            <p class="semibold">Chase Meeting Room Chair</p>
+                            <p class="little">Terracotta</p>
+                            <p class="little">$458 / per item</p>
+                        </div>    
+                        <div class="cart-item-price row-one table-price stack right-align">
+                            <p>$916</p>
+                            <p class="little">Qty: 2</p>
+                        </div>
+                        <img class="summary-img row-two" src="images/EdgeMeetingTable.webp" alt="Edge Round Meeting Table">
+                        <div class="cart-item-name row-two stack">
+                            <p class="semibold">Edge Round Meeting Table</p>
+                            <p class="little">90cm x 73cm</p>
+                            <p class="little">$211 / per item</p>
+                        </div>    
+                        <div class="cart-item-price row-two table-price stack right-align">
+                            <p>$211</p>
+                            <p class="little">Qty: 1</p>
+                        </div>
+                    </div>
+            </div>
+            <div>
+                <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
+                <a class="cluster proceed end" href="#">
+                    <p class="medium">Back to Homepage</p>
+                    <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
+                </a>
+            </div>
+        </div>
     </section>
     <!-- footer -->
     <footer>
