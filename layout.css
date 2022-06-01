@@ -137,8 +137,8 @@ td{
     min-width: 25%;
 }
 
-.cart > .not-sidebar{
-    min-width: 70%;
+.not-summary{
+    min-width: 55rem;
 }
 
 .sidebar.summary-wrapper{
@@ -479,6 +479,8 @@ td{
         z-index: 1;
     }
 }
+
+
 
 @media only screen and (max-width: 700px){
     :root{
