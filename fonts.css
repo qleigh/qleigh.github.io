@@ -4,6 +4,7 @@
 :root{
     --font-body: 'Montserrat', sans-serif;
 
+    --hero-text: 3.5rem;
     --text-xxl: 2.5rem;
     --text-xl: 2.25rem;
     --text-lg: 1.75rem;
@@ -99,7 +100,15 @@ footer{
     display: inline;
 }
 
+.heroText{
+    font-size: var(--hero-text);
+}
+
 @media only screen and (max-width: 700px){
+    .heroText{
+        font-size: var(--text-xxl);
+    }
+
     :root{
         font-size: 12px;
     }
@@ -109,7 +118,13 @@ footer{
     }
 }
 
-.menu-one > li, .menu-two > li{
-    font-size: var(--text-md);
+.menu-one > ul > li, .menu-two > li{
+    font-size: var(--text-sm);
     font-weight: 500;
+}
+
+.menu-links{
+    font-size: var(--text-sm);
+    font-weight: 400;
+    line-height: 2em;
 }

@@ -12,19 +12,34 @@
     <!-- nav bar and menu -->
     <div>
         <!-- menu -->
-        <ul class="menu-one" id="this-menu-one">
-            <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-            <li><button onmouseover="openNavTwo()">New In</button></li>
-            <li><button onmouseover="openNavTwo()">Seating</button></li>
-            <li><button onmouseover="openNavTwo()">Desks & Tables</button></li>
-            <li><button onmouseover="openNavTwo()">Storage</button></li>
-            <li><button onmouseover="openNavTwo()">Furniture Ranges</button></li>
-            <li><button onmouseover="openNavTwo()">Accessories</button></li>
-            <li><button onmouseover="openNavTwo()">COVID-19 Products</button></li>
-        </ul>
-        <ul class="menu-two" id="this-menu-two">
-            <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-            <li><a href="listings.html">Free Trial Chairs</a></li>
+        <div class="menu-one" id="product-menu-one">
+            <ul>
+                <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav('product-menu-one', 'product-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+                <li><button class="semibold" onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">New In</button></li>
+                <li><button onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">Seating</button></li>
+                <li><button onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">Desks & Tables</button></li>
+                <li><button onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">Storage</button></li>
+                <li><button onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">Furniture Ranges</button></li>
+                <li><button onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">Accessories</button></li>
+                <li><button onclick="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')" onmouseover="openNavTwo('product-menu-one', 'product-menu-two', 'product-close-menu')">COVID-19 Products</button></li>
+            </ul>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-links-wrapper">
+                    <img src="icons/facebook-fill.svg" alt="Facebook logo">
+                    <img src="icons/youtube-fill.svg" alt="Youtube logo">
+                    <img src="icons/twitter-fill.svg" alt="Twitter logo">
+                </div>
+            </div>
+        </div>
+        
+        <ul class="menu-two" id="product-menu-two">
+            <a href="javascript:void(0)" class="close-menu-two" id="product-close-menu" onclick="closeNav('product-menu-one', 'product-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+            <li><a class="semibold" href="listings.html">Free Trial Chairs</a></li>
             <li><a href="listings.html">Meeting Room</a></li>
             <li><a href="listings.html">Executive</a></li>
             <li><a href="listings.html">Ergonomic</a></li>
@@ -37,40 +52,40 @@
         <!-- nav bar -->
         <nav class="small-nav stack not-home">
             <div class="nav-small">
-                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <button onclick="openNav('product-menu-one')"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
                 <a href="index.html">
                     <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                 </a>
-                <div class="cluster">
-                    <a id="account" href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                    <a id="cart" href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                <div class="cluster small-nav-right">
+                    <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
                 </div>
             </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
+            <form class="searchBarWrap" action="listings.html">
+                <input id="searchInput" class="searchbar"type="search">
+                <a href="listings.html"><img class="searchIcon cart" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+            </form>
         </nav>
         <nav class="big-nav not-home">
             <div class="nav-links" id="navLinksLeft">
-                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <button onclick="openNav('product-menu-one')"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
                 <a href="index.html">
                     <span>
                         <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                     </span>
                 </a>
             </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
+                <form class="searchBarWrap" action="listings.html">
+                    <input id="searchInput" class="searchbar"type="search">
+                    <a href="listings.html"><img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+                </form>
             <div class="centre-vertical nav-links" id="navLinksRight">
                 <a id="contactUs" href="#">Contact Us</a>
                 <a href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
             </div>
         </nav>
-    </div>duct info -->
+    </div>
+    <!-- product info -->
     <section class="top">
         <div class="productWrapper sidebar-container">
             <!-- Images -->
@@ -105,19 +120,22 @@
                             <img class="configuration-img" id="23" onclick="selectChaseStyle(id)" src="images/ChaseChairMesh.jpeg" alt="Chase Meeting Room Chair">
                         </div>
                     </div>
-                    <div class="button-wrapper cluster">
-                        <div class="blue-background product-btn cluster">
-                            <p class="white-text medium">Quantity</p>
-                            <div class="cluster">
-                                <input type="image" src="icons/minus-bold.svg" class="minus" data-field="quantity">
-                                <input type="number" step="1" min="0" max="" value="1" name="quantity" class="quantity-field">
-                                <input type="image" src="icons/plus-bold.svg" class="plus" data-field="quantity">
+                    <div class="button-wrapper">
+                        <div class="cluster">
+                            <div class="blue-background product-btn cluster">
+                                <p class="white-text medium">Quantity</p>
+                                <div class="cluster">
+                                    <input type="image" src="icons/minus-bold.svg" class="minus" data-field="quantity">
+                                    <input type="number" step="1" min="0" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="image" src="icons/plus-bold.svg" class="plus" data-field="quantity">
+                                </div>
                             </div>
+                            <button onclick="addToCart(1)" class="blue-background product-btn cluster add-to-cart">
+                                <p class="white-text medium">Add to cart</p>
+                                <img class="plus" src="icons/plus-bold.svg" alt="">
+                            </button>
                         </div>
-                        <button class="blue-background product-btn cluster add-to-cart">
-                            <p class="white-text medium">Add to cart</p>
-                            <img class="plus" src="icons/plus-bold.svg" alt="">
-                        </button>
+                        <p class="semibold added-text" id="chase-added-text"></p>
                     </div>
                 </div>
             </div>
@@ -127,14 +145,13 @@
     <section class="white-text">
         <!-- tab links -->
         <div class="tab medium">
-            <button class="tablinks first" onclick="">Details</button>
-            <button class="tablinks" onclick="">Delivery</button>
-            <button class="tablinks" onclick="">Reviews</button>
+            <button id="chase-details" class="tablinks first" onclick="chaseTabs(id)">Details</button>
+            <button id="chase-delivery" class="tablinks" onclick="chaseTabs(id)">Delivery</button>
+            <button id="chase-reviews" class="tablinks" onclick="chaseTabs(id)">Reviews</button>
         </div>
-        
         <!-- tab content -->
         <!-- Details -->
-        <div id="Details" class="tab-content blue-background cluster">
+        <div id="chase-details-expanded" class="tab-content blue-background cluster">
                 <ul class="features">
                     <li>Weight rating: 130kg</li>
                     <li>User weight tension control</li>
@@ -146,7 +163,7 @@
             <img class="measurements" src="images/ChaseChairDimensions.webp" alt="Chase Meeting Room Chair Dimensions">
         </div>
         <!-- Delivery -->
-        <div id="Delivery" class="tab-content none">
+        <div id="chase-delivery-expanded" class="tab-content none">
             <div class="delivery-text">
                 <p>Delivery only, no pick-up available on this item.</p>
                 <p>Deliveries to WA for this chair will take approx. 5-7 business days</p>
@@ -154,7 +171,7 @@
             </div>
         </div>
         <!-- Reviews -->
-        <div id="Reviews" class="tab-content none">
+        <div id="chase-reviews-expanded" class="tab-content none">
             <div class="review">
                 <div>
                     <div class="stars">
@@ -224,7 +241,7 @@
         <h2 class="centre-text">More Like This</h2>
         <div class="image-row row-padding">
             <div class="centre-text">
-                <a href="product.html">
+                <a href="product2.html">
                     <div class="clickable-img" id="bondi-chair"></div>
                     <p>Bondi Chair</p>
                 </a>
@@ -233,7 +250,7 @@
                 </div>
             </div>
             <div class="centre-text">
-                <a href="product.html">
+                <a href="product2.html">
                     <div class="clickable-img" id="valentina-chair"></div>
                     <p>Valentina Medium Back Chair</p>
                 </a>
@@ -243,7 +260,7 @@
                 </div>
             </div>
             <div class="centre-text">
-                <a href="product.html">
+                <a href="product2.html">
                     <div class="clickable-img" id="hunter-chair"></div>
                     <p>Hunter Medium Back Chair</p>
                 </a>

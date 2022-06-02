@@ -3,6 +3,10 @@ html {
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden
+}
+
 img{
     max-width: 100%;
 }
@@ -257,28 +261,6 @@ td{
     margin-bottom: 0.5em;
 }
 
-.footer-icons{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.nav-logo {
-    height: 1.75em;
-}
-
-.footer-logo{
-    height: 3em;
-}
-
-.social-links-wrapper{
-    margin-top: 1em;
-}
-
-.social-links-wrapper > img + img{
-    margin-left: 0.5em;
-}
-
 .down-caret{
     width: 1em;
     margin-left: 0.25em;
@@ -351,6 +333,10 @@ td{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.trending-wrapper > * + *{
+    margin-top: 2em;
 }
 
 #navLinksLeft {
@@ -427,6 +413,10 @@ td{
 }
 
 @media only screen and (max-width: 1000px){
+    .page-start{
+        margin-top: 4em;
+    }
+
     #account + #cart{
         margin-left: 1em;
     }
@@ -480,6 +470,14 @@ td{
         min-width: 40rem;
     }
 
+    .top.page-start{
+        margin-top: 12em;
+    }
+
+    .proceed.start{
+        width: 100%;
+    }
+
     .proceed.end{
         display: none;
     }
@@ -491,14 +489,6 @@ td{
     .summary-wrapper, .not-summary{
         padding-left: 1.5em;
         padding-right: 1.5em;
-    }
-
-    .page-start{
-        margin-top: 1em;
-    }
-
-    .top.page-start{
-        margin-top: 12em;
     }
 
     .section-title{
@@ -546,6 +536,6 @@ td{
 
 @media only screen and (max-width: 500px){
     .not-summary{
-        min-width: 25rem;
+        min-width: 28rem;
     }
 }

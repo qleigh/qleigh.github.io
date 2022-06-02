@@ -12,67 +12,81 @@
     <!-- header -->
     <section>
         <!-- nav bar and menu -->
-        <div>
-            <!-- menu -->
-            <ul class="menu-one" id="this-menu-one">
-                <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-                <li><button onmouseover="openNavTwo()">New In</button></li>
-                <li><button onmouseover="openNavTwo()">Seating</button></li>
-                <li><button onmouseover="openNavTwo()">Desks & Tables</button></li>
-                <li><button onmouseover="openNavTwo()">Storage</button></li>
-                <li><button onmouseover="openNavTwo()">Furniture Ranges</button></li>
-                <li><button onmouseover="openNavTwo()">Accessories</button></li>
-                <li><button onmouseover="openNavTwo()">COVID-19 Products</button></li>
+    <div>
+        <!-- menu -->
+        <div class="menu-one" id="shipping-menu-one">
+            <ul>
+                <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav('shipping-menu-one', 'shipping-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+                <li><button class="semibold" onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">New In</button></li>
+                <li><button onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">Seating</button></li>
+                <li><button onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">Desks & Tables</button></li>
+                <li><button onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">Storage</button></li>
+                <li><button onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">Furniture Ranges</button></li>
+                <li><button onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">Accessories</button></li>
+                <li><button onclick="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')" onmouseover="openNavTwo('shipping-menu-one', 'shipping-menu-two', 'shipping-close-menu')">COVID-19 Products</button></li>
             </ul>
-            <ul class="menu-two" id="this-menu-two">
-                <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-                <li><a href="listings.html">Free Trial Chairs</a></li>
-                <li><a href="listings.html">Meeting Room</a></li>
-                <li><a href="listings.html">Executive</a></li>
-                <li><a href="listings.html">Ergonomic</a></li>
-                <li><a href="listings.html">Visitor</a></li>
-                <li><a href="listings.html">Lounges and Ottomans</a></li>
-                <li><a href="listings.html">Hospitality</a></li>
-                <li><a href="listings.html">Industrial</a></li>
-                <li><a href="listings.html">Chair Components</a></li>
-            </ul>
-            <!-- nav bar -->
-            <nav class="small-nav stack not-home">
-                <div class="nav-small">
-                    <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-                    <a href="index.html">
-                        <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-                    </a>
-                    <div class="cluster">
-                        <a id="account" href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                        <a id="cart" href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-                    </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-links-wrapper">
+                    <img src="icons/facebook-fill.svg" alt="Facebook logo">
+                    <img src="icons/youtube-fill.svg" alt="Youtube logo">
+                    <img src="icons/twitter-fill.svg" alt="Twitter logo">
                 </div>
-                <div class="searchBarWrap">
-                    <input id="searchInput" class="searchbar" type="search" onchange="search(searchInput)">
-                    <a href="listings.html"><img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
-                </div>
-            </nav>
-            <nav class="big-nav not-home">
-                <div class="nav-links" id="navLinksLeft">
-                    <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
-                    <a href="index.html">
-                        <span>
-                            <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
-                        </span>
-                    </a>
-                </div>
-                <div class="searchBarWrap">
-                    <input class="searchbar" type="search">
-                    <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-                </div>
-                <div class="centre-vertical nav-links" id="navLinksRight">
-                    <a id="contactUs" href="#">Contact Us</a>
-                    <a href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                    <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-                </div>
-            </nav>
+            </div>
         </div>
+        
+        <ul class="menu-two" id="shipping-menu-two">
+            <a href="javascript:void(0)" class="close-menu-two" id="shipping-close-menu" onclick="closeNav('shipping-menu-one', 'shipping-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+            <li><a class="semibold" href="listings.html">Free Trial Chairs</a></li>
+            <li><a href="listings.html">Meeting Room</a></li>
+            <li><a href="listings.html">Executive</a></li>
+            <li><a href="listings.html">Ergonomic</a></li>
+            <li><a href="listings.html">Visitor</a></li>
+            <li><a href="listings.html">Lounges and Ottomans</a></li>
+            <li><a href="listings.html">Hospitality</a></li>
+            <li><a href="listings.html">Industrial</a></li>
+            <li><a href="listings.html">Chair Components</a></li>
+        </ul>
+        <!-- nav bar -->
+        <nav class="small-nav stack not-home">
+            <div class="nav-small">
+                <button onclick="openNav('shipping-menu-one')"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <a href="index.html">
+                    <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                </a>
+                <div class="cluster small-nav-right">
+                    <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                </div>
+            </div>
+            <form class="searchBarWrap" action="listings.html">
+                <input id="searchInput" class="searchbar"type="search">
+                <a href="listings.html"><img class="searchIcon cart" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+            </form>
+        </nav>
+        <nav class="big-nav not-home">
+            <div class="nav-links" id="navLinksLeft">
+                <button onclick="openNav('shipping-menu-one')"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <a href="index.html">
+                    <span>
+                        <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
+                    </span>
+                </a>
+            </div>
+                <form class="searchBarWrap" action="listings.html">
+                    <input id="searchInput" class="searchbar"type="search">
+                    <a href="listings.html"><img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+                </form>
+            <div class="centre-vertical nav-links" id="navLinksRight">
+                <a id="contactUs" href="#">Contact Us</a>
+                <a href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
+                <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+            </div>
+        </nav>
+    </div>
     </section>
     <section>
         <div class="top page-start sidebar-container">
@@ -86,11 +100,11 @@
                 </div>
                 <h1>Shipping</h1>
                 <!-- Form -->
-                <form class="form" id="shipping-form">
+                <form action="payment.html" class="form" id="shipping-form" onsubmit="return(validateShippingForm());">
                     <div class="adjacent-input input-group">
                         <div class="stack grid-left">
                             <label for="firstName">First Name*</label>
-                            <input type="text" id="firstName">
+                            <input type="text" id="firstName" name="firstName">
                         </div>
                         <div class="stack grid-right">
                             <label for="lastName">Last Name*</label>
@@ -113,28 +127,28 @@
                     <div class="radio-button-group">
                         <p>Delivery/Pickup*</p>
                         <div>
-                            <input type="radio" id="clickAndCollect" name="delivery" value="Click and Collect">
-                            <label for="clickAndCollect">Click and Collect</label>
+                            <input type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery" checked>
+                            <label for="flatPackDelivery">Flat Pack Delivery</label>
                         </div>
                         <div>
-                            <input type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery">
-                            <label for="flatPackDelivery">Flat Pack Delivery</label>
+                            <input type="radio" id="clickAndCollect" name="delivery" value="Click and Collect">
+                            <label for="clickAndCollect">Click and Collect</label>
                         </div>
                         <div>
                             <input type="radio" id="deliveryAndAssembly" name="delivery" value="Delivery and Assembly">
                             <label for="deliveryAndAssembly">Delivery and Assembly</label>
                         </div>   
                     </div>
-                    <div class="radio-button-group location">
+                    <div class="radio-button-group">
                         <p>Delivery Location*</p>
+                        <div>
+                            <input type="radio" id="commercialAddress" name="location" value="Commercial Address" checked>
+                            <label for="commercialAddress">Commercial Address</label>
+                        </div> 
                         <div>
                             <input type="radio" id="residentialAddress" name="location" value="Residential Address">
                             <label for="residentialAddress">Residential Address</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="commercialAddress" name="location" value="Commercial Address">
-                            <label for="commercialAddress">Commercial Address</label>
-                        </div>  
+                        </div> 
                     </div>
                     <div class="input-group">
                         <label for="additionalInfo">Comments and additional delivery info</label>
@@ -144,10 +158,10 @@
             </div>
             <!-- Summary -->
             <div class="stack sidebar summary-wrapper">
-                <a class="cluster proceed start" href="payment.html">
+                <button type="submit" form="shipping-form" class="cluster proceed start">
                     <p class="medium">Proceed to Payment</p>
                     <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
-                </a>
+                </button>
                 <div class="summary">
                         <h3>Summary</h3>
                         <table>

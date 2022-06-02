@@ -6,25 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="rectangle"></div>
     <!-- nav bar and menu -->
     <div>
         <!-- menu -->
-        <ul class="menu-one" id="this-menu-one">
-            <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-            <li><button onmouseover="openNavTwo()">New In</button></li>
-            <li><button onmouseover="openNavTwo()">Seating</button></li>
-            <li><button onmouseover="openNavTwo()">Desks & Tables</button></li>
-            <li><button onmouseover="openNavTwo()">Storage</button></li>
-            <li><button onmouseover="openNavTwo()">Furniture Ranges</button></li>
-            <li><button onmouseover="openNavTwo()">Accessories</button></li>
-            <li><button onmouseover="openNavTwo()">COVID-19 Products</button></li>
-        </ul>
-        <ul class="menu-two" id="this-menu-two">
-            <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-            <li><a href="listings.html">Free Trial Chairs</a></li>
+        <div class="menu-one" id="index-menu-one">
+            <ul>
+                <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav('index-menu-one', 'index-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+                <li><button class="semibold" onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">New In</button></li>
+                <li><button onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">Seating</button></li>
+                <li><button onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">Desks & Tables</button></li>
+                <li><button onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">Storage</button></li>
+                <li><button onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">Furniture Ranges</button></li>
+                <li><button onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">Accessories</button></li>
+                <li><button onclick="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')" onmouseover="openNavTwo('index-menu-one', 'index-menu-two', 'index-close-menu')">COVID-19 Products</button></li>
+            </ul>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-links-wrapper">
+                    <img src="icons/facebook-fill.svg" alt="Facebook logo">
+                    <img src="icons/youtube-fill.svg" alt="Youtube logo">
+                    <img src="icons/twitter-fill.svg" alt="Twitter logo">
+                </div>
+            </div>
+        </div>
+        <ul class="menu-two" id="index-menu-two">
+            <a href="javascript:void(0)" class="close-menu-two" id="index-close-menu" onclick="closeNav('index-menu-one', 'index-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+            <li><a class="semibold" href="listings.html">Free Trial Chairs</a></li>
             <li><a href="listings.html">Meeting Room</a></li>
             <li><a href="listings.html">Executive</a></li>
             <li><a href="listings.html">Ergonomic</a></li>
@@ -35,40 +50,38 @@
             <li><a href="listings.html">Chair Components</a></li>
         </ul>
         <!-- nav bar -->
-        <nav class="small-nav stack not-home">
+        <nav class="small-nav stack">
             <div class="nav-small">
-                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <button onclick="openNav(document.getElementById('index-menu-one').id)"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
                 <a href="#">
                     <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                 </a>
-                <div class="cluster">
-                    <a id="account" href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                    <a id="cart" href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                <div class="cluster small-nav-right">
+                    <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
                 </div>
             </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
+            <form class="searchBarWrap" action="listings.html">
+                <input id="searchInput" class="searchbar"type="search">
+                <a href="listings.html"><img class="searchIcon cart" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+            </form>
         </nav>
-        <nav class="big-nav not-home">
+        <nav class="big-nav">
             <div class="nav-links" id="navLinksLeft">
-                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <button onclick="openNav(document.getElementById('index-menu-one').id)"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
                 <a href="#">
                     <span>
                         <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                     </span>
                 </a>
             </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
+                <form class="searchBarWrap" action="listings.html">
+                    <input id="searchInput" class="searchbar"type="search">
+                    <a href="listings.html"><img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+                </form>
             <div class="centre-vertical nav-links" id="navLinksRight">
                 <a id="contactUs" href="#">Contact Us</a>
                 <a href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
-            </div>
+                <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
         </nav>
     </div>
     <!-- hero header -->
@@ -83,7 +96,7 @@
         <h2 class="centre-text">Shop Our Newest Range</h2>
         <div class="row-padding image-row">
             <div>
-                <a href="product.html">
+                <a href="product2.html">
                     <div class="clickable-img" id="link-table"></div>
                     <p class="centre-text">Link Multi-purpose Table</p>
                 </a>
@@ -103,7 +116,7 @@
                 </div>
             </div>
             <div>
-                <a href="product.html">
+                <a href="product2.html">
                     <div class="clickable-img" id="seychelles-bookcase"></div>
                     <p class="centre-text">Seychelles Bookcase</p>
                 </a>
@@ -122,12 +135,12 @@
     <!-- what's trending -->
     <section>
         <h2 class="centre-text">What's Trending</h2>
-        <div class="stack">
+        <div class="stack trending-wrapper">
             <div class="centre-vertical trending sidebar-container">
                 <div class="stack left-box box centre-text sidebar">
                     <h3>Bianca Chair and Vogue Coffee Table Package</h3>
                     <p>Mix and match the colours of the Bianca Chair and Vogue Coffee Table to suit the style of your space</p>
-                    <button class="link-btn little" >Learn more</button>
+                    <a href="product.html" class="link-btn little">Learn more</a>
                 </div>
                 <img class="not-sidebar trending-image" src="images/BiancaChairVogueTable.webp" alt="Bianca Chair and Vogue Coffee Table Package">
             </div>
@@ -135,7 +148,7 @@
                 <div class="stack right-box box centre-text sidebar">
                     <h3>Toorak High Back Chair</h3>
                     <p>Upholstered in premium quality Black leather with a modern thick pad design and multi position tilt lock mechanism</p>
-                    <button class="link-btn little">Learn more</button>
+                    <a href="product2.html" class="link-btn little">Learn more</a>
                 </div>
                 <img class="not-sidebar trending-image" src="images/ToorakHighBackChair.jpeg" alt="Toorak High Back Chair">
             </div>
@@ -143,7 +156,7 @@
                 <div class="stack left-box box centre-text sidebar">
                     <h3>Smart Desk</h3>
                     <p>Electric height adjustable desk of commercial quality for increased mobility</p>
-                    <button class="link-btn little">Learn more</button>
+                    <a href="product.html" class="link-btn little">Learn more</a>
                 </div>
                 <img class="not-sidebar trending-image" src="images/SmartDesk.webp" alt="Smart Desk">
             </div>

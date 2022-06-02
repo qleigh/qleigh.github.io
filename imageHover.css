@@ -37,12 +37,12 @@
     background-image: url("images/ChaseMeetingRoomChairHover.webp");
 }
 
-#rift-seat{
+#peer-chair{
     background-image: url("images/PeerArmChair.jpeg");
 }
 
 #peer-chair:hover{
-    background-image: url("images/PeerArmChairHover.jpeg");
+    background-image: url("images/PeerArmChairHover.jpg");
 }
 
 #bondi-chair{
@@ -138,5 +138,5 @@
 }
 
 #apollo-chair:hover{
-    background-image: url("images/ApolloVisitorChairHover.jpegs");
+    background-image: url("images/ApolloVisitorChairHover.jpeg");
 }

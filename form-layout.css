@@ -64,7 +64,3 @@ input[type="radio"]{
     flex-wrap: wrap;
     flex-direction: row;
 }
-
-.location{
-    display: none;
-}

@@ -11,6 +11,10 @@ input[type="number"] {
     border-radius: 0.5em;
 }
 
+.added-text{
+    margin-top: 1em;
+}
+
 .features{
     margin-bottom: 2em;
 }
@@ -67,6 +71,7 @@ input[type="number"] {
 .main-image{
     height: 25em;
     width: 25em;
+    margin-bottom: 2em;
 }
 
 .dropdownContent{
@@ -76,6 +81,11 @@ input[type="number"] {
 
 .productWrapper > .not-sidebar{
     min-width: 33em;
+}
+
+.trending-image{
+    min-width: 10em;
+    max-width: 25em;
 }
 
 .product-info{
@@ -161,6 +171,14 @@ input[type="number"] {
 }
 
 @media only screen and (max-width: 700px){
+    .configuration-grid{
+        grid-template-columns: repeat(4, minmax(2em, 1fr));
+    }
+
+    .configuration-img{
+        padding: 0.5em;
+    }
+
     .tablinks + .tablinks{
         width: 33%;
     }
@@ -170,8 +188,9 @@ input[type="number"] {
     }
 
     .main-image{
-        height: 16em;
-        width: 16em;
+        object-fit: cover;
+        min-height: 16em;
+        min-width: 16em;
     }
 
     .productWrapper > .not-sidebar{

@@ -12,19 +12,34 @@
     <!-- nav bar and menu -->
     <div>
         <!-- menu -->
-        <ul class="menu-one" id="this-menu-one">
-            <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-            <li><button onmouseover="openNavTwo()">New In</button></li>
-            <li><button onmouseover="openNavTwo()">Seating</button></li>
-            <li><button onmouseover="openNavTwo()">Desks & Tables</button></li>
-            <li><button onmouseover="openNavTwo()">Storage</button></li>
-            <li><button onmouseover="openNavTwo()">Furniture Ranges</button></li>
-            <li><button onmouseover="openNavTwo()">Accessories</button></li>
-            <li><button onmouseover="openNavTwo()">COVID-19 Products</button></li>
-        </ul>
-        <ul class="menu-two" id="this-menu-two">
-            <a href="javascript:void(0)" class="close-menu-two" id="this-close-menu-two" onclick="closeNav()"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
-            <li><a href="listings.html">Free Trial Chairs</a></li>
+        <div class="menu-one" id="product2-menu-one">
+            <ul>
+                <a href="javascript:void(0)" class="close-menu-one" onclick="closeNav('product2-menu-one', 'product2-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+                <li><button class="semibold" onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">New In</button></li>
+                <li><button onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">Seating</button></li>
+                <li><button onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">Desks & Tables</button></li>
+                <li><button onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">Storage</button></li>
+                <li><button onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">Furniture Ranges</button></li>
+                <li><button onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">Accessories</button></li>
+                <li><button onclick="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')" onmouseover="openNavTwo('product2-menu-one', 'product2-menu-two', 'product2-close-menu')">COVID-19 Products</button></li>
+            </ul>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-links-wrapper">
+                    <img src="icons/facebook-fill.svg" alt="Facebook logo">
+                    <img src="icons/youtube-fill.svg" alt="Youtube logo">
+                    <img src="icons/twitter-fill.svg" alt="Twitter logo">
+                </div>
+            </div>
+        </div>
+        
+        <ul class="menu-two" id="product2-menu-two">
+            <a href="javascript:void(0)" class="close-menu-two" id="product2-close-menu" onclick="closeNav('product2-menu-one', 'product2-menu-two')"><img class="menuIcon" src="icons/x-bold.svg" alt=""></a>
+            <li><a class="semibold" href="listings.html">Free Trial Chairs</a></li>
             <li><a href="listings.html">Meeting Room</a></li>
             <li><a href="listings.html">Executive</a></li>
             <li><a href="listings.html">Ergonomic</a></li>
@@ -37,37 +52,36 @@
         <!-- nav bar -->
         <nav class="small-nav stack not-home">
             <div class="nav-small">
-                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <button onclick="openNav('product2-menu-one')"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
                 <a href="index.html">
                     <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                 </a>
-                <div class="cluster">
-                    <a id="account" href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                    <a id="cart" href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                <div class="cluster small-nav-right">
+                    <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
                 </div>
             </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
+            <form class="searchBarWrap" action="listings.html">
+                <input id="searchInput" class="searchbar"type="search">
+                <a href="listings.html"><img class="searchIcon cart" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+            </form>
         </nav>
         <nav class="big-nav not-home">
             <div class="nav-links" id="navLinksLeft">
-                <button onclick="openNav()"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
+                <button onclick="openNav('product2-menu-one')"><img class="menuIcon" src="icons/list-bold.svg" alt="Hamburger Menu Icon"></button>
                 <a href="index.html">
                     <span>
                         <img class="nav-logo" src="icons/VOFLogoWhite.svg" alt="Value Office Furniture Logo">
                     </span>
                 </a>
             </div>
-            <div class="searchBarWrap">
-                <input class="searchbar" type="search">
-                <img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon">
-            </div>
+                <form class="searchBarWrap" action="listings.html">
+                    <input id="searchInput" class="searchbar"type="search">
+                    <a href="listings.html"><img class="searchIcon" src="icons/magnifying-glass-bold.svg" alt="Magnifying Glass Icon"></a>
+                </form>
             <div class="centre-vertical nav-links" id="navLinksRight">
                 <a id="contactUs" href="#">Contact Us</a>
                 <a href="#"><img class="menuIcon" src="icons/user-bold.svg" alt="Account"></a>
-                <a href="shoppingCart.html"><img class="menuIcon" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
+                <a href="shoppingCart.html"><img class="menuIcon cart" src="icons/shopping-cart-bold.svg" alt="Shopping Cart Icon"></a>
             </div>
         </nav>
     </div>
@@ -117,11 +131,11 @@
                                 <button onclick="closeConfig()"><img class="down-caret" src="icons/caret-up-bold.svg" alt=""></button>
                             </div>
                             <div class="configuration-grid">
-                                <img class="configuration-img" id="1" onclick="selectLynxColour(id)" src="images/LynxColours.jpg" alt="Lynx Colour">
-                                <img class="configuration-img" id="2" onclick="selectLynxColour(id)" src="images/LynxColours 2.jpg" alt="Lynx Colour">
-                                <img class="configuration-img" id="3" onclick="selectLynxColour(id)" src="images/LynxColours 3.jpg" alt="Lynx Colour">
-                                <img class="configuration-img" id="4" onclick="selectLynxColour(id)" src="images/LynxColours 4.jpg" alt="Lynx Colour">
-                                <img class="configuration-img" id="5" onclick="selectLynxColour(id)" src="images/LynxColours 5.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="24" onclick="selectLynxColour(id)" src="images/LynxColours.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="25" onclick="selectLynxColour(id)" src="images/LynxColours 2.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="26" onclick="selectLynxColour(id)" src="images/LynxColours 3.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="27" onclick="selectLynxColour(id)" src="images/LynxColours 4.jpg" alt="Lynx Colour">
+                                <img class="configuration-img" id="28" onclick="selectLynxColour(id)" src="images/LynxColours 5.jpg" alt="Lynx Colour">
                                 <img class="configuration-img" id="6" onclick="selectLynxColour(id)" src="images/LynxColours 6.jpg" alt="Lynx Colour">
                                 <img class="configuration-img" id="7" onclick="selectLynxColour(id)" src="images/LynxColours 7.jpg" alt="Lynx Colour">
                                 <img class="configuration-img" id="8" onclick="selectLynxColour(id)" src="images/LynxColours 8.jpg" alt="Lynx Colour">
@@ -144,19 +158,22 @@
                             <img class="configuration-img" id="19" onclick="selectLynxConfig(id)" src="images/LynxArm.webp" alt="Lynx Visitor Chair">
                         </div>
                     </div>
-                    <div class="button-wrapper cluster">
-                        <div class="blue-background product-btn cluster">
-                            <p class="white-text medium">Quantity</p>
-                            <div class="cluster">
-                                <input type="image" src="icons/minus-bold.svg" class="minus" data-field="quantity">
-                                <input type="number" step="1" min="0" max="" value="1" name="quantity" class="quantity-field">
-                                <input type="image" src="icons/plus-bold.svg" class="plus" data-field="quantity">
+                    <div class="button-wrapper">
+                        <div class="cluster">
+                            <div class="blue-background product-btn cluster">
+                                <p class="white-text medium">Quantity</p>
+                                <div class="cluster">
+                                    <input type="image" src="icons/minus-bold.svg" class="minus" data-field="quantity">
+                                    <input type="number" step="1" min="0" max="" value="1" name="quantity" class="quantity-field">
+                                    <input type="image" src="icons/plus-bold.svg" class="plus" data-field="quantity">
+                                </div>
                             </div>
+                            <button onclick="addToCart(2)" class="blue-background product-btn cluster add-to-cart">
+                                <p class="white-text medium">Add to cart</p>
+                                <img class="plus" src="icons/plus-bold.svg" alt="">
+                            </button>
                         </div>
-                        <button class="blue-background product-btn cluster add-to-cart">
-                            <p class="white-text medium">Add to cart</p>
-                            <img class="plus" src="icons/plus-bold.svg" alt="">
-                        </button>
+                        <p class="semibold added-text" id="lynx-added-text"></p>
                     </div>
                 </div>
             </div>
@@ -166,24 +183,26 @@
     <section class="white-text">
         <!-- tab links -->
         <div class="tab medium">
-            <button class="tablinks first" onclick="">Details</button>
-            <button class="tablinks" onclick="">Delivery</button>
-            <button class="tablinks" onclick="">Reviews</button>
+            <button id="lynx-details" class="tablinks first" onclick="lynxTabs(id)">Details</button>
+            <button id="lynx-delivery" class="tablinks" onclick="lynxTabs(id)">Delivery</button>
+            <button id="lynx-reviews" class="tablinks" onclick="lynxTabs(id)">Reviews</button>
         </div>
         
         <!-- tab content -->
         <!-- Details -->
-        <div id="Details" class="tab-content blue-background cluster">
+        <div id="lynx-details-expanded" class="tab-content blue-background cluster">
                 <ul class="features">
                     <li>3 year warranty</li>
                     <li>Weight rating – 120kg</li>
                     <li>Prices include GST</li>
+                    <li>Available with and without arms</li>
+                    <li>Also available in any specific colour of your choice. Contact us for more information.</li>
                     <li class="semibold">Scroll down for more details</li>
                 </ul>
             <img class="measurements" src="images/LynxMeasurements.webp" alt="Lynx Visitor Chair Dimensions">
         </div>
         <!-- Delivery -->
-        <div id="Delivery" class="tab-content none">
+        <div id="lynx-delivery-expanded" class="tab-content none">
             <div class="delivery-text">
                 <p>Delivered assembled – ready to use</p>
                 <p>This chair is made to order, please allow 2-3 weeks for delivery</p>
@@ -192,7 +211,7 @@
             </div>
         </div>
         <!-- Reviews -->
-        <div id="Reviews" class="tab-content none">
+        <div id="lynx-reviews-expanded" class="tab-content none">
             <div class="review">
                 <div>
                     <div class="stars">

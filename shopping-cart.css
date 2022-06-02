@@ -53,6 +53,13 @@
     grid-row: 2;
 }
 
+@media only screen and (min-width: 700px){
+    .not-summary > .cart-grid > .cart-item-name > * + *{
+        margin-top: 1em;
+    }
+}
+
+
 @media only screen and (max-width: 500px){
     .cart-item-img{
         height: 6em;

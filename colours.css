@@ -39,8 +39,13 @@ input[type="text"], textarea{
     background-color: var(--colour-accent-light);
 }
 
-.menu-one > li > button:hover, .menu-two > li > a:hover {
+.menu-one > ul > li > button:hover, .menu-two > li > a:hover, .menu-links > ul > li:hover {
     color: var(--colour-bg);
+}
+
+.tablinks.first{
+    color: var(--colour-bg);
+    background-color: var(--colour-main);
 }
 
 .heroText{
@@ -50,6 +55,10 @@ input[type="text"], textarea{
 .learnMore{
     background-color: var(--colour-main);
     color: var(--colour-bg);
+}
+
+.link-btn{
+    color: var(--colour-text);
 }
 
 .newPrice{
