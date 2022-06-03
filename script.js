@@ -190,25 +190,48 @@ function showDelivery(){
 function validateShippingForm() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
+    var email = document.getElementById('email').value;;
     var phoneNumber = document.getElementById('phoneNumber').value;
     var address = document.getElementById('address').value;
     var error = false;
+    const phoneRegex = new RegExp(/^(?:\+?61|0)[2-478](?:[ -]?[0-9]){8}$/);
+    const emailRegex = new RegExp(/^.+?@.+?\..+$/);
 
     if (firstName == "" || firstName == null) {
-        document.getElementById('firstNameError').style.display = "block";
+        document.getElementById('firstNameError').innerHTML = "Please provide a first name";
         error = true;
+    } else {
+        document.getElementById('firstNameError').innerHTML = "";
     }
     if (lastName == "" || lastName == null) {
-        document.getElementById('lastNameError').style.display = "block";
+        document.getElementById('lastNameError').innerHTML = "Please provide a last name";
         error = true;
+    } else {
+        document.getElementById('lastNameError').innerHTML = "";
+    }
+    if (email == "" || email == null) {
+        document.getElementById('emailError').innerHTML = "Please provide an email";
+        error = true;
+    } else if (!emailRegex.test(email)){
+        document.getElementById('emailError').innerHTML = "Please provide a properly formatted email address";
+        error = true;
+    } else{
+        document.getElementById('emailError').innerHTML = "";
     }
     if (phoneNumber == "" || phoneNumber == null) {
-        document.getElementById('phoneNumberError').style.display = "block";
+        document.getElementById('phoneNumberError').innerHTML = "Please provide a phone number";
         error = true;
+    } else if (!phoneRegex.test(phoneNumber)){
+        document.getElementById('phoneNumberError').innerHTML = "Please provide a properly formatted phone number";
+        error = true;
+    } else{
+        document.getElementById('phoneNumberError').innerHTML = "";
     }
     if (address == "" || address == null) {
-        document.getElementById('addressError').style.display = "block";
+        document.getElementById('addressError').innerHTML = "Please provide an address";
         error = true;
+    } else {
+        document.getElementById('addressError').innerHTML = "";
     }
     if(error == true){
         return false;
@@ -226,26 +249,48 @@ function validateShippingForm() {
     var cardholderName = document.getElementById('cardholderName').value;
     var billingAddress = document.getElementById('billingAddress').value;
     var paymentError = false;
+    const cardRegex = new RegExp(/^[0-9]{13,19}$/);
+    const dateRegex = new RegExp(/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/);
+    const CVCRegex = new RegExp(/^[0-9]{3,4}$/);
 
     if (cardNumber == "" || cardNumber == null) {
-        document.getElementById('cardError').style.display = "block";
+        document.getElementById('cardError').innerHTML = "Please provide a card number";
         paymentError = true;
+    } else if (!cardRegex.test(cardNumber)){
+        document.getElementById('cardError').innerHTML = "Please provide a properly formatted card number";
+        paymentError = true;
+    } else {
+        document.getElementById('cardError').innerHTML = "";
     }
     if (expiryDate == "" || expiryDate == null) {
-        document.getElementById('expiryError').style.display = "block";
+        document.getElementById('expiryError').innerHTML = "Please provide an expiry date";
         paymentError = true;
+    } else if (!dateRegex.test(expiryDate)){
+        document.getElementById('expiryError').innerHTML = "Please provide a date in the form dd/mm/yyyy";
+        paymentError = true;
+    } else {
+        document.getElementById('expiryError').innerHTML = "";
     }
     if (CVC == "" || CVC == null) {
-        document.getElementById('CVCError').style.display = "block";
+        document.getElementById('CVCError').innerHTML = "Please provide a CVC/CVV";
         paymentError = true;
+    } else if (!CVCRegex.test(CVC)){
+        document.getElementById('CVCError').innerHTML = "Please provide a properly formatted CVC/CVV";
+        paymentError = true;
+    } else {
+        document.getElementById('CVCError').innerHTML = "";
     }
     if (cardholderName == "" || cardholderName == null) {
-        document.getElementById('cardholderError').style.display = "block";
+        document.getElementById('cardholderError').innerHTML = "Please provide a cardholder name";
         paymentError = true;
+    } else {
+        document.getElementById('cardholderError').innerHTML = "";
     }
     if (billingAddress == "" || billingAddress == null) {
-        document.getElementById('billingAddressError').style.display = "block";
+        document.getElementById('billingAddressError').innerHTML = "Please provide a billing address";
         paymentError = true;
+    } else {
+        document.getElementById('billingAddressError').innerHTML = "";
     }
     if(paymentError == true){  
         return false;    

@@ -166,6 +166,10 @@ input[type="text"], textarea{
     background-color: var(--colour-main-light);
 }
 
+.required::after{
+    color: var(--colour-accent);
+}
+
 #contactUs{
     color: var(--colour-bg);
 }

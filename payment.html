@@ -104,7 +104,7 @@
                 <!-- Form -->
                 <form action="review.html" class="form" id="payment-form" onsubmit="return(validatePaymentForm());">
                     <div class="radio-button-group">
-                        <p>Payment Method*</p>
+                        <p class="required">Payment Method</p>
                         <div>
                             <input type="radio" id="Credit Card" name="payment" value="Credit Card" checked>
                             <label for="Credit Card">Credit Card</label>
@@ -115,32 +115,32 @@
                         </div> 
                     </div>
                     <div class="input-group">
-                        <label for="cardNumber">Card Number*</label>
+                        <label class="required" for="cardNumber">Card Number</label>
                         <input type="text" id="cardNumber">
-                        <p class="none error" id="cardError">Please enter a value</p>
+                        <p class="error" id="cardError"></p>
                     </div>
                     <div class="adjacent-input input-group">
                         <div class="stack grid-left">
-                            <label for="expiryDate">Expiry Date*</label>
+                            <label class="required" for="expiryDate">Expiry Date</label>
                             <input type="text" id="expiryDate">
-                            <p class="none error" id="expiryError">Please enter a value</p>
+                            <p class="error" id="expiryError"></p>
                         </div>
                         <div class="stack grid-right">
-                            <label for="CVC">CVC/CVV*</label>
+                            <label class="required" for="CVC">CVC/CVV</label>
                             <input type="text" id="CVC">
-                            <p class="none error" id="CVCError">Please enter a value</p>
+                            <p class="error" id="CVCError"></p>
                         </div>
                     </div>
                     <div class="input-group">
-                        <label for="cardholderName">Cardholder Name*</label>
+                        <label class="required" for="cardholderName">Cardholder Name</label>
                         <input type="text" id="cardholderName">
-                        <p class="none error" id="cardholderError">Please enter a value</p>
+                        <p class="error" id="cardholderError"></p>
                     </div>
                     <div class="input-group">
-                        <label for="billingAddress">Billing Address*</label>
+                        <label class="required" for="billingAddress">Billing Address</label>
                         <input type="text" id="billingAddress">
                         <button><p><u>Enter Address Manually</u></p></button>
-                        <p class="none error" id="billingAddressError">Please enter a value</p>
+                        <p class="error" id="billingAddressError"></p>
                     </div>
                 </form>
             </div>

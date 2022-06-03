@@ -68,3 +68,7 @@ input[type="radio"]{
 .proceed{
     width: 100%;
 }
+
+.required::after{
+    content: "*";
+}

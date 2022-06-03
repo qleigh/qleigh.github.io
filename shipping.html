@@ -106,33 +106,38 @@
                 <form action="payment.html" class="form" id="shipping-form" onsubmit="return(validateShippingForm());">
                     <div class="adjacent-input input-group">
                         <div class="stack grid-left">
-                            <label for="firstName">First Name*</label>
+                            <label  class="required" for="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName">
-                            <p class="none error" id="firstNameError">Please enter a value</p>
+                            <p class="error" id="firstNameError"></p>
                         </div>
                         <div class="stack grid-right">
-                            <label for="lastName">Last Name*</label>
+                            <label class="required" for="lastName">Last Name</label>
                             <input type="text" id="lastName">
-                            <p class="none error" id="lastNameError">Please enter a value</p>
+                            <p class="error" id="lastNameError"></p>
                         </div>
                     </div>
                     <div class="input-group">
-                        <label for="phoneNumber">Phone Number*</label>
+                        <label class="required" for="email">Email Address</label>
+                        <input type="text" id="email">
+                        <p class="error" id="emailError"></p>
+                    </div>
+                    <div class="input-group">
+                        <label class="required" for="phoneNumber">Phone Number</label>
                         <input type="text" id="phoneNumber">
-                        <p class="none error" id="phoneNumberError">Please enter a value</p>
+                        <p class="error" id="phoneNumberError"></p>
                     </div>
                     <div class="input-group">
                         <label for="companyName">Company Name</label>
                         <input type="text" id="companyName">
                     </div>
                     <div class="input-group">
-                        <label for="address">Address*</label>
+                        <label class="required" for="address">Address</label>
                         <input type="text" id="address" placeholder="Start typing…">
                         <button><p><u>Enter Address Manually</u></p></button>
-                        <p class="none error" id="addressError">Please enter a value</p>
+                        <p class="error" id="addressError"></p>
                     </div>
                     <div class="radio-button-group">
-                        <p>Delivery/Pickup*</p>
+                        <p class="required">Delivery/Pickup</p>
                         <div>
                             <input onclick="showDelivery()" type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery" checked>
                             <label for="flatPackDelivery">Flat Pack Delivery</label>
@@ -147,7 +152,7 @@
                         </div>   
                     </div>
                     <div class="radio-button-group" id="delivery">
-                        <p>Delivery Location*</p>
+                        <p class="required">Delivery Location</p>
                         <div>
                             <input type="radio" id="commercialAddress" name="location" value="Commercial Address" checked>
                             <label for="commercialAddress">Commercial Address</label>
