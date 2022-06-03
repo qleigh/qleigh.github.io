@@ -141,3 +141,77 @@ function addToCart(item){
         document.getElementById("lynx-added-text").innerHTML = "Item(s) added to cart";
     }
 }
+
+// validate form
+function validateShippingForm() {
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var address = document.getElementById('address').value;
+    var error = false;
+
+    if (firstName == "" || firstName == null) {
+        document.getElementById('firstNameError').style.display = "block";
+        error = true;
+    }
+    if (lastName == "" || lastName == null) {
+        document.getElementById('lastNameError').style.display = "block";
+        error = true;
+    }
+    if (phoneNumber == "" || phoneNumber == null) {
+        document.getElementById('phoneNumberError').style.display = "block";
+        error = true;
+    }
+    if (address == "" || address == null) {
+        document.getElementById('addressError').style.display = "block";
+        error = true;
+    }
+    if(error == true){
+        return false;
+    }
+  }
+
+  function showDelivery(){
+    document.getElementById('delivery').style.display = "block";
+  }
+
+  function hideDelivery(){
+    document.getElementById('delivery').style.display = "none";
+  }
+
+   function billingDefault(){
+    document.getElementById('billingAddress').value = "42 Wallaby Way, Sydney 2000 NSW";
+   }
+
+  function validatePaymentForm() {
+    var cardNumber = document.getElementById('cardNumber').value;
+    var expiryDate = document.getElementById('expiryDate').value;
+    var CVC = document.getElementById('CVC').value;
+    var cardholderName = document.getElementById('cardholderName').value;
+    var billingAddress = document.getElementById('billingAddress').value;
+    var paymentError = false;
+
+    if (cardNumber == "" || cardNumber == null) {
+        document.getElementById('cardError').style.display = "block";
+        paymentError = true;
+    }
+    if (expiryDate == "" || expiryDate == null) {
+        document.getElementById('expiryError').style.display = "block";
+        paymentError = true;
+    }
+    if (CVC == "" || CVC == null) {
+        document.getElementById('CVCError').style.display = "block";
+        paymentError = true;
+    }
+    if (cardholderName == "" || cardholderName == null) {
+        document.getElementById('cardholderError').style.display = "block";
+        paymentError = true;
+    }
+    if (billingAddress == "" || billingAddress == null) {
+        document.getElementById('billingAddressError').style.display = "block";
+        paymentError = true;
+    }
+    if(paymentError == true){  
+        return false;    
+    }
+  }

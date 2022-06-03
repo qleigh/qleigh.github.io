@@ -108,15 +108,18 @@
                         <div class="stack grid-left">
                             <label for="firstName">First Name*</label>
                             <input type="text" id="firstName" name="firstName">
+                            <p class="none error" id="firstNameError">Please enter a value</p>
                         </div>
                         <div class="stack grid-right">
                             <label for="lastName">Last Name*</label>
                             <input type="text" id="lastName">
+                            <p class="none error" id="lastNameError">Please enter a value</p>
                         </div>
                     </div>
                     <div class="input-group">
                         <label for="phoneNumber">Phone Number*</label>
                         <input type="text" id="phoneNumber">
+                        <p class="none error" id="phoneNumberError">Please enter a value</p>
                     </div>
                     <div class="input-group">
                         <label for="companyName">Company Name</label>
@@ -126,23 +129,24 @@
                         <label for="address">Address*</label>
                         <input type="text" id="address" placeholder="Start typing…">
                         <button><p><u>Enter Address Manually</u></p></button>
+                        <p class="none error" id="addressError">Please enter a value</p>
                     </div>
                     <div class="radio-button-group">
                         <p>Delivery/Pickup*</p>
                         <div>
-                            <input type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery" checked>
+                            <input onclick="showDelivery()" type="radio" id="flatPackDelivery" name="delivery" value="Flat Pack Delivery" checked>
                             <label for="flatPackDelivery">Flat Pack Delivery</label>
                         </div>
                         <div>
-                            <input type="radio" id="clickAndCollect" name="delivery" value="Click and Collect">
+                            <input onclick="hideDelivery()" type="radio" id="clickAndCollect" name="delivery" value="Click and Collect">
                             <label for="clickAndCollect">Click and Collect</label>
                         </div>
                         <div>
-                            <input type="radio" id="deliveryAndAssembly" name="delivery" value="Delivery and Assembly">
+                            <input onclick="showDelivery()" type="radio" id="deliveryAndAssembly" name="delivery" value="Delivery and Assembly">
                             <label for="deliveryAndAssembly">Delivery and Assembly</label>
                         </div>   
                     </div>
-                    <div class="radio-button-group">
+                    <div class="radio-button-group" id="delivery">
                         <p>Delivery Location*</p>
                         <div>
                             <input type="radio" id="commercialAddress" name="location" value="Commercial Address" checked>
@@ -206,10 +210,10 @@
                 </div>
                 <div>
                     <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
-                    <a class="cluster proceed end" href="payment.html">
+                    <button type="submit" form="shipping-form" class="cluster proceed end">
                         <p class="medium">Proceed to Payment</p>
                         <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

@@ -175,6 +175,10 @@ input[type="number"] {
         grid-template-columns: repeat(4, minmax(2em, 1fr));
     }
 
+    #light-green {
+        display: none;
+    }
+
     .configuration-img{
         padding: 0.5em;
     }

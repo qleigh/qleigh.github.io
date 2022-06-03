@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="billingDefault()">
     <!-- header -->
     <section>
         <!-- nav bar and menu -->
@@ -102,9 +102,9 @@
                 </div>
                 <h1>Payment</h1>
                 <!-- Form -->
-                <div class="form">
+                <form action="review.html" class="form" id="payment-form" onsubmit="return(validatePaymentForm());">
                     <div class="radio-button-group">
-                        <p>Payment Method</p>
+                        <p>Payment Method*</p>
                         <div>
                             <input type="radio" id="Credit Card" name="payment" value="Credit Card" checked>
                             <label for="Credit Card">Credit Card</label>
@@ -115,36 +115,41 @@
                         </div> 
                     </div>
                     <div class="input-group">
-                        <label for="cardNumber">Card Number</label>
+                        <label for="cardNumber">Card Number*</label>
                         <input type="text" id="cardNumber">
+                        <p class="none error" id="cardError">Please enter a value</p>
                     </div>
                     <div class="adjacent-input input-group">
                         <div class="stack grid-left">
-                            <label for="expiryDate">Expiry Date</label>
+                            <label for="expiryDate">Expiry Date*</label>
                             <input type="text" id="expiryDate">
+                            <p class="none error" id="expiryError">Please enter a value</p>
                         </div>
                         <div class="stack grid-right">
-                            <label for="CVC">CVC/CVV</label>
+                            <label for="CVC">CVC/CVV*</label>
                             <input type="text" id="CVC">
+                            <p class="none error" id="CVCError">Please enter a value</p>
                         </div>
                     </div>
                     <div class="input-group">
-                        <label for="cardholderName">Cardholder Name</label>
+                        <label for="cardholderName">Cardholder Name*</label>
                         <input type="text" id="cardholderName">
+                        <p class="none error" id="cardholderError">Please enter a value</p>
                     </div>
                     <div class="input-group">
-                        <label for="billingAddress">Billing Address</label>
-                        <input type="text" id="billingAddress" placeholder="Start typing…">
-                        <button><p><u>Add New Address</u></p></button>
+                        <label for="billingAddress">Billing Address*</label>
+                        <input type="text" id="billingAddress">
+                        <button><p><u>Enter Address Manually</u></p></button>
+                        <p class="none error" id="billingAddressError">Please enter a value</p>
                     </div>
-                </div>
+                </form>
             </div>
             <!-- Summary -->
             <div class="stack sidebar summary-wrapper">
-                <a class="cluster proceed start" href="review.html">
+                <button type="submit" form="payment-form" class="cluster proceed start">
                     <p class="medium">Proceed to Review</p>
                     <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
-                </a>
+                </button>
                 <div class="summary">
                         <h3>Summary</h3>
                         <table>
@@ -190,10 +195,10 @@
                 </div>
                 <div>
                     <img id="payment-methods" src="images/PaymentMethods.png" alt="Payment Methods">
-                    <a class="cluster proceed end" href="review.html">
+                    <button type="submit" form="payment-form" class="cluster proceed end">
                         <p class="medium">Proceed to Review</p>
                         <img id="right-arrow" src="icons/arrow-right-bold.svg" alt="Right Arrow">
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
