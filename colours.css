@@ -15,176 +15,82 @@ body{
     background-color: var(--colour-bg);
 }
 
-nav.not-home, .rectangle{
-    background-color: var(--colour-main);
-}
-
-footer{
-    background-color: var(--colour-main-light);
-}
-
 a, a:hover, a:focus, a:active, button{
     text-decoration: none;
     color: inherit;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
+/* background colour white */
+.configuration-img, .measurements, .link-btn, .summary-img{
+    background-color: var(--colour-bg);
 }
 
-input[type="search"]{
-    appearance: none;
-}
-
-input[type="text"], textarea{
+/* background colour light blue */
+footer, .menu-one, input[type="text"], textarea, .btn:hover, .add-to-cart:hover, .tablinks, .tablinks:hover{
     background-color: var(--colour-main-light);
 }
 
-::placeholder, textarea{
-    color: var(--colour-main);
-}
-
-.menu-one{
-    background-color: var(--colour-main-light);
-}
-
-.menu-two{
-    background-color: var(--colour-accent-light);
-}
-
-.menu-one > ul > li > button:hover, .menu-two > li > a:hover, .menu-links > ul > li:hover {
-    color: var(--colour-bg);
-}
-
-.tablinks.first{
-    color: var(--colour-bg);
+/* background colour blue */
+nav.not-home, .rectangle, .blue-background, .tablinks:active, .tab-content{
     background-color: var(--colour-main);
 }
 
-.heroText{
-    color: var(--colour-bg);
-}
-
-.learnMore{
-    background-color: var(--colour-main);
-    color: var(--colour-bg);
-}
-
-.link-btn{
-    color: var(--colour-text);
-}
-
-.newPrice{
-    color: var(--colour-accent);
-}
-
-.blue-background{
-    background-color: var(--colour-main);
-}
-
+/* background colour orange */
 .accent-background{
     background-color: var(--colour-accent);
 }
 
-.configuration-img{
-    background-color: var(--colour-bg);
+/* background colour light orange */
+.menu-two, .product-categories > li:hover, .product-categories > a:hover{
+    background-color: var(--colour-accent-light);
+}
+
+/* background colour grey */
+.link-btn:hover{
+    background-color: var(--colour-grey);
+}
+
+/* colour blue */
+::placeholder, textarea{
+    color: var(--colour-main);
+}
+
+/* colour orange */
+.newPrice, .link, .current-step, .error, .required::after{
+    color: var(--colour-accent);
+}
+
+/* colour white */
+.menu-one > ul > li > button:hover, .menu-two > li > a:hover, .menu-links > ul > li:hover, .heroText, .white-text, #contactUs {
+    color: var(--colour-bg);
+}
+
+/* colour black */
+.link-btn{
+    color: var(--colour-text);
+}
+
+.tablinks.first, .learnMore, .left-box, .proceed{
+    color: var(--colour-bg);
+    background-color: var(--colour-main);
 }
 
 .configuration-img:hover, .configuration-img:active{
     border: 4px solid var(--colour-main);
 }
 
-.measurements{
-    background-color: var(--colour-bg);
-}
-
-.left-box{
-    color: var(--colour-bg);
-    background-color: var(--colour-main);
-}
-
-.right-box{
+.product-categories > li, .product-categories > a, .summary, .right-box{
     color: var(--colour-bg);
     background-color: var(--colour-accent);
-}
-
-.link-btn{
-    background-color: var(--colour-bg);
-}
-
-.link-btn:hover{
-    background-color: var(--colour-grey);
-}
-
-.btn:hover, .add-to-cart:hover{
-    background-color: var(--colour-main-light);
-}
-
-.white-text{
-    color: var(--colour-bg);
-}
-
-.link{
-    color: var(--colour-accent);
-}
-
-.product-categories > li, .product-categories > a{
-    color: var(--colour-bg);
-    background-color: var(--colour-accent);
-}
-
-.product-categories > li:hover, .product-categories > a:hover{
-    background-color: var(--colour-accent-light);
-}
-
-.summary{
-    background-color: var(--colour-accent);
-    color: var(--colour-bg);
-}
-
-.current-step, .error{
-    color: var(--colour-accent);
-}
-.summary-img{
-    background-color: var(--colour-bg);
 }
 
 .alt-image:hover{
     border: 2px solid var(--colour-main-light);
 }
 
-.proceed{
-    color: var(--colour-bg);
-    background-color: var(--colour-main);
-}
-
 .proceed:hover{
     color: var(--colour-bg);
     background-color: var(--colour-main-light);
-}
-
-.required::after{
-    color: var(--colour-accent);
-}
-
-#contactUs{
-    color: var(--colour-bg);
-}
-
-/* tab */
-.tablinks{
-    background-color: var(--colour-main-light);
-}
-
-.tablinks:hover{
-    background-color: var(--colour-main-light);
-}
-
-.tablinks:active, .tab-content{
-    background-color: var(--colour-main);
 }
 
 .secondary-btn{

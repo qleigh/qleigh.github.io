@@ -4,11 +4,6 @@
     object-fit: cover;
 }
 
-#trash{
-    height: 2em;
-    width: 2em;
-}
-
 .cart-item-row {
     margin-bottom: 2em;
 }
@@ -51,6 +46,11 @@
 
 .row-two{
     grid-row: 2;
+}
+
+#trash{
+    height: 2em;
+    width: 2em;
 }
 
 @media only screen and (min-width: 700px){

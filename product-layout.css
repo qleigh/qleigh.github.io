@@ -11,10 +11,9 @@ input[type="number"] {
     border-radius: 0.5em;
 }
 
-.added-text{
-    margin-top: 1em;
-}
 
+
+/* features */
 .features{
     margin-bottom: 2em;
 }
@@ -22,6 +21,15 @@ input[type="number"] {
 .features > .box{
     padding-top: 2em;
     padding-bottom: 2em;
+}
+
+
+
+/* product and alternative images */
+.main-image{
+    height: 25em;
+    width: 25em;
+    margin-bottom: 2em;
 }
 
 .product-image-caret{
@@ -36,6 +44,13 @@ input[type="number"] {
     padding: 0.5em;
 }
 
+.alt-image:hover{
+    border-radius: 1em;
+}
+
+
+
+/* connfiguration */
 .configuration{
     border-radius: 1em;
     padding: 1em;
@@ -62,30 +77,15 @@ input[type="number"] {
     display: none;
 }
 
-.minus, .plus{
-    height: 1em;
-    width: 1em;
-    margin: 0.5em;
-}
-
-.main-image{
-    height: 25em;
-    width: 25em;
-    margin-bottom: 2em;
-}
-
 .dropdownContent{
     display: none;
 }
 
 
+
+/* product */
 .productWrapper > .not-sidebar{
     min-width: 33em;
-}
-
-.trending-image{
-    min-width: 10em;
-    max-width: 25em;
 }
 
 .product-info{
@@ -113,6 +113,8 @@ input[type="number"] {
     margin-top: 1em;
 }
 
+
+
 /* tab */
 .none{
     display: none;
@@ -132,18 +134,9 @@ input[type="number"] {
     padding: 2em;
 }
 
-.features > li + li, .delivery-text > p+p{
-    margin-top: 1em;
-}
 
-.measurements{
-    width: 100%;
-    max-width: 20em;
-    height: auto;
-    border-radius: 1em;
-    padding: 1em;
-}
 
+/* review */
 .stars > img{
     height: 100%;
     width: auto;
@@ -170,9 +163,37 @@ input[type="number"] {
     margin-left: 1em;
 }
 
-.alt-image:hover{
-    border-radius: 1em;
+
+
+/* miscellaneous */
+.minus, .plus{
+    height: 1em;
+    width: 1em;
+    margin: 0.5em;
 }
+
+.trending-image{
+    min-width: 10em;
+    max-width: 25em;
+}
+
+.features > li + li, .delivery-text > p+p{
+    margin-top: 1em;
+}
+
+.measurements{
+    width: 100%;
+    max-width: 20em;
+    height: auto;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.added-text{
+    margin-top: 1em;
+}
+
+
 
 @media only screen and (max-width: 700px){
     .configuration-grid{

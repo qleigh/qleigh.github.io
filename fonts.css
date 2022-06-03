@@ -83,11 +83,7 @@ footer{
     font-weight: 600;
 }
 
-.current-step{
-    font-weight: 500;
-}
-
-.medium{
+.current-step, .medium{
     font-weight: 500;
 }
 
@@ -95,9 +91,15 @@ footer{
     line-height: 2.5em;
 }
 
+.menu-one > ul > li, .menu-two > li{
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
 
-.inline{
-    display: inline;
+.menu-links{
+    font-size: var(--text-sm);
+    font-weight: 400;
+    line-height: 2em;
 }
 
 .heroText{
@@ -116,15 +118,4 @@ footer{
     h4{
         font-size: var(--text-sm);
     }
-}
-
-.menu-one > ul > li, .menu-two > li{
-    font-size: var(--text-sm);
-    font-weight: 500;
-}
-
-.menu-links{
-    font-size: var(--text-sm);
-    font-weight: 400;
-    line-height: 2em;
 }

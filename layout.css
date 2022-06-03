@@ -51,11 +51,6 @@ h1 + p {
     margin-top: 2em;
 }
 
-.heading-padding{
-    padding-top: 2em;
-    padding-bottom: 1em;
-}
-
 h2{
     padding-bottom: 1em;
 }
@@ -80,15 +75,8 @@ td{
     padding-bottom: 2em;
 }
 
-.header{
-    position: relative;
-    z-index: 2;
-}
 
-.table-price{
-    text-align: right;
-}
-
+/* top margin */
 .top{
     margin-top: 5em;
 }
@@ -101,6 +89,9 @@ td{
     margin-top: 4em;
 }
 
+
+
+/* clusters */
 .cluster{
     display: flex;
     flex-wrap: wrap;
@@ -122,17 +113,9 @@ td{
     flex-direction: row;
 }
 
-.stack{
-    display: flex;
-    flex-direction: column;
-}
 
-.qty{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
 
+/* sidebar */
 .sidebar-container{
     display: flex;
     flex-direction: row;
@@ -162,10 +145,8 @@ td{
     flex-basis: 50%;
 }
 
-.swap-position{
-    flex-direction: row-reverse;
-}
 
+/* text alignment */
 .centre-text{
     text-align: center;
 }
@@ -178,6 +159,9 @@ td{
     text-align: right;
 }
 
+
+
+/* alignment */
 .right-vertical{
     float: right;
 }
@@ -191,19 +175,29 @@ td{
     justify-content: center;
 }
 
-.value-difference{
-    padding-top: 6em;
-    padding-bottom: 6em;
+
+
+/* margin */
+.margin{
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-.row-padding{
-    padding: 0em 5em 0em 5em;
+.margin-left{
+    margin-left: 3rem;
 }
 
-.page-heading{
-    padding: 4em 2.5rem 3em 2.5rem;
+
+
+/* stack */
+.stack{
+    display: flex;
+    flex-direction: column;
 }
 
+
+
+/* back */
 .back{
     display: flex;
     flex-wrap: wrap;
@@ -217,21 +211,9 @@ td{
     width: 1.5em;
 }
 
-.margin{
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
 
-.margin-left{
-    margin-left: 3rem;
-}
 
-.trending-image{
-    height: 25%;
-    width: 25%;
-    margin: 5% 12.5% 5% 12.5%;
-}
-
+/* boxes for trending and features info */
 .box{
     width: 35em;
     justify-content: center;
@@ -255,25 +237,9 @@ td{
     height: 25em;
 }
 
-.heroText{
-    width: 10em;
-    justify-content: left;
-    margin-bottom: 0.5em;
-}
 
-.down-caret{
-    width: 1em;
-    margin-left: 0.25em;
-}
 
-.price{
-    display: flex;
-}
-
-.oldPrice + .newPrice{
-    margin-left: 0.5em;
-}
-
+/* confirmation page */
 .confirmation{
     width: 75%;
     margin-top: 3em;
@@ -284,10 +250,7 @@ td{
     margin-top: 2em;
 }
 
-.section-title{
-    padding-left: 2em;
-    padding-right: 2em;
-}
+
 
 /* summary */
 .summary-wrapper, .not-summary{
@@ -305,19 +268,27 @@ td{
     align-self: center;
 }
 
-.proceed{
-    border-radius: 1em;
-    padding: 1em;
-}
-
 .summary-img{
     padding: 0.25em;
     border-radius: 0.5em;
     margin-right: 1em;
 }
 
-.socials{
-    padding-bottom: 2em;
+.proceed{
+    border-radius: 1em;
+    padding: 1em;
+}
+
+
+
+/* miscellaneous */
+.heading-padding{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.table-price{
+    text-align: right;
 }
 
 .checkout-steps{
@@ -325,71 +296,74 @@ td{
     margin-bottom: 4em;
 }
 
-.form{
-    margin-top: 3em;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .trending-wrapper > * + *{
     margin-top: 2em;
-}
-
-#navLinksLeft {
-    display: flex;
-    width: 8em;
-    margin-right: 5em;
-}
-
-#navLinksRight {
-    display: flex;
-    width: 13em;
-    margin-left: 5em;
-}
-
-#payment-methods{
-    width: 7em;
-    margin-top: 1em;
-    margin-bottom: 2em;
 }
 
 #right-arrow{
     height: 1.5em;
 }
 
-.footer-col{
-    column-count: 2;
-    column-gap: 4em;
-}
-
 .page-heading > p{
     width: 70%;
-}
-
-.small-nav > a{
-    margin: 2em;
 }
 
 .proceed.start, .proceed.end{
     margin-bottom: 2em;
 }
 
-@media only screen and (min-width: 1000px){
-    .small-nav{
-        display: none;
-    }
-
-    .rectangle{
-        width: 100%;
-        height: 5em;
-        position: fixed;
-        z-index: 1;
-    }
+.inline{
+    display: inline;
 }
+
+.down-caret{
+    width: 1em;
+    margin-left: 0.25em;
+}
+
+.price{
+    display: flex;
+}
+
+.oldPrice + .newPrice{
+    margin-left: 0.5em;
+}
+
+.section-title{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.qty{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.swap-position{
+    flex-direction: row-reverse;
+}
+
+.value-difference{
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.row-padding{
+    padding: 0em 5em 0em 5em;
+}
+
+.page-heading{
+    padding: 4em 2.5rem 3em 2.5rem;
+}
+
+.trending-image{
+    height: 25%;
+    width: 25%;
+    margin: 5% 12.5% 5% 12.5%;
+}
+
+
 
 @media only screen and (min-width: 1200px){
     .image-row{
@@ -412,6 +386,19 @@ td{
     }
 }
 
+@media only screen and (min-width: 1000px){
+    .small-nav{
+        display: none;
+    }
+
+    .rectangle{
+        width: 100%;
+        height: 5em;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
 @media only screen and (max-width: 1000px){
     .page-start{
         margin-top: 4em;
@@ -423,27 +410,6 @@ td{
 
     .top{
         margin-top: 8em;
-    }
-
-    nav{
-        height: 8em;
-    }
-
-    .page-heading{
-        padding: 6em 2.5rem 2.5em 2.5rem;
-    }
-
-    .searchBarWrap{
-        top: 5em;
-    }
-
-    .nav-logo{
-        margin: 0.5em;
-        height: 2em;
-    }
-
-    .big-nav{
-        display: none;
     }
 
     .rectangle{
@@ -498,35 +464,6 @@ td{
 
     .row-padding{
         padding: 0em 1em 0em 1em;
-    }
-
-    .header{
-        background-image: url("images/MeetingRoomSmall.jpg");
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .page-heading > p{
-        width: 100%;
-    }
-    
-    .footer-col{
-        column-count: 1
-    }
-
-    .footer-logo{
-        display: none;
-    }
-
-    .footer-icons{
-        align-items: flex-start;
-    }
-
-    .footer-icons > #payment-methods{
-        display: none;
     }
 }
 

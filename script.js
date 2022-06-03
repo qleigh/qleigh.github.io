@@ -1,4 +1,6 @@
+//
 // Menu functions
+//
 function closeNav(thismenuone, thismenutwo) {
     document.getElementById(thismenuone).style.width = "0";
     document.getElementById(thismenutwo).style.width = "0";
@@ -22,8 +24,9 @@ function openNavTwo(thismenuone, thismenutwo, thisclosemenutwo) {
     } 
 }
 
-
+//
 // product tabs
+//
 function chaseTabs(currentTab){
     if (currentTab != "chase-details"){
         document.getElementById("chase-details-expanded").style.display = "none";
@@ -89,7 +92,10 @@ function lynxTabs(currentTab){
 }
 
 
+
+//
 // configuration functions
+//
 function openConfig(){
     document.getElementById("collapsed-config").style.display = "none";
     document.getElementById("expanded-config").style.display = "block";
@@ -127,7 +133,11 @@ function selectChaseStyle(option){
     document.getElementById(option).style.border = "4px solid var(--colour-main)";
 }
 
+
+
+//
 // alternative product images
+//
 function showTerracotta(){
     document.getElementById('mainChaseImage').src = "images/ChaseMeetingRoomChair.webp";
 }
@@ -164,6 +174,7 @@ function showArmsSide(){
     document.getElementById('mainLynxImage').src = "images/LynxArmSide.webp";
 }
 
+
 // add items to cart
 function addToCart(item){
     var carts = document.getElementsByClassName("cart");
@@ -178,15 +189,23 @@ function addToCart(item){
     }
 }
 
+
+
+//
 // form functions
+//
+
+// show delivery div
 function showDelivery(){
     document.getElementById('delivery').style.display = "block";
   }
 
-  function hideDelivery(){
+// hide delivery div
+function hideDelivery(){
     document.getElementById('delivery').style.display = "none";
   }
 
+// validate the shipping form
 function validateShippingForm() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
@@ -238,11 +257,8 @@ function validateShippingForm() {
     }
   }
 
-   function billingDefault(){
-    document.getElementById('billingAddress').value = "42 Wallaby Way, Sydney 2000 NSW";
-   }
-
-  function validatePaymentForm() {
+// validate the payment form
+function validatePaymentForm() {
     var cardNumber = document.getElementById('cardNumber').value;
     var expiryDate = document.getElementById('expiryDate').value;
     var CVC = document.getElementById('CVC').value;
@@ -295,4 +311,9 @@ function validateShippingForm() {
     if(paymentError == true){  
         return false;    
     }
-  }
+}
+
+// billing address same as shipping address
+function billingDefault(){
+    document.getElementById('billingAddress').value = "42 Wallaby Way, Sydney 2000 NSW";
+}
