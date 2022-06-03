@@ -127,6 +127,42 @@ function selectChaseStyle(option){
     document.getElementById(option).style.border = "4px solid var(--colour-main)";
 }
 
+// alternative product images
+function showTerracotta(){
+    document.getElementById('mainChaseImage').src = "images/ChaseMeetingRoomChair.webp";
+}
+
+function showBlack(){
+    document.getElementById('mainChaseImage').src = "images/ChaseMeetingRoomChairHover.webp";
+}
+
+function showTan(){
+    document.getElementById('mainChaseImage').src = "images/ChaseChairTan.webp";
+}
+
+function showMesh(){
+    document.getElementById('mainChaseImage').src = "images/ChaseChairMesh.jpeg";
+}
+
+function showFront(){
+    document.getElementById('mainLynxImage').src = "images/LynxVisitorChair.webp";
+}
+
+function showBack(){
+    document.getElementById('mainLynxImage').src = "images/LynxVisitorChairHover.webp";
+}
+
+function showSide(){
+    document.getElementById('mainLynxImage').src = "images/LynxSide.webp";
+}
+
+function showArms(){
+    document.getElementById('mainLynxImage').src = "images/LynxArm.webp";
+}
+
+function showArmsSide(){
+    document.getElementById('mainLynxImage').src = "images/LynxArmSide.webp";
+}
 
 // add items to cart
 function addToCart(item){
@@ -142,7 +178,15 @@ function addToCart(item){
     }
 }
 
-// validate form
+// form functions
+function showDelivery(){
+    document.getElementById('delivery').style.display = "block";
+  }
+
+  function hideDelivery(){
+    document.getElementById('delivery').style.display = "none";
+  }
+
 function validateShippingForm() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
@@ -169,14 +213,6 @@ function validateShippingForm() {
     if(error == true){
         return false;
     }
-  }
-
-  function showDelivery(){
-    document.getElementById('delivery').style.display = "block";
-  }
-
-  function hideDelivery(){
-    document.getElementById('delivery').style.display = "none";
   }
 
    function billingDefault(){

@@ -92,15 +92,15 @@
             <div class="page-start stack centre-vertical not-sidebar product-padding">
                 <div class="centre-vertical">
                     <img class="product-image-caret" src="icons/caret-left-bold.svg" alt="">
-                    <img class="main-image" src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair">
+                    <img id="mainLynxImage" class="main-image" src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair">
                     <img class="product-image-caret" src="icons/caret-right-bold.svg" alt="">
                 </div>
                 <div class="configuration-grid">
-                    <img class="alt-image" src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair">
-                    <img class="alt-image" src="images/LynxVisitorChairHover.webp" alt="Lynx Visitor Chair">
-                    <img class="alt-image" src="images/LynxSide.webp" alt="Lynx Visitor Chair">
-                    <img class="alt-image" src="images/LynxArm.webp" alt="Lynx Visitor Chair">
-                    <img class="alt-image" src="images/LynxArmSide.webp" alt="Lynx Visitor Chair">
+                    <button onclick="showFront()"><img class="alt-image" src="images/LynxVisitorChair.webp" alt="Lynx Visitor Chair"></button>
+                    <button onclick="showBack()"><img class="alt-image" src="images/LynxVisitorChairHover.webp" alt="Lynx Visitor Chair"></button>
+                    <button onclick="showSide()"><img class="alt-image" src="images/LynxSide.webp" alt="Lynx Visitor Chair"></button>
+                    <button onclick="showArms()"><img class="alt-image" src="images/LynxArm.webp" alt="Lynx Visitor Chair"></button>
+                    <button onclick="showArmsSide()"><img class="alt-image" src="images/LynxArmSide.webp" alt="Lynx Visitor Chair"></button>
                 </div>
             </div>
             <!-- Product info and configuration -->

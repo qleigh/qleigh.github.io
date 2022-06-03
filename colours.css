@@ -152,6 +152,10 @@ input[type="text"], textarea{
     background-color: var(--colour-bg);
 }
 
+.alt-image:hover{
+    border: 2px solid var(--colour-main-light);
+}
+
 .proceed{
     color: var(--colour-bg);
     background-color: var(--colour-main);
